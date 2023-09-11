@@ -1,0 +1,173 @@
+/*Google fonts styles that that are imported*/
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Lexend+Deca:wght@200&family=Merienda:wght@900&family=Playfair+Display+SC&family=Roboto:wght@100&family=Ultra&display=swap');
+
+/* change the values below to your chosen font(s) */
+:root {
+    --heading-font: "Lexend";
+    --paragraph1-font: "Roboto";
+    --paragraph2-font: Noto Sans, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: rgb(243, 243, 243);
+}
+
+h5 {
+    font-family: var(--paragraph1-font);
+}
+
+
+p {
+    font-family: var(--paragraph2-font);
+}
+
+
+
+h6 {
+    color: rgb(243, 243, 243);
+    ;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+li {
+    font-size: 30px;
+    color: rgb(243, 243, 243);
+    list-style-type: none;
+    /* Get rid of the bullet point */
+}
+
+body {
+    margin: 50px 0 0;
+    /* Add top margin, I've added 50px of margin at the top, and 0 margin for the left and  */
+    background-color: #3c6363;
+}
+
+a:link {
+    color: lightblue;
+    /* unvisited link is black */
+}
+
+a:visited {
+    color: #5815a54c;
+    /* visited link is black (reverse the color back to black) */
+}
+
+#mainGridcontainer1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 200px;
+}
+
+#mainBoxToColor {
+    background-color: rgba(6, 49, 87, 0.699);
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 7;
+    height: 200px;
+    z-index: -1;
+    box-shadow: 0px 0px 10px 2px white;
+
+    border-radius: 90px;
+    /*Use to create the desired level of curvature for your element. */
+}
+
+.portalImage {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-column-end: 3;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 50%;
+    margin: auto;
+    /* Center horizontally within the cell */
+}
+
+
+
+h1 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    font-size: 70px;
+    text-align: center;
+}
+
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica;
+    color: rgba(240, 248, 255, 0.763);
+
+}
+
+.mainlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+.centered-hr {
+    width: 50%;
+    /* Adjust the length of the HR line */
+    border: none;
+    border-top: 2px solid black;
+    /* Add styling to the HR line */
+}
+
+.mainMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -25px; Adjust as needed */
+}
+
+#mainGridcontainer2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#footerBoxToColor {
+    background-color: rgba(49, 74, 94);
+    height: 100px;
+    width: 900px;
+    z-index: -1;
+    border-radius: 90px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.copyRightSection {
+    text-align: center;
+    /* Center the content horizontally within the cell */
+}
+
+#link2 {
+    color: black;
+    text-decoration: none;
+    /* Remove underline by default */
+}
+
+#link2:hover {
+    text-decoration: underline;
+    /* Add underline when hovering */
+}
