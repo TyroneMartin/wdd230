@@ -69,7 +69,6 @@ a:visited {
     height: 200px;
     z-index: -1;
     box-shadow: 0px 0px 10px 2px white;
-
     border-radius: 90px;
     /*Use to create the desired level of curvature for your element. */
 }
@@ -82,7 +81,7 @@ a:visited {
     display: flex;
     justify-content: center;
     align-content: center;
-    max-width: 50%;
+    max-width: 40%;
     margin: auto;
     /* Center horizontally within the cell */
 }
@@ -171,3 +170,47 @@ h2 {
     text-decoration: underline;
     /* Add underline when hovering */
 }
+
+nav {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    text-align: justify; /* Use flexbox */
+    justify-content: center;
+     align-items: flex-end; 
+    /* margin-top: 2%; */
+    display: flex; /* Use flexbox */
+    justify-content: space; /* Space the items evenly */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 25px;
+  text-align: end;
+  background-color: #3c6363; 
+
+  height: 39px ;
+  border-radius: 90px;
+  
+
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 35 em; /* Adjust this value to control spacing between words */
+
+}
+
+.nav-button {
+    text-decoration: none;
+    margin-right: 0.5em;
+    padding: 10px 20px; /*Adjust padding to control the button size */
+    /* background-color: #076fed8a; Set the background colorn */
+    height: 20px; /* Set the height of the button */
+    color: #fff; /* Set the text color */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show a pointer cursor on hover */
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
