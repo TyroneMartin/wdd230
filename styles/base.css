@@ -204,10 +204,16 @@ h2 {
    
 }
 
-.copyRightSection p  {
+.InformationMessage {
+    margin-top: 10px; /* Adds space above each paragraph */
+    margin-bottom: 45px; /* Adds space below each paragraph */
+    font-style: normal;
+}
+
+.copyRightSection  p  {
     margin-top: 5px; /* Adds space above each paragraph */
     margin-bottom: 20px; /* Adds space below each paragraph */
-    font-style: normal;
+ 
     font-weight: bold;
     font-family: Arial, sans-serif;
     font-size: 20px;
@@ -220,6 +226,7 @@ h2 {
     /* Remove underline by default */
     font-variant-caps: all-small-caps;
     font-size: 20px;
+    font-family: Arial, sans-serif;
 }
 
 #link2:hover {
