@@ -176,31 +176,50 @@ h2 {
 }
 
 #mainGridcontainer2 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr; */
+    margin: 0 auto;
+    width: 50%;
+   
 }
 
 #footerBoxToColor {
     background-color: #000000fb;
-    height: 100px;
-    width: 900px;
+    height: 45px;
+    width: 100%;
     z-index: -1;
-    /* border-radius: 90px; */
-    grid-column-start: 2;
-    grid-column-end: 8;
-    margin-top: 15px%;
+    border-radius: 1px;
+    margin-top: 30px;  /* spacing between the boxes */
+    margin-bottom: 30px;
+    padding-bottom: 15%;
 }
 
 .copyRightSection {
     text-align: center;
     /* Center the content horizontally within the cell */
+    color: #ffffff;
+    font-size:medium;
+    padding: 4%; 
+   
 }
 
-#link2 {
-    color: black;
+.copyRightSection p  {
+    margin-top: 5px; /* Adds space above each paragraph */
+    margin-bottom: 20px; /* Adds space below each paragraph */
+    font-style: normal;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+#footer-copy-right-name {
+    color: #ffffff;
     text-decoration: none;
     /* Remove underline by default */
+    font-variant-caps: all-small-caps;
+    font-size: 20px;
 }
 
 #link2:hover {
@@ -227,7 +246,6 @@ nav {
     /* background-color: #3c6363; */
     background-color: black;
     height: 50px;
-  
     padding-top: 1%;
     grid-column-start: 3;
     grid-column-end: 7;
