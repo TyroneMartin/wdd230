@@ -13,7 +13,6 @@ h1 {
     color: rgb(243, 243, 243);
     font-size: 50px;
     padding: 9%;
-    grid-column-end: ;
 }
 
 h5 {
@@ -107,7 +106,6 @@ h1 {
     grid-row-start: 1;
     font-size: 70px;
     text-align: center;
-    margin: ;
 }
 
 .mainTitle {
@@ -181,7 +179,7 @@ h2 {
     grid-template-rows: 1fr; */
     margin: 0 auto;
     width: 50%;
-   
+
 }
 
 #footerBoxToColor {
@@ -190,7 +188,8 @@ h2 {
     width: 100%;
     z-index: -1;
     border-radius: 1px;
-    margin-top: 30px;  /* spacing between the boxes */
+    margin-top: 30px;
+    /* spacing between the boxes */
     margin-bottom: 30px;
     padding-bottom: 15%;
 }
@@ -199,21 +198,25 @@ h2 {
     text-align: center;
     /* Center the content horizontally within the cell */
     color: #ffffff;
-    font-size:medium;
-    padding: 4%; 
-   
+    font-size: medium;
+    padding: 4%;
+
 }
 
 .InformationMessage {
-    margin-top: 10px; /* Adds space above each paragraph */
-    margin-bottom: 45px; /* Adds space below each paragraph */
+    margin-top: 10px;
+    /* Adds space above each paragraph */
+    margin-bottom: 45px;
+    /* Adds space below each paragraph */
     font-style: normal;
 }
 
-.copyRightSection  p  {
-    margin-top: 5px; /* Adds space above each paragraph */
-    margin-bottom: 20px; /* Adds space below each paragraph */
- 
+.copyRightSection p {
+    margin-top: 5px;
+    /* Adds space above each paragraph */
+    margin-bottom: 20px;
+    /* Adds space below each paragraph */
+
     font-weight: bold;
     font-family: Arial, sans-serif;
     font-size: 20px;
@@ -264,9 +267,6 @@ nav {
 nav a {
     text-decoration: none;
     /* Remove underline from links */
-    margin-right: 35 em;
-    /* Adjust this value to control spacing between words */
-
 }
 
 .nav-button {
