@@ -1,5 +1,6 @@
-/* Styles for small screens (up to 444px - 1756px size) */
-@media (min-width: 444px) and (max-width: 1756px) {
+/* Medium Views */
+@media (min-width: 1757px) and (max-width: 1927px) {
+
     nav {
         /* grid-row-start: 1;
         grid-column-start: 2;
@@ -9,8 +10,10 @@
         justify-content: center;
         /* Center text vertically */
         align-items: center;
-        display: flex;       /* Center text vertically */
-        flex-direction: column;  /*layout horizontally  */
+        display: flex;
+        /* Center text vertically */
+        flex-direction: column;
+        /*layout horizontally  */
         /* Use flexbox */
         text-decoration: none;
         /* Remove underline from links */
@@ -22,7 +25,19 @@
         grid-column-start: 3;
         grid-column-end: 7;
         grid-row: 2;
-        padding: 10%; 
+        padding: 10%;
+
     }
 
+
 }
+
+/* Medium Views */
+@media (min-width: 1757px) and (max-width: 1927px) {
+
+}
+
+
+
+
+
