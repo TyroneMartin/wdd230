@@ -37,9 +37,6 @@
     
 }
 
-
-
-
 /*Google fonts styles that that are imported*/
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Lexend+Deca:wght@200&family=Merienda:wght@900&family=Playfair+Display+SC&family=Roboto:wght@100&family=Ultra&display=swap');
 
@@ -51,13 +48,11 @@
 }
 
 
-
-
 h1 {
     font-family: var(--heading-font);
     color: rgb(243, 243, 243);
     font-size: 50px;
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 2rem;
     margin-left: 20rem;
 
@@ -148,8 +143,6 @@ body {
    
 
 }
-
-
 
 h1 {
     grid-column-start: 3;
@@ -340,6 +333,10 @@ ul a:visited {
     width: 30%;
     text-align: center;
 
+}
+
+.googlemap{
+    margin:  0 auto;
 }
 
 

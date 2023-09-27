@@ -1,58 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lesson: 02 Design Principles Document in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <!-- Import Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=LatoMontserrat&display=swap">
 
     <!-- Import the CSS Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!--stylesheet/s and Favion image-->
+
+    <!--Google fronts and Favion image-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="../lesson02/styles/base.css">
     <link rel="icon" href="/favicon.ico.png" type="image/png">
+
+    <!-- media qui-->
+    <link rel="stylesheet" href="../lesson02/styles/base.css">
+    <link rel="stylesheet" href="../lesson02/styles/medium.css">
+    <link rel="stylesheet" href="../lesson02/styles/large.css">
+
     <title>L02: Design Principles Document</title>
 </head>
 
 <body>
-
-    <main>
-        <section>
+    <header class="banner_header">
+        <h1>Design Principles Document</h1>
+        <h2>Tyrone J. Martin</h2>
+    </header>
+    <main class="mainContainer">
+        <section class="card">
             <h2>Visual Hierarchy</h2>
-            <a href="https://www.invisionapp.com/defined/visual-hierarchy" target="_blank"><img src="./images/visual_hierarchy_image.png" alt="Article on Visual Hierarchy from invisionapp.com webiste"></a><h3>What is visual hierarchy?</h3>
-            <p>Commonly referred to as hierarchy in the Principles of Design, visual hierarchy is a way to visually rank
-            your design elements. It’s based on the order of visual importance, rather than aesthetics or design styles.
+            <h3><a href="https://www.invisionapp.com/defined/visual-hierarchy" target="_blank">
+                    Click image to get more info</a></h3>
+            <picture>
+                <img src="./images/visual_hierarchy_image.png"
+                    alt="Article on Visual Hierarchy from invisionapp.com webiste">
+            </picture>
+
+            <p>
+                Commonly referred to as hierarchy in the Principles of Design, visual hierarchy is a way to visually
+                rank
+                your design elements. It’s based on the order of visual importance, rather than aesthetics or design
+                styles.
             </p>
+
+            <a href="https://www.invisionapp.com/" target="_blank">Additional Resouces</a>
         </section>
-        <section>
+        <section class="card">
             <h2>White Space and Clean Design</h2>
-            <a href="https://fabrikbrands.com/white-space-in-graphic-design-white-space-principle-of-design/" target="_blank"><img src="./images/white_space_and_clean_design_image.png" alt="Article on White Space and Clean Design from fabrikbrands.com"></a><h3>What is visual hierarchy?</h3>
+            <h3> <a href="https://fabrikbrands.com/white-space-in-graphic-design-white-space-principle-of-design/"
+                    target="_blank">Click image to get more info</a></h3>
+            <picture>
+
+                <img src="./images/white_space_and_clean_design_image.png"
+                    alt="Article on White Space and Clean Design from fabrikbrands.com">
+            </picture>
             <p>Commonly referred to as hierarchy in the Principles of Design, visual hierarchy is a way to visually rank
-            your design elements. It’s based on the order of visual importance, rather than aesthetics or design styles.
+                your design elements. It’s based on the order of visual importance, rather than aesthetics or design
+                styles.
             </p>
+            <a href="https://fabrikbrands.com/stephen-peate-creative-director-of-fabrik-brands/"
+                target="_blank">Additional Resouces</a>
         </section>
-        <section>
+        <section class="card">
             <h2>PARC: Alignment</h2>
-            <a href="https://www.invisionapp.com/defined/visual-hierarchy" target="_blank"><img src="./images/visual_hierarchy_image.png" alt="invisionapp.com webiste on Visual Hierarchy"></a><h3>What is visual hierarchy?</h3>
-            <p>Commonly referred to as hierarchy in the Principles of Design, visual hierarchy is a way to visually rank
-            your design elements. It’s based on the order of visual importance, rather than aesthetics or design styles.
+            <h3><a href="https://happyaddons.com/alignment-in-web-design/" target="_blank">
+                    Click image to get more info</a></h3>
+            <picture>
+
+                <img src="./images/alignment_image.png"
+                    alt="Article on PARC: Alignment by Fuad Al Azad hosted on Happy Addons">
+            </picture>
+            <p>
+                fggggggggggggggggggggggggggggcxiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiy
             </p>
+            <a href="https://happyaddons.com/author/fuad-al-azad/" target="_blank">Additional Resouces</a>
         </section>
     </main>
     <footer>
-        <div id="mainGridcontainer2">
-            <div id="footerBoxToColor">
-                <div class="copyRightSection">
-                    <p>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="/index.html">Tyrone
-                            Martin</a>. All Rights Reserved. </p>
-                    <p><span>Location: Rexburg, Idaho</span></p>
-                    <p>Last updated: <span id="lastUpdated"></span></p>
-                </div>
-            </div>
-        </div>
+        <p>
+            &copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="/index.html">Tyrone
+                Martin</a>. All Rights Reserved. </p>
+        <p><span>Location: Rexburg, Idaho</span></p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
+
     </footer>
     <script src="../script/getdates.js"></script>
 </body>
+
 
 </html>
