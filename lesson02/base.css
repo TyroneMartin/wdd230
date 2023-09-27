@@ -17,12 +17,13 @@ h6 {
 .banner_header {
     flex-direction: column;
     text-align: center;
-    background-color: #114c50;
+    background-color: #114C50;
     color: #ffffff;
     justify-content: center;
-    padding: 1rem;
+    padding: 4rem;
     border-radius: 1rem;
 }
+
 
 
 .mainContainer {
@@ -34,7 +35,7 @@ h6 {
 }
 
 footer {
-    background-color: #114c50;
+    background-color: #130106;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
@@ -59,9 +60,9 @@ footer a {
 }
 
 .card {
-    background-color: #b1b1b1;
-    max-width: 95%;
-    border: #e4e4e4 solid 5px;
+    background-color: #EBEBEB;
+    max-width: 100%;
+    border: #333333 solid 5px;
     border-radius: 2rem;
     justify-self: center;
 }
