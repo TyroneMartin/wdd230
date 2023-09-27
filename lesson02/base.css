@@ -10,13 +10,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner_header{
-    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: #114c50;
     color: #ffffff;
     justify-content: center;
     padding: 1rem;
     border-radius: 1rem;
 }
+
+
 
 .mainContainer {
     display: grid;
