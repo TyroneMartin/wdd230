@@ -1,321 +1,72 @@
-/* Styles for small screens (up to 916px - 1756px size) */
-@media (min-width: 444px) and (max-width: 1756px) {
-    nav {
-        text-align: center;
-        /* Center text horizontally */
-        justify-content: center;
-        /* Center text vertically */
-        align-items: center;
-        display: flex;       /* Center text vertically */
-        flex-direction: column;  /*layout horizontally  */
-        /* Use flexbox */
-        text-decoration: none;
-        /* Remove underline from links */
-        text-transform: uppercase;
-        font-size: 30px;
-        background-color: black;
-        height: 50px;
-        grid-row: 2;
-        padding: 8%; 
-    }
-
-}
-
-@media (min-width: 412px) and (max-width: 915px) {
-    nav {
-        text-align: center;
-        /* Center text horizontally */
-        justify-content: center;
-        /* Center text vertically */
-        align-items: center;
-        display: flex;       /* Center text vertically */
-        flex-direction: column;  /*layout horizontally  */
-        /* Use flexbox */
-        text-decoration: none;
-        /* Remove underline from links */
-        text-transform: uppercase;
-        font-size: 15px;
-        background-color: black;
-        height: 50px;
-        grid-column-start: 3;
-        grid-column-end: 7;
-        grid-row: 2; 
-        padding: 30%; 
-        margin: 0 auto;
-    }
-}
-
-
-/*additional Google fonts styles that that are imported*/
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Lexend+Deca:wght@200&family=Merienda:wght@900&family=Playfair+Display+SC&family=Roboto:wght@100&family=Ultra&display=swap');
-
-/* change the values below to your chosen font(s) */
-:root {
-    --heading-font: "Lexend";
-    --paragraph1-font: "Roboto";
-    --paragraph2-font: Noto Sans, Helvetica, sans-serif;
-}
-
-
-h1 {
-    font-family: var(--heading-font);
-    color: rgb(243, 243, 243);
-    font-size: 50px;
-    /* margin: auto; */
-    margin-bottom: 2rem;
-    margin-left: 20rem;
-
-}
-
-h5 {
-    font-family: var(--paragraph1-font);
-}
-
-
-p {
-    font-family: var(--paragraph2-font);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-h6 {
-    color: rgb(243, 243, 243);
-    ;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif
-}
-
-ul {
-    font-size: 30px;
-    color: rgb(243, 243, 243);
-    list-style-type: none;
-    /* Get rid of the bullet point */
-
-}
-
-ol {
-    font-size: 20px;
-    color: rgb(243, 243, 243);
-    list-style-type: none;
-    margin: 0 auto;
-
-}
-
-body {
-    margin: 50px 0 0;
-    /* Add top margin, I've added 50px of margin at the top, and 0 margin for the left and  */
+html {
+    /* background-color: rgb(224, 224, 224); */
     background-color: #3c6363;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
 
+}
 
-#mainGridcontainer1 {
+header {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 200px;
-    padding: 2%;
-}
-
-#mainBoxToColor {
+    grid-template-columns: 150px 1fr;
+    /* background-color: rgb(2, 2, 93); */
     background-color: rgba(6, 49, 87, 0.699);
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-end: 7;
-    height: 200px;
-    z-index: -1;
+    align-items: center;
     box-shadow: 0px 0px 10px 2px white;
-    border-radius: 10px;
-    /*Use to create the desired level of curvature for your element. */
-
-}
-
-.portalImage {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-column-end: 3;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    max-width: 40%;
-    margin: auto;
-    margin-left: auto;
-    margin-right: 15%;
-    margin-bottom: 10%;
-    border-radius: 15%;
-    border-color: #fff;
-    border-style: solid;
-   
-
-}
-
-h1 {
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    font-size: 70px;
-    text-align: center;
-}
-
-.mainTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-
-}
-
-h2 {
-    /* font-family: "Helvetica Neue", Helvetica; */
-    color: rgba(240, 248, 255, 0.763);
-    background-color: #090b0b6f;
-    /* border-radius: 9px; */
-    width: 48%;
-    margin: 0 auto;
-    height: fit-content;
-    padding: 0;
-
-}
-
-.byuiImage {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    margin: 0 auto;
-    padding-top: 1%;
-    margin-top: -3%;
-    width: 48%;
-    height: 25vh;
-
-}
-
-.mainlinks-And-Info-Section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgb(51 82 82);
-    width: 30%;
-    margin: 0 auto;
-
-}
-
-.googlemap {
-    margin: 0 auto;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-
 
 }
 
 
 
-.space-Holder {
+header img {
+    width: 150px;
     padding: 20px;
 }
 
-.hr-container {
+header h1 {
+    text-align: left;
+    color: white;
+    font-size: 60px;
+
+}
+
+.mainTitle {
+    font-size: 35px;
+        font-family: "Helvetica Neue", Helvetica;
+        color: rgba(240, 248, 255, 0.763);
+        background-color: #090b0b6f;
+}
+
+
+nav {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 1px;
-    /* Adjust as needed */
-}
-
-.centered-hr {
-    width: 48%;
-    /* Adjust the length of the HR line */
-    border: none;
-    border-top: 2px solid black;
-    /* Add styling to the HR line */
-}
-
-#mainGridcontainer2 {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr; */
-    margin: 0 auto;
-    width: 50%;
-
-}
-
-#footerBoxToColor {
-    background-color: #000000fb;
-    height: 45px;
+    justify-content: space-between;
     width: 100%;
-    z-index: -1;
-    border-radius: 1px;
-    margin-top: 30px;
-    /* spacing between the boxes */
-    margin-bottom: 30px;
-    padding-bottom: 15%;
+    grid-column: 1/3;
+    background-color: black;
+    text-transform: uppercase;
 }
-
-.copyRightSection {
-    text-align: center;
-    /* Center the content horizontally within the cell */
-    color: #ffffff;
-    font-size: medium;
-    padding: 4%;
-
-}
-
-.InformationMessage {
-    margin-top: 10px;
-    /* Adds space above each paragraph */
-    margin-bottom: 45px;
-    /* Adds space below each paragraph */
-    font-style: normal;
-}
-
-.copyRightSection p {
-    margin-top: 5px;
-    /* Adds space above each paragraph */
-    margin-bottom: 20px;
-    /* Adds space below each paragraph */
-
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-
-}
-
-#footer-copy-right-name {
-    color: #ffffff;
-    text-decoration: none;
-    /* Remove underline by default */
-    font-variant-caps: all-small-caps;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-}
-
-#link2:hover {
-    text-decoration: underline;
-    /* Add underline when hovering */
-}
-
-
 
 nav a {
+    color: white;
+    padding: 20px;
+    text-align: center;
     text-decoration: none;
     /* Remove underline from links */
 }
 
+nav a:hover {
+    /* background-color: white; */
+    color: black;
+    width: 100%;
+}
+
 .nav-button {
-    text-decoration: none;
-    margin-right: 0.5em;
-    padding: 10px 20px;
-    /*Adjust padding to control the button size */
-    /* background-color: #076fed8a; Set the background colorn */
-    height: 20px;
-    /* Set the height of the button */
     color: #fff;
     /* Set the text color */
     border: none;
@@ -324,10 +75,14 @@ nav a {
     /* Add rounded corners */
     cursor: pointer;
     /* Show a pointer cursor on hover */
+    margin-right: 0.5em;
+    padding: 25px 20px;
+
 }
 
 .nav-button:hover {
-    background-color: #0056b3;
+    /* background-color: #0056b3; */
+    background-color: white; 
     /* Change the background color on hover */
 }
 
@@ -341,28 +96,112 @@ ul a:visited {
     /* visited link is black (reverse the color back to black) */
 }
 
-.card {
-    display: flex;
-    justify-content: center;
+ul li {
+    color: rgb(243, 243, 243);
 }
+
+#info_container p {
+    color: rgb(243, 243, 243);
+    padding: 10px;
+    font-size: 20px;    
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    grid-template-rows: repeat(5, auto);
+}
+
+.card {
+    border: 1px solid black;
+    /* background-color: white; */
+    background-color: rgb(51 82 82);
+
+}
+
+.byuiImage {
+    width: 100%;
+}
+
 
 .card h3 {
-    font-size: 30px;
+
     color: rgb(217 165 165);
     background-color: rgb(0 0 0 / 87%);
-    width: 30%;
+    padding: 20px; 
+    font-size: 30px;
     text-align: center;
-
 }
 
-.map-container {
-    width: 100%;
-    height: 450px; 
-    display: flex;
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
-padding-top: -20%; 
-box-shadow: #0056b3;
-border: #3c6363 solid;
+.card ul {
+    padding: 40px;
 }
 
+#info {
+    padding: 40px;
+}
+
+footer {
+    background-color: #000000fb;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    /* Add underline when hovering */
+}
+
+#footer-copy-right-name {
+    font-variant-caps: all-small-caps;
+    font-size: 22px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#activities li {
+    list-style-type: none;
+    /* Get rid of the bullet point */
+    padding: 5px;
+    font-size: 25px;    
+}
+
+
+/*  Additional styling */
+
+/*additional Google fonts styles that that are imported*/
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Lexend+Deca:wght@200&family=Merienda:wght@900&family=Playfair+Display+SC&family=Roboto:wght@100&family=Ultra&display=swap');
+
+/* change the values below to your chosen font(s) */
+:root {
+    --heading-font: "Lexend";
+    --paragraph1-font: "Roboto";
+    --paragraph2-font: Noto Sans, Helvetica, sans-serif;
+}
+
+p {
+    font-family: var(--paragraph2-font);
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}

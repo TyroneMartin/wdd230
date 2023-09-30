@@ -1,5 +1,5 @@
 /* Medium Views */
-@media (min-width: 1757px) and (max-width: 1927px) {
+@media  screen and (min-width: 1757px)  {
 
     nav {
         /* grid-row-start: 1;
@@ -29,12 +29,6 @@
 
     }
 }
-
-/* Medium Views */
-@media (min-width: 1757px) and (max-width: 1927px) {
-
-}
-
 
 
 

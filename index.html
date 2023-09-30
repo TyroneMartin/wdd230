@@ -20,7 +20,6 @@
 
     <!--stylesheet/s and Favion image-->
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
 
 
@@ -29,46 +28,40 @@
 </head>
 
 <body>
+    <header>
+        <img class="portalImage" src="./image/myportfolio_photo.jpg" alt="Tyrone Martin portfolio picture">
+        <h1>Tyrone J. Martin</h1>
+        <nav>
+            <a href="#" class="nav-button">Home</a>
+            <a href="chamber/siteplan.html" class="nav-button" target="_blank">Site Plan</a>
+            <a href="chamber/" class="nav-button" target="_blank">Chamber</a>
+            <a href="https://www.byui.edu/" class="nav-button" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/6?lang=eng&id=p50#p50"
+                class="nav-button" target="_blank">Scripture</a>
+        </nav>
+    </header>
     <main>
-        <section id="mainGridcontainer">
-            <div id="mainGridcontainer1">
-                <div id="mainBoxToColor"></div>
-                <img class="portalImage" src="./image/myportfolio_photo.jpg" alt="Tyrone Martin portfolio picture">
-                <h1 class="myName">Tyrone J. Martin</h1>
-                <nav>
-                    <a href="#" class="nav-button">Home</a>
-                    <a href="chamber/siteplan.html" class="nav-button" target="_blank">Site Plan</a>
-                    <a href="chamber/" class="nav-button" target="_blank">Chamber</a>
-                    <a href="https://www.byui.edu/" class="nav-button" target="_blank">BYU-Idaho</a>
-                    <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/6?lang=eng&id=p50#p50"
-                        class="nav-button" target="_blank">Scripture</a>
-                </nav>
-            </div>
-        </section>
+
         <img class="byuiImage" src="./image/the_tailor_building_brigham_young_university_Idaho.png"
             alt="the_tailor_building_brigham_young_university_Idaho">
-        <div class="hr-container">
-            <hr class="centered-hr">
-        </div>
-        <h2 class="mainTitle">WDD 230: Web Frontend Development</h2>
-        <div class="hr-container">
-            <hr class="centered-hr">
-        </div>
-        <div class="space-Holder"></div>
 
-        <section class="card">
+
+
+        <h2 class="mainTitle">WDD 230: Web Frontend Development</h2>
+
+
+        <section class="card" id="activities">
             <!-- Table box header here-->
             <h3>Learning Activities</h3>
             <!-- ...... -->
-        </section>
-        <div class="mainlinks-And-Info-Section">
-            <!--This to the course work material, box table listing-->
             <ul>
                 <li>Lesson 01: Holy Grail Setup--Will be upsated</li>
                 <li>Lesson 02: <a href="./lesson02/design.html" target="_blank">Design</a> | <a
                         href="./lesson02/design-principles.html" target="_blank">Design Principles</a> </li>
-                <li>Lesson 03: <a href="" target="_blank">Title</a></li>
-                <li>Lesson 04:</li>
+                <li>Lesson 03: <a href="./lesson03/chamber-site-plan.html" target="_blank">The Chamber of Commerce Site
+                        Plan</a></li>
+
+                <!--<li>Lesson 04:</li>
                 <li>Lesson 05:</li>
                 <li>Lesson 06:</li>
                 <li>Lesson 07:</li>
@@ -77,58 +70,33 @@
                 <li>Lesson 10:</li>
                 <li>Lesson 11:</li> -->
             </ul>
-        </div>
-        <div class="space-Holder">
-            <section class="card">
-                <h3>Information</h3>
-            </section>
-            <div class="mainlinks-And-Info-Section">
+        </section>
+        <!--This to the course work material, box table listing-->
 
-                <ol class="InformationMessage">
-                    <li>
-                        <p>Rexburg, Idaho</p>
-                    </li>
-                    <li>
-                        <p>Weather <span id="temp"></span>🌞</p>
-                    </li>
-                    <li>
-                        <p>Number of visits to the page: 15</p>
-                    </li>
+        <section class="card" id="info_container">
+            <h3>Information</h3>
+            <div id="info">
+                <p>Rexburg, Idaho</p>
 
-                </ol>
+
+                <p>Weather <span id="temp"></span>🌞</p>
+
+
+                <p>Number of visits to the page: 15</p>
             </div>
-             <div class="space-Holder"></div>
-            <section class="card">
-                <!-- Maps header-->
-                <h3>Maps</h3>
-                <!-- ...... -->
-            </section>
-            <div class="map-container">
+        </section>
 
-                <iframe class="googlemap"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.85270980117!2d-111.8294682612173!3d43.830104938155614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1695764824386!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-
-        </div>
-
-        </div>
-
+        <iframe class="googlemap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.85270980117!2d-111.8294682612173!3d43.830104938155614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1695764824386!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
     <footer>
-        <div id="mainGridcontainer2">
-            <div id="footerBoxToColor">
-                <div class="copyRightSection">
-                    <p>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="/index.html">Tyrone
-                            Martin</a>. All Rights Reserved. </p>
-                    <p><span>Location: Rexburg, Idaho</span></p>
-                    <p>Last updated: <span id="lastUpdated"></span></p>
-                </div>
-            </div>
-        </div>
+        <p>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="/index.html">Tyrone
+                Martin</a>. All Rights Reserved. </p>
+        <p><span>Location: Rexburg, Idaho</span></p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
     </footer>
     <script src="./script/getdates.js"></script>
 </body>
