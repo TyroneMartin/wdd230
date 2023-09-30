@@ -1,5 +1,4 @@
 html {
-    /* background-color: rgb(224, 224, 224); */
     background-color: #3c6363;
 }
 
@@ -43,13 +42,15 @@ header h1 {
 
 nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     grid-column: 1/3;
     background-color: black;
     text-transform: uppercase;
+    cursor: pointer;
+    /* Show a pointer cursor on hover */
+
 }
 
 nav a {
@@ -58,40 +59,39 @@ nav a {
     text-align: center;
     text-decoration: none;
     /* Remove underline from links */
+
 }
 
 nav a:hover {
-    /* background-color: white; */
-    color: black;
+    /* color: black; */
     width: 100%;
 }
 
-.nav-button {
-    color: #fff;
-    /* Set the text color */
-    border: none;
-    /* Remove the default button border */
-    border-radius: 5px;
-    /* Add rounded corners */
-    cursor: pointer;
-    /* Show a pointer cursor on hover */
-    margin-right: 0.5em;
-    padding: 25px 20px;
-
+.active nav ul{
+    padding-inline-start: 0px;
+    box-shadow: 3px 3px rgb(0, 0, 53);
+    display: flex;
+    flex-direction: column;
+ 
 }
+
+.active{
+    border-bottom: 3px solid rgba(0, 29, 114, 0.593); 
+    background-color: #0056b3;
+}
+
 
 .nav-button:hover {
-    /* background-color: #0056b3; */
-    background-color: white; 
-    /* Change the background color on hover */
+    background-color: #0056b3;
+/* Change the background color on hover */
 }
 
-ul a:link {
+#activities a:link {
     color: lightblue;
     /* unvisited link is black */
 }
 
-ul a:visited {
+#activities ul li a:visited {
     color: rgb(224, 236, 240);
     /* visited link is black (reverse the color back to black) */
 }
@@ -176,6 +176,12 @@ footer p {
     font-size: 25px;    
 }
 
+.card {
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 10px;
+}
+
 
 /*  Additional styling */
 
@@ -199,4 +205,27 @@ h1 {
 
 .googlemap {
     width: 100%;
+}
+
+/** Hamburger Menu Stuff **/
+
+.menu-hide, .menu-show{
+    display: none;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 10.rem 0 0 .5rem;
+
+}
+
+.menu-hide.showing, .menu-show.showing{
+    display: block;
+}
+
+#nav-menu{
+    display: none;
+}
+
+#nav-menu.showing{
+    display: flex;
+flex-direction: column; 
 }

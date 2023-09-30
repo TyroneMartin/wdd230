@@ -25,6 +25,8 @@
 
     <link rel="icon" href="/favicon.ico.png" type="image/png">
     <title>Tyrone Martin- WDD 230 - Web Frontend Development</title>
+    <script src="./script/hamburger-menu.js" defer></script>
+
 </head>
 
 <body>
@@ -32,12 +34,15 @@
         <img class="portalImage" src="./image/myportfolio_photo.jpg" alt="Tyrone Martin portfolio picture">
         <h1>Tyrone J. Martin</h1>
         <nav>
-            <a href="#" class="nav-button">Home</a>
+            <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+            <ul id="nav-menu">
+            <a href="#" class="active" class="nav-button">Home</a>
             <a href="chamber/siteplan.html" class="nav-button" target="_blank">Site Plan</a>
             <a href="chamber/" class="nav-button" target="_blank">Chamber</a>
             <a href="https://www.byui.edu/" class="nav-button" target="_blank">BYU-Idaho</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/mark/6?lang=eng&id=p50#p50"
                 class="nav-button" target="_blank">Scripture</a>
+            </ul>
         </nav>
     </header>
     <main>
@@ -79,10 +84,10 @@
                 <p>Rexburg, Idaho</p>
 
 
-                <p>Weather <span id="temp"></span>🌞</p>
+                <p>Weather: 60&deg; Mostly Sunny <span id="temp"></span>🌞</p>
 
 
-                <p>Number of visits to the page: 15</p>
+                <p>Number of visits to the page: 20</p>
             </div>
         </section>
 
