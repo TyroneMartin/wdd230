@@ -34,9 +34,9 @@ header h1 {
 
 .mainTitle {
     font-size: 35px;
-        font-family: "Helvetica Neue", Helvetica;
-        color: rgba(240, 248, 255, 0.763);
-        background-color: #090b0b6f;
+    font-family: "Helvetica Neue", Helvetica;
+    color: rgba(240, 248, 255, 0.763);
+    background-color: #090b0b6f;
 }
 
 
@@ -67,23 +67,26 @@ nav a:hover {
     width: 100%;
 }
 
-.active nav ul{
+.active nav ul {
     padding-inline-start: 0px;
     box-shadow: 3px 3px rgb(0, 0, 53);
     display: flex;
     flex-direction: column;
- 
+
 }
 
-.active{
-    border-bottom: 3px solid rgba(0, 29, 114, 0.593); 
+.active {
+    border-bottom: 3px solid rgba(0, 29, 114, 0.593);
     background-color: #0056b3;
 }
 
-
-.nav-button:hover {
+nav a:hover {
     background-color: #0056b3;
-/* Change the background color on hover */
+    /* Change the background color on hover */
+    border-bottom: 3px solid rgba(0, 29, 114, 0.593);
+
+
+
 }
 
 #activities a:link {
@@ -103,7 +106,7 @@ ul li {
 #info_container p {
     color: rgb(243, 243, 243);
     padding: 10px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 
@@ -131,7 +134,7 @@ main {
 
     color: rgb(217 165 165);
     background-color: rgb(0 0 0 / 87%);
-    padding: 20px; 
+    padding: 20px;
     font-size: 30px;
     text-align: center;
 }
@@ -173,13 +176,13 @@ footer p {
     list-style-type: none;
     /* Get rid of the bullet point */
     padding: 5px;
-    font-size: 25px;    
+    font-size: 25px;
 }
 
 .card {
-        border: 1px solid;
-        padding: 10px;
-        box-shadow: 5px 10px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
 }
 
 
@@ -209,7 +212,8 @@ h1 {
 
 /** Hamburger Menu Stuff **/
 
-.menu-hide, .menu-show{
+.menu-hide,
+.menu-show {
     display: none;
     background-color: white;
     border: 1px solid grey;
@@ -217,15 +221,16 @@ h1 {
 
 }
 
-.menu-hide.showing, .menu-show.showing{
+.menu-hide.showing,
+.menu-show.showing {
     display: block;
 }
 
-#nav-menu{
+#nav-menu {
     display: none;
 }
 
-#nav-menu.showing{
+#nav-menu.showing {
     display: flex;
-flex-direction: column; 
+    flex-direction: column;
 }
