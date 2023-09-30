@@ -59,15 +59,15 @@ nav a {
     text-align: center;
     text-decoration: none;
     /* Remove underline from links */
-
+    list-style-type: none;
 }
 
-nav a:hover {
+nav  a:hover {
     /* color: black; */
     width: 100%;
 }
 
-.active nav ul {
+.active nav ul li {
     padding-inline-start: 0px;
     box-shadow: 3px 3px rgb(0, 0, 53);
     display: flex;
@@ -80,7 +80,7 @@ nav a:hover {
     background-color: #0056b3;
 }
 
-nav a:hover {
+nav ul li a:hover {
     background-color: #0056b3;
     /* Change the background color on hover */
     border-bottom: 3px solid rgba(0, 29, 114, 0.593);
@@ -99,9 +99,7 @@ nav a:hover {
     /* visited link is black (reverse the color back to black) */
 }
 
-ul li {
-    color: rgb(243, 243, 243);
-}
+
 
 #info_container p {
     color: rgb(243, 243, 243);

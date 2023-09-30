@@ -8,6 +8,7 @@
         flex-direction: row;
         justify-content: space-around;
 
+
     }
     nav a:hover {
         width: fit-content;
