@@ -1,5 +1,5 @@
 html {
-    background-color: f9f7f3;
+    background-color: #ffffff;
 }
 
 main {
@@ -36,7 +36,7 @@ nav {
     display: flex;
     flex-direction: column;
  
-    background-color: black;
+    background-color: #175846;
         min-height: 90px;
 
 
