@@ -1,0 +1,98 @@
+html {
+    background-color: beige;
+}
+
+main {
+     margin: 0 0 0 15px;
+}
+
+header {
+    display: grid;
+    grid-template-columns:  1fr;
+    background-color: rgba(6, 49, 87, 0.699);
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px white;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+
+}
+
+header h1   {
+    color:aqua;
+    font-size: 20px;
+}
+
+header h2   {
+    color:aqua;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+        min-height: 90px;
+
+
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    cursor: pointer;      /* Show a pointer cursor on hover */
+    list-style-type: none;      /* Remove underline from links */
+    min-height: 50px;
+    padding: 20px;
+}
+
+nav  a:hover {
+    color: blue;
+
+}
+
+nav ul  {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+/*  Footer section */
+footer {
+    background-color: #000000fb;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    /* Add underline when hovering */
+}
+
+#footer-copy-right-name {
+    font-variant-caps: all-small-caps;
+    font-size: 22px;
+}
+
+footer p {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+
