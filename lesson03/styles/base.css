@@ -1,15 +1,17 @@
 html {
-    background-color: beige;
+    background-color: f9f7f3;
 }
 
 main {
-     margin: 0 0 0 15px;
+     margin: 0 0 0 20px;
 }
 
 header {
     display: grid;
     grid-template-columns:  1fr;
-    background-color: rgba(6, 49, 87, 0.699);
+    padding: 20px;
+     background-color: rgba(245, 245, 220, 0.355); 
+    /* background-color: #42515A; */
     align-items: center;
     box-shadow: 0px 0px 10px 2px white;
     text-align: center;
@@ -19,19 +21,21 @@ header {
 }
 
 header h1   {
-    color:aqua;
-    font-size: 20px;
+    color:rgb(83, 76, 67);
+    font-size: 25px;
+    font-family: Garamond, Roboto, Arial, sans-serif;
 }
 
 header h2   {
-    color:aqua;
+    color:#ffffff;
     font-size: 15px;
+    font-family: Lexend Deca, Roboto, Arial, sans-serif;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
+ 
     background-color: black;
         min-height: 90px;
 
@@ -57,6 +61,15 @@ nav ul  {
     list-style: none;
 }
 
+h3 {
+    font-size: 15px;
+    font-family: Lexend Deca, Roboto, Arial, sans-serif;
+}
+
+.Logo {
+    height: 300px;
+}
+
 
 
 
@@ -67,7 +80,7 @@ nav ul  {
 
 /*  Footer section */
 footer {
-    background-color: #000000fb;
+    background-color: #222222;
     color: white;
     padding: 20px;
     text-align: center;
