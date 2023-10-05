@@ -63,7 +63,13 @@ nav ul  {
 
 h3 {
     font-size: 15px;
+    color: 43626a;
     font-family: Lexend Deca, Roboto, Arial, sans-serif;
+}
+
+p{ 
+    font-size: 15px;
+    font-family: times New Roman, Arial, sans-serif;
 }
 
 .Logo {
