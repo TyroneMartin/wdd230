@@ -76,6 +76,25 @@ p{
     height: 300px;
 }
 
+.card {
+    background-color: #EBEBEB;
+    max-width: 100%;
+    border: #333333 solid 5px;
+    border-radius: 2rem;
+    justify-self: center;
+}
+
+.wireframe-Images {
+    width: 500px;
+    height: fit-content;
+    margin: 0 0 0 15px;
+}
+
+.paletteTemplate {
+    width: 450px;
+    height: fit-content;
+    margin: 0 0 0 15px;
+}
 
 
 
