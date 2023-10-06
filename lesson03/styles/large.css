@@ -16,8 +16,8 @@
 
     }
 
-   nav {
-    display: flex;
+   nav ul {
+    flex-direction: row;
    }
 
 

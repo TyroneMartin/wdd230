@@ -33,12 +33,13 @@ header h2   {
 }
 
 nav {
+    background-color: #175846;
+    min-height: 90px;
+}
+
+nav ul {
 display: flex;
 flex-direction: column;
-    background-color: #175846;
-        min-height: 90px;
-
-
 }
 
 nav a {
@@ -62,7 +63,7 @@ nav ul  {
 
 h3 {
     font-size: 15px;
-    color: 43626a;
+    /* color: 43626a; */
     font-family: Lexend Deca, Roboto, Arial, sans-serif;
 }
 
@@ -77,7 +78,7 @@ p{
 
 .card {
     background-color: #EBEBEB;
-    max-width: 80%;
+    width: 500px;
     border: #333333 solid 5px;
     border-radius: 2rem;
     justify-self: center;
@@ -86,11 +87,11 @@ p{
     margin-bottom: 15px;
 }
 
-.card h3 {
+
+h3  {
     background-color: #705c5c65;
     height: 20px;
-    padding: -11px;
-    margin-top: -19px;
+    width: 500px;
 }
 
 .wireframe-Images {

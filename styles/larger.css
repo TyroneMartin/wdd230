@@ -4,7 +4,8 @@
         max-width: 1100px;
         margin: 0 auto;
     }
-    nav {
+
+    nav  {
         flex-direction: row;
         justify-content: space-around;
 
