@@ -26,15 +26,17 @@ header h1   {
     font-family: Garamond, Roboto, Arial, sans-serif;
 }
 
-header h2   {
-    color:#ffffff;
-    font-size: 15px;
-    font-family: Lexend Deca, Roboto, Arial, sans-serif;
+h2   {
+    color:#4e565b;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 nav {
+    padding-top: 1px;
     background-color: #175846;
-    min-height: 90px;
+    padding-bottom: 2px;
 }
 
 nav ul {
@@ -49,7 +51,7 @@ nav a {
     cursor: pointer;      /* Show a pointer cursor on hover */
     list-style-type: none;      /* Remove underline from links */
     min-height: 50px;
-    padding: 20px;
+    padding: 20px   
 }
 
 nav  a:hover {
@@ -59,6 +61,7 @@ nav  a:hover {
 
 nav ul  {
     list-style: none;
+    
 }
 
 h3 {
@@ -74,13 +77,22 @@ p{
 
 .Logo {
     height: 300px;
+    display: flex;
+    margin: 0 auto; /* Center horizontally by setting left and right margins to "auto" */
+
+}
+
+/* Remove margin from the last item to avoid extra spacing on the right */
+nav ul:last-child {
+    margin-right: 0;
+
 }
 
 .card {
     background-color: #EBEBEB;
     width: 500px;
-    border: #333333 solid 5px;
-    border-radius: 2rem;
+    border: #333333  5px;
+    /* border-radius: 2rem; */
     justify-self: center;
     padding: 20px;
     margin: 0%;
@@ -88,10 +100,18 @@ p{
 }
 
 
-h3  {
-    background-color: #705c5c65;
-    height: 20px;
+.box {
+
+    background-color: #1758466d;
     width: 500px;
+    /* border: #333333 solid 5px; */
+    /* border-radius: 2rem; */
+    justify-self: center;
+    padding: 20px;
+
+    margin-bottom: 0px;
+    padding-top: 15px;
+text-align: center;
 }
 
 .wireframe-Images {
@@ -105,13 +125,6 @@ h3  {
     height: fit-content;
     margin: 0 0 0 15px;
 }
-
-
-
-
-
-
-
 
 /*  Footer section */
 footer {
