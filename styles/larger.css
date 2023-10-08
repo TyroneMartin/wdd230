@@ -7,13 +7,10 @@
 
     nav  {
         flex-direction: row;
-        justify-content: space-around;
-
 
     }
-    nav a:hover {
-        width: fit-content;
-    }
+
+
     main {
         grid-template-columns: auto auto;
     }
@@ -35,15 +32,14 @@
     
     #nav-menu{
         display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top:40px;
     }
 
-        .card {
-            border: 1px solid black;
-            padding: 10px;
-            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2); /* Added unit and rgba for box-shadow */
-            background-color: aquamarine;
-        }
+    ul li  {
+        font-size: 15px;
+        
+   
+      }
+
 }
+
