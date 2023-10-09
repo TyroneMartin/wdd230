@@ -3,7 +3,7 @@ html {
 }
 
 main {
-     margin: 0 0 0 20px;
+     margin: 0 20px 0 20px;
 }
 
 header {
@@ -19,6 +19,12 @@ header {
     margin: 0px;
 
 }
+
+.hero_image {
+    width: 500px;
+}
+
+
 
 header h1   {
     color:rgb(83, 76, 67);
@@ -92,7 +98,7 @@ nav ul:last-child {
     width: 500px;
     border: #333333  5px;
     /* border-radius: 2rem; */
-    justify-self: center;
+    /* justify-self: center; */   /*  use to center item*/  
     padding: 20px;
     margin: 0%;
     margin-bottom: 15px;
@@ -105,7 +111,7 @@ nav ul:last-child {
     width: 500px;
     /* border: #333333 solid 5px; */
     /* border-radius: 2rem; */
-    justify-self: center;
+    /* justify-self: center; */  /*  use to center item*/  
     padding: 20px;
 
     margin-bottom: 0px;
