@@ -1,0 +1,153 @@
+html {
+    background-color: #ffffff;
+}
+
+main {
+     margin: 0 0 0 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns:  1fr;
+    padding: 20px;
+    background-color: rgba(245, 245, 220); 
+   /* background-color: #42515A; */
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px white;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+
+}
+
+header h1   {
+    color:rgb(83, 76, 67);
+    font-size: 25px;
+    font-family: Garamond, Roboto, Arial, sans-serif;
+}
+
+h2   {
+    color:#4e565b;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav {
+    padding-top: 1px;
+    background-color: #175846;
+    padding-bottom: 2px;
+}
+
+nav ul {
+display: flex;
+flex-direction: column;
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    cursor: pointer;      /* Show a pointer cursor on hover */
+    list-style-type: none;      /* Remove underline from links */
+    min-height: 50px;
+    padding: 20px   
+}
+
+nav  a:hover {
+    color: blue;
+
+}
+
+nav ul  {
+    list-style: none;
+    
+}
+
+h3 {
+    font-size: 15px;
+    /* color: 43626a; */
+    font-family: Lexend Deca, Roboto, Arial, sans-serif;
+}
+
+p{ 
+    font-size: 15px;
+    font-family: times New Roman, Arial, sans-serif;
+}
+
+.logo2 {
+    height: 150px;
+
+}
+
+/* Remove margin from the last item to avoid extra spacing on the right */
+nav ul:last-child {
+    margin-right: 0;
+
+}
+
+.card {
+    background-color: #EBEBEB;
+    width: 500px;
+    border: #333333  5px;
+    /* border-radius: 2rem; */
+    justify-self: center;
+    padding: 20px;
+    margin: 0%;
+    margin-bottom: 15px;
+}
+
+
+.box {
+
+    background-color: #1758466d;
+    width: 500px;
+    /* border: #333333 solid 5px; */
+    /* border-radius: 2rem; */
+    justify-self: center;
+    padding: 20px;
+
+    margin-bottom: 0px;
+    padding-top: 15px;
+text-align: center;
+}
+
+/* .bold  {
+font-weight: bold;
+color: #175846;
+
+} */
+
+
+/*  Footer section */
+footer {
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    /* Add underline when hovering */
+}
+
+#footer-copy-right-name {
+    font-variant-caps: all-small-caps;
+    font-size: 22px;
+}
+
+footer p {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+

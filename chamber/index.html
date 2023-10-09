@@ -29,15 +29,17 @@
         rel="stylesheet">
 
     <!-- mmedia query-->
-    <link rel="stylesheet" href="../lesson03/styles/base.css">
-    <link rel="stylesheet" href="../lesson03/styles/large.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/medium.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
     <title>The Chamber of Commerce for Montego Bay</title>
 </head>
 
 <body>
     <header>
-        <img src="../chamber/images/logo2.png" alt="Jamaican national bird is use as the Chamber of Commerce logo">
-        <!--   code to match logo background to update css code as   color: rgba(255, 255, 0, 0.95); -->
+        <a href="../chamber/index.html"><img class="logo2" src="../chamber/images/logo2.png"
+                alt="Jamaican national bird is use as the Chamber of Commerce logo"></a>
+
 
         <h1>The Chamber of Commerce for Montego Bay, Jamaica</h1>
 
@@ -45,13 +47,12 @@
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#" target="_blank">Discover </a></li>
+            <li><a href="#" target="_blank">Discover</a></li>
             <li><a href="#" target="_blank">Directory</a></li>
             <li><a href="#" target="_blank">Join</a></li>
         </ul>
     </nav>
     <main>
-
         <section>
             <h3>Join the Chamber</h3>
             <p>JAMAICA: MONTEGO BAY
@@ -60,31 +61,59 @@
                 alt="Hero image of Montego Bay showing the water front of Palladium Hotel.">
         </section>
 
-        <section>
-            <h3>Events</h3>
-            <p> Events info section</p>
+        <section class = "card">
+            <h3 class = "bold">Event: Montego Bay Music Festival</h3>
+            <hr>
+            <p>Join us for the annual Montego Bay Music Festival, a three-day extravaganza celebrating the rhythm and
+                soul of Jamaica!</p>
+            <p> Vibrant event brings together local and international music artists to showcase a diverse range of
+                musical genres, from reggae and dancehall to jazz and world music.</p>
+            <p>Date: December 15th - 17th, 2023</p>
+            <p>Location: Montego Bay Harmony Beach Park</p>
         </section>
 
-        <section>
-            <h3>Weather</h3>
-            <p> Weather info section</p>
-        </section>
+        <h3 class="box">Weather</h3>
+        <div class="card">
+            <p>Partly Cloudy</p>
+            <p>Humidity: 35%</p>
+            <p>Wind Chill: N/A</p>
+        </div>
+
 
         <h3>Member Spotlights</h3>
-
-        <section>
-            <h3>Member Spotlights</h3>
-            <p> Member Spotlights section</p>
+        <section class = "card">
+            <h3>Montego Bay Culinary Delights</h3>
+            <hr>
+            <p>Meet the culinary genius behind Montego Bay Culinary Delights, Chef Marcus James. With a passion for
+                blending traditional Jamaican flavors with a modern twist, Chef Marcus has taken the Montego Bay dining
+                scene by storm. His restaurant offers a delectable fusion of Caribbean cuisine, showcasing
+                locally-sourced ingredients and innovative recipes. Experience the vibrant tastes of Jamaica at Montego
+                Bay Culinary Delights.</p>
         </section>
 
-        <section>
-            <h3>Member Spotlights</h3>
-            <p> Member Spotlights section</p>
+        <section class = "card">            
+            <h3>Tropical Treasures Boutique</h3>
+            <hr>
+            <p>
+                Certainly! Here are three fictional Member Spotlights that you can use as content for the "Member
+                Spotlights" section:
+
+                Member Spotlight: Tropical Treasures Boutique
+                Discover the story behind Tropical Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
+                Lisa Campbell, this charming boutique specializes in handcrafted jewelry and accessories inspired by the
+                beauty of Jamaica's tropical landscapes. Lisa's passion for crafting unique pieces using local materials
+                shines through in every item she creates. Explore the collection and take home a piece of Jamaica's
+                natural beauty with you.</p>
         </section>
 
-        <section>
-            <h3>Member Spotlights</h3>
-            <p> Member Spotlights section</p>
+     <section class = "card">     
+            <h3>Eco-Adventures Jamaica</h3>
+            <hr>
+            <p>Embark on an eco-adventure with Eco-Adventures Jamaica, founded by environmental enthusiast Sarah
+                Thompson. This eco-tour company is dedicated to promoting sustainable tourism while providing
+                unforgettable experiences. Explore the lush rainforests, pristine beaches, and hidden waterfalls of
+                Jamaica with expert guides who are passionate about preserving the island's natural beauty. Join
+                Eco-Adventures Jamaica for an eco-conscious journey through paradise.</p>
         </section>
 
     </main>
@@ -98,8 +127,6 @@
         </p>
         <p>Montego Freeport</p>
         <p>Montego Bay, Jamaica</p>
-
-
 
         <h4>EMAIL:</h4>
         <p>info@mobaychamber.org</p>
@@ -116,7 +143,6 @@
         </div>
     </footer>
     <script src="../script/getdates.js"></script>
-
 </body>
 
 </html>
