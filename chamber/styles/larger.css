@@ -8,25 +8,45 @@
     .hero-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        
+        grid-template-rows: 1fr 1fr 1f;
+
     }
 
     .hero_image {
-    width: 100%;
-    grid-column-start: 1;
-grid-column-end: 4;
+        width: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: 4;
+        z-index: -1;
+
     }
 
     .hero-section h3 {
-        grid-column-start: 2;  
-        grid-row-start: 3; 
+        grid-row-start: 1;
+        grid-column-start: 2;
+        margin: 0 auto;
+        z-index: 1;
+        padding-top:200px;
+        color: aliceblue;
+        font-size: larger;
+    }
 
-     }
 
+    .hero-section p {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        text-decoration-line: underline;
+        margin: 35px;
+        padding-top:600px;
+
+    }
 
     main {
         display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
+        /* grid-template-columns: 500px 1fr 1fr 1fr 1fr; */
     }
 
     .card h2 {
@@ -46,17 +66,18 @@ grid-column-end: 4;
         padding-bottom: 20px;
     }
 
-   nav ul {
-    flex-direction: row;
-    /* word-spacing: 15px; Adjust the value as needed to control the spacing */
-    /* justify-content: space-between; */
+    nav ul {
+        flex-direction: row;
+        /* word-spacing: 15px; Adjust the value as needed to control the spacing */
+        /* justify-content: space-between; */
 
-   }
+    }
 
-   .Logo {
-    margin: 0 auto; /* Center horizontally by setting left and right margins to "auto" */
+    .Logo {
+        margin: 0 auto;
+        /* Center horizontally by setting left and right margins to "auto" */
 
-}
+    }
 
 
 }
