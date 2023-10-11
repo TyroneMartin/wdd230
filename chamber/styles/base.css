@@ -3,21 +3,21 @@ html {
 }
 
 main {
-     /* margin: 0 20px 0 20px; */
+     margin: 40px 5px 0 5px;
 }
 
 
 header {
-    display: grid;
-    grid-template-columns:  1fr;
-    padding: 20px;
+    display: flex;
+    padding: 0px;
     background-color: rgba(245, 245, 220); 
-   /* background-color: #42515A; */
-    align-items: center;
     box-shadow: 0px 0px 10px 2px white;
-    text-align: center;
+    /* text-align: center; */
+
     width: 100%;
     margin: 0px;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -84,7 +84,7 @@ p{
 }
 
 .logo2 {
-    height: 150px;
+    height: 100px;
 
 }
 

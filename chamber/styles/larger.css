@@ -8,8 +8,6 @@
     .hero-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr 1f;
-
     }
 
     .hero_image {
@@ -46,7 +44,7 @@
 
     main {
         display: grid;
-        gap: 30px;
+        gap: 25px;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
