@@ -21,7 +21,7 @@
 
     }
 
-    .hero-section h3 {
+    .hero-section  h3 {
         grid-row-start: 1;
         grid-column-start: 2;
         margin: 0 auto;
@@ -46,15 +46,24 @@
 
     main {
         display: grid;
-        /* grid-template-columns: 500px 1fr 1fr 1fr 1fr; */
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .member-title {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+
+    
 
     .card h2 {
         font-size: 1.2rem;
     }
 
     .card {
-        padding: 20px;
+
         margin: 0%;
         margin-bottom: 15px;
 
@@ -79,5 +88,21 @@
 
     }
 
+    #event {
+        grid-column: 1/3;
+    }
+    
+    #s1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #s2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #s3 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
 
 }

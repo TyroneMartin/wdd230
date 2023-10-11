@@ -6,6 +6,7 @@ main {
      /* margin: 0 20px 0 20px; */
 }
 
+
 header {
     display: grid;
     grid-template-columns:  1fr;
@@ -95,20 +96,22 @@ nav ul:last-child {
 
 .card {
     background-color: #EBEBEB;
-    width: 500px;
     border: #333333  5px;
     /* border-radius: 2rem; */
     /* justify-self: center; */   /*  use to center item*/  
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0%;
     margin-bottom: 15px;
 }
 
-
+/* This is to add padding to specificic elements */
+.card-padding {
+    padding: 20px;
+}
 .box {
-
+    margin-top: 0;
     background-color: #1758466d;
-    width: 500px;
+
     /* border: #333333 solid 5px; */
     /* border-radius: 2rem; */
     /* justify-self: center; */  /*  use to center item*/  
