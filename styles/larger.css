@@ -13,9 +13,19 @@
     
     .mainTitle::after {
         content: " - Larger View";
+        /* content: '🔸''- Larger View '; */
+
         color: rgba(240, 248, 255, 0.763);
         /* Pseudo-element added for styling */
     }
+
+    /* .mainTitle::before { */
+        /* content: " - Larger View"; */
+        /* content: '🔸'; */
+
+        /* color: rgba(240, 248, 255, 0.763); */
+        /* Pseudo-element added for styling */
+    /* } */
 
 
     main {

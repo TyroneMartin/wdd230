@@ -1,14 +1,14 @@
 @media (min-width:1200px) {
 
     header {
-        font-size: 80px;
+        font-size: 100px;
 
     }
 
-    .hero-section {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    #footer-image-container {
+        justify-self: end;
     }
+
 
     .hero_image {
         width: 100%;
@@ -19,26 +19,26 @@
 
     }
 
-    .hero-section  h3 {
+    .hero-section h3 {
         grid-row-start: 1;
         grid-column-start: 2;
         margin: 0 auto;
         z-index: 1;
-        padding-top:200px;
+        padding-top: 200px;
         color: aliceblue;
         font-size: larger;
     }
 
 
     .hero-section p {
-    grid-column: 1/3;
+        grid-column: 1/3;
         grid-row: 1/2;
         z-index: 1;
         color: #ffffffbb;
         font-size: 60px;
         text-decoration-line: underline;
-        margin: 190px;
-        padding-top:600px;
+ 
+
         font-family: 'Montserrat', sans-serif;
         font-weight: bolder;
 
@@ -56,7 +56,7 @@
     }
 
 
-    
+
 
     .card h2 {
         font-size: 1.2rem;
@@ -91,18 +91,43 @@
     #event {
         grid-column: 1/3;
     }
-    
+
     #s1 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     #s2 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
     #s3 {
         grid-column: 3/4;
         grid-row: 2/3;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-logo {        
+        height: 300px;
+        padding: 50px;
+
+
+        }
+
+    .sub-footer {
+        grid-column: 1/5;
+        grid-row: 2/3;
+        background-color: rgba(66, 66, 66, 0.746);
+        text-align: center;
+        }
+
+
+
+
 
 }
