@@ -1,4 +1,25 @@
-@media (min-width:1200px) {
+@media screen and (min-width:1200px) {
+
+    /* *****grid was remove**** */
+
+    /* .hero_image {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: 4;
+        z-index: -1;
+
+    } */
+
+    /* .hero-section h3 {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        margin: 0 auto;
+        z-index: 1;
+        padding-top: 200px;
+        color: aliceblue;
+        font-size: larger;
+    } */
+
 
     header {
         font-size: 100px;
@@ -10,123 +31,83 @@
     }
 
 
-    .hero_image {
-        width: 100%;
-        grid-column-start: 1;
-        grid-row-start: 1;
-        grid-column-end: 4;
-        z-index: -1;
+        .hero-section p {
+            font-size: 60px
+        }
 
-    }
-
-    .hero-section h3 {
-        grid-row-start: 1;
-        grid-column-start: 2;
-        margin: 0 auto;
-        z-index: 1;
-        padding-top: 200px;
-        color: aliceblue;
-        font-size: larger;
-    }
+        main {
+            display: grid;
+            gap: 25px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
 
-    .hero-section p {
-        grid-column: 1/3;
-        grid-row: 1/2;
-        z-index: 1;
-        color: #ffffffbb;
-        font-size: 60px;
-        text-decoration-line: underline;
- 
+        .card h2 {
+            font-size: 1.2rem;
+        }
 
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bolder;
+        .card {
 
-    }
-
-    main {
-        display: grid;
-        gap: 25px;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .member-title {
-        grid-column: 1/4;
-        grid-row: 2/3;
-    }
-
-
-
-
-    .card h2 {
-        font-size: 1.2rem;
-    }
-
-    .card {
-
-        margin: 0%;
-        margin-bottom: 15px;
-
-    }
-
-    nav {
-        min-height: 20px;
-        height: 20px;
-        padding-bottom: 20px;
-    }
-
-    nav ul {
-        flex-direction: row;
-        /* word-spacing: 15px; Adjust the value as needed to control the spacing */
-        /* justify-content: space-between; */
-
-    }
-
-    .Logo {
-        margin: 0 auto;
-        /* Center horizontally by setting left and right margins to "auto" */
-
-    }
-
-    #event {
-        grid-column: 1/3;
-    }
-
-    #s1 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    #s2 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    #s3 {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .footer-logo {        
-        height: 200px;
-        padding: 50px;
+            margin: 0%;
+            margin-bottom: 15px;
 
         }
 
-    .sub-footer {
-        grid-column: 1/5;
-        grid-row: 2/3;
-        background-color: rgba(66, 66, 66, 0.746);
-        text-align: center;
+        nav {
+            min-height: 20px;
+            /* height: 20px; */
+            /* padding-bottom: 20px; */
+            margin: 0 auto;
+        }
+
+        nav ul {
+            flex-direction: row;
+            /* word-spacing: 15px; Adjust the value as needed to control the spacing */
+            /* justify-content: space-between; */
+
+        }
+
+        #event {
+            grid-column: 1/3;
+        }
+
+        #s1 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        #s2 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        #s3 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .sub-footer {
+            grid-column: 1/5;
+            grid-row: 2/3;
+
+        }
+
+        .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
+            display: none;
+        }   
+        
+        #nav-menu{
+            display: flex;
+            margin-top:40px;
         }
 
 
 
 
 
-}
+    }

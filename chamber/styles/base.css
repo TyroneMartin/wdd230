@@ -1,5 +1,6 @@
 html {
     background-color: #ffffff;
+
 }
 
 main {
@@ -24,8 +25,8 @@ header {
 .hero_image {
     height: 100%;
     width: 100%;
-
 }
+
 .hero-section {
     position: relative;
     height: fit-content;
@@ -38,9 +39,14 @@ header {
 }
 .hero-section p {
     position: absolute;
+    color: #ffffffbb;
+    font-size: 30px;
+    text-decoration-line: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    z-index: 1;
    
 }
-
 
 header h1   {
     color:rgb(83, 76, 67);
@@ -60,7 +66,7 @@ nav {
     padding-top: 1px;
     background-color: #175846;
     padding-bottom: 2px;
-    padding: 50px
+
 }
 
 nav ul {
@@ -100,7 +106,7 @@ p{
 }
 
 .logo2 {
-    height: 155px;
+    height: 100px;
 
 }
 
@@ -169,6 +175,54 @@ footer p {
     font-family: Roboto, Arial, sans-serif;
     font-size: 20px;
     padding: 5px;
+}
+
+/** Hamburger Menu Stuff **/
+
+.menu-hide,
+.menu-show {
+    display: none;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 10.rem 0 0 .5rem;
+
+}
+
+.menu-hide.showing,
+.menu-show.showing {
+    display: block;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.showing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-logo {
+    height: 150px;
+    padding: 50px;
+}
+
+.sub-footer {
+    padding-top: 1px;
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    height: 50px;
+    width: 100%;
+justify-content: center;
+align-items: center;
+color: #ded411;
+font-weight: bold;
+font-size: 15px;
+font-style: italic;
+
 }
 
 

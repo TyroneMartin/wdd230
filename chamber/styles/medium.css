@@ -1,0 +1,16 @@
+@media screen and (min-width: 1159px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
+        display: none;
+    }   
+    
+    #nav-menu{
+        display: flex;
+        /* margin-top:40px; */
+    }
+}

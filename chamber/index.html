@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="../chamber/styles/medium.css">
     <link rel="stylesheet" href="../chamber/styles/larger.css">
     <title>The Chamber of Commerce for Montego Bay</title>
+    <script src="./scripts/hamburgermenu.js" defer></script>
 </head>
 
 <body>
@@ -44,8 +45,10 @@
 
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
+        <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+
+        <ul id="nav-menu">
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#" target="_blank">Discover</a></li>
             <li><a href="#" target="_blank">Directory</a></li>
             <li><a href="./join.html" target="_blank">Join</a></li>
@@ -57,10 +60,12 @@
         <div class="hero-content">
             <p>JAMAICA: MONTEGO BAY</p>
             <!-- Adding link to the button on the onclick event -->
-            <button onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/chamber/join';">Join the Chamber</button>
+            <button onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/chamber/join';">Join the
+                Chamber</button>
         </div>
-        <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg" alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel.">
-        </div>
+        <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
+            alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel.">
+    </div>
 
     <main>
 
@@ -86,7 +91,7 @@
         </div>
 
 
-        <h3 class="member-title">Member Spotlights</h3>
+        <!-- <h3 class="member-title">Member Spotlights</h3> -->
         <section class="card card-padding" id="s1">
             <h3>Montego Bay Culinary Delights</h3>
             <hr>
@@ -148,14 +153,11 @@
             </h4>
             <p>1 876-952-6045</p>
         </section>
-
-        <div class="sub-footer">
-            <h6>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="../index.html">Tyrone
-                    Martin</a>. All Rights Reserved. </h6>
-            <h6><span>Location: Rexburg, Idaho</span></h6>
-            <h6>Last updated: <span id="lastUpdated"></span></h6>
-        </div>
     </footer>
+    <div class="sub-footer">
+        <h6>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="../index.html">Tyrone
+                Martin</a>. All Rights Reserved. Location: Rexburg, Idaho Last updated: <span id="lastUpdated"></span></h6>
+    </div>
     <script src="../script/getdates.js"></script>
 </body>
 
