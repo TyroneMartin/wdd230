@@ -2,7 +2,7 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
@@ -13,4 +13,9 @@
         display: flex;
         /* margin-top:40px; */
     }
+
+    .footer-logo {
+        height: 150px;
+    }
+    
 }

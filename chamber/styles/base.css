@@ -1,3 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
 html {
     background-color: #ffffff;
 
@@ -21,6 +27,7 @@ header {
     align-items: center;
 
 }
+
 
 .hero_image {
     height: 100%;
@@ -195,7 +202,7 @@ footer p {
     display: none;
     background-color: white;
     border: 1px solid grey;
-    margin: 10.rem 0 0 .5rem;
+    margin: 10rem 0 0 .5rem;
 
 }
 
@@ -233,7 +240,4 @@ footer p {
     color: #ffffff;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
-}
-
-    
 }
