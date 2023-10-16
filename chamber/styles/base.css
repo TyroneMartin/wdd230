@@ -29,6 +29,8 @@ html {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 40px 5px 0 5px;
 }
 
@@ -186,6 +188,7 @@ color: #175846;
 
 /*  Footer section */
 footer {
+    display: grid;
     background-color: #222222;
     color: white;
     padding: 20px;
@@ -242,8 +245,8 @@ footer p {
 
 
 .footer-logo {
-    height: 150px;
-    padding: 50px;
+    height:150px;
+    /* padding: 50px; */
 }
 
 .sub-footer-container {
