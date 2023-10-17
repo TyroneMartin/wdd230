@@ -116,8 +116,10 @@
         margin-top: 40px;
     }
 
+    .hero-content button {
+        top: 600px;
 
-
-
-
+    
+        
+    }
 }

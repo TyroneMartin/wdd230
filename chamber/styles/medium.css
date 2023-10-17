@@ -8,7 +8,9 @@
     .menu-show,
     .menu-hide,
     .menu-show.showing,
-    .menu-hide.showing {
+    .menu-hide.showing    
+    {
+        
         display: none;
     }
 
