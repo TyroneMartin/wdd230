@@ -1,12 +1,10 @@
 /* To change the colors */
-
 :root {
     --text-color: black;
     --background-color: #ffffff;
     --hover-background-color: #bc6c25;
     --hover-color: black;
-    --header-background-color: black;
-    --header-color: rgba(245, 245, 220); /* Adding the new custom property for the header color */
+    --header-background-color: rgba(245, 245, 220); /* Updated to the specified background color */
 }
 
 header {
