@@ -14,10 +14,11 @@ darkmode.addEventListener('click', () => {
         bodyelt.style.backgroundColor = 'black';
         document.documentElement.style.setProperty('--header-background-color', 'black');
         header.style.backgroundColor = 'var(--header-background-color)';
+        header.querySelector('h1').style.color = 'white'; // Change the color of the h1 tag to white
         nav.style.backgroundColor = '#2c2c2c'; // Set to the specified background color
         darkmode.textContent = 'LIGHT';
         // Change image source for dark mode
-        // logoImage.src = "..\chamber\images\logo-footer.png";
+        logoImage.src = "../chamber/images/logo-header2.png";
     } else {
         // Apply light mode styles
         document.documentElement.style.setProperty('--text-color', 'black');
@@ -25,8 +26,9 @@ darkmode.addEventListener('click', () => {
         document.documentElement.style.setProperty('--hover-background-color', '#bc6c25');
         document.documentElement.style.setProperty('--hover-color', 'black');
         bodyelt.style.backgroundColor = '#ffffff';
-        document.documentElement.style.setProperty('--header-background-color', 'white');
+        document.documentElement.style.setProperty('--header-background-color', 'rgba(245, 245, 220)');
         header.style.backgroundColor = 'var(--header-background-color)';
+        header.querySelector('h1').style.color = 'black'; // Change the color of the h1 tag back to black
         nav.style.backgroundColor = '#175846'; // Set to the specified background color
         darkmode.textContent = 'DARK';
         // Change image source back to the original

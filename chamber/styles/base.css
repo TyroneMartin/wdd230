@@ -6,12 +6,13 @@
     --hover-background-color: #bc6c25;
     --hover-color: black;
     --header-background-color: black;
-    /* --background-color: var(--header-background-color); */
+    --header-color: rgba(245, 245, 220); /* Adding the new custom property for the header color */
 }
 
-/* header {
+header {
     background-color: var(--header-background-color);
-} */
+    color: var(--header-color); /* Applying the header color */
+}
 
 /* ---------------------------- */
 #dark-mode {
@@ -45,10 +46,9 @@ main {
 header {
     display: flex;
     padding: 0px;
-    background-color: rgba(245, 245, 220);
+    /* background-color: rgba(245, 245, 220); this is now in the root */
     box-shadow: 0px 0px 10px 2px white;
     /* text-align: center; */
-
     width: 100%;
     margin: 0px;
     justify-content: center;
