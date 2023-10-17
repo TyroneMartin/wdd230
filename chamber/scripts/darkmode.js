@@ -11,6 +11,7 @@ darkmode.addEventListener('click', () => {
         document.documentElement.style.setProperty('--background-color', 'black');
         document.documentElement.style.setProperty('--hover-background-color', '#442211');
         document.documentElement.style.setProperty('--hover-color', '#dda15e');
+        bodyelt.style.backgroundColor = 'black'; // Set the background color of the body to black
         bodyelt.classList.add('dark-mode');
         document.documentElement.style.setProperty('--header-background-color', 'black');
         header.style.backgroundColor = 'var(--header-background-color)';
@@ -34,6 +35,7 @@ darkmode.addEventListener('click', () => {
         document.documentElement.style.setProperty('--background-color', '#ffffff');
         document.documentElement.style.setProperty('--hover-background-color', '#bc6c25');
         document.documentElement.style.setProperty('--hover-color', 'black');
+        bodyelt.style.backgroundColor = ''; // Remove the inline style for background color
         bodyelt.classList.remove('dark-mode');
         document.documentElement.style.setProperty('--header-background-color', 'rgba(245, 245, 220)');
         header.style.backgroundColor = 'var(--header-background-color)';
