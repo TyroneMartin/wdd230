@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Homepage portal for Tyrone Martin in WDD 230 - Web Frontend Development">
+    <meta name="author" content="Tyrone Martin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Social Media Meta Tags for Facebook-->
+    <meta property="og:title" content="Martin- WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tyronemartin.github.io/wdd230/favicon.ico.png">
+    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/">
+
+    <!-- Import the CSS Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--stylesheet/s and Favion image-->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+
+
+    <link rel="icon" href="/favicon.ico.png" type="image/png">
+    <title>Responsive Images: srcset</title>
+
 </head>
+
 <body>
+  <main>
     <div class="hero">
-        <picture>
-          <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-          <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-          <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
-        </picture>
-      </div>
+      <picture>
+        <source srcset="../lesson03/images/hero-small" media="(max-width: 500px)">
+        <source srcset="../lesson03/images/hero-medium" media="(max-width: 1000px)">
+        <img src="../lesson03/images/hero-large.webp" alt="table setting" width="1500" height="750">
+
+        
+      </picture>
+    </div>
+  </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="../index.html">Tyrone
+                Martin</a>. All Rights Reserved. </p>
+        <p><span>Location: Rexburg, Idaho</span></p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
+    </footer>
+    <script src="../script/getdates.js"></script>
 </body>
+
 </html>
