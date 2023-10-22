@@ -32,6 +32,24 @@ header h1 {
 
 }
 
+.hero {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2{
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: navy;
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+
 .mainTitle {
     font-size: 35px;
     font-family: "Helvetica Neue", Helvetica;
@@ -124,8 +142,9 @@ main {
 
 }
 
-.byuiImage {
+.byuiImage .hero {
     width: 100%;
+    height: auto;
 }
 
 

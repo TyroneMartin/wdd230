@@ -27,13 +27,29 @@
         /* Pseudo-element added for styling */
     /* } */
 
+    .hero h2{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 2rem;
+    }
 
     main {
         grid-template-columns: auto auto;
     }
-    .byuiImage {
+
+    /* This image is no longer being used, but keep code for this grid */
+    
+       /*.byuiImage {
         grid-column: 1/3;
     }
+  */
+
+    .hero {
+        grid-column: 1/3; 
+    }
+
+
     .mainTitle {
         grid-column: 1/3;
         border-top: 1px solid black;
@@ -54,8 +70,6 @@
 
     ul li  {
         font-size: 15px;
-        
-   
       }
 
 }
