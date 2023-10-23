@@ -2,49 +2,46 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="L04: Project Milestone - The Chamber of Commerce for Montego Bay, Jamaica in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <meta name="keywords" content="Jamaica Chamber of Commerce, Montego Bay, Business">
-    <meta name="author" content="Tyrone Martin">
+        content="L04: Project Milestone - The Chamber of Commerce for Montego Bay, Jamaica in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <meta name="keywords" content="Jamaica Chamber of Commerce, Montego Bay, Business" />
+    <meta name="author" content="Tyrone Martin" />
 
     <!--Social Media Meta Tags for Facebook-->
-    <meta property="og:title" content="The Chamber of Commerce for Montego Bay, Jamaica">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://tyronemartin.github.io/wdd230/chamber/images/favicon.ico">
-    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/chamber/index.html">
+    <meta property="og:title" content="The Chamber of Commerce for Montego Bay, Jamaica" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://tyronemartin.github.io/wdd230/chamber/images/favicon.ico" />
+    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/chamber/index.html" />
 
     <!-- Import the CSS Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
     <!-- Import Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Gloock&family=Lexend+Deca:wght@200&family=Merienda:wght@900&family=Playfair+Display+SC&family=Playfair+Display:ital@1&family=Roboto:wght@100&family=Ultra&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
     <!--Favion image-->
-    <link rel="icon" href="../chamber/images/favicon.ico" type="image/png">
+    <link rel="icon" href="../chamber/images/favicon.ico" type="image/png" />
 
     <!-- mmedia query-->
-    <link rel="stylesheet" href="../chamber/styles/base.css">
-    <link rel="stylesheet" href="../chamber/styles/medium.css">
-    <link rel="stylesheet" href="../chamber/styles/larger.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css" />
+    <link rel="stylesheet" href="../chamber/styles/medium.css" />
+    <link rel="stylesheet" href="../chamber/styles/larger.css" />
     <script src="./scripts/hamburgermenu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
     <title>The Chamber of Commerce for Montego Bay</title>
-
 </head>
 
 <body>
     <header>
-        <a href="../chamber/index.html"><img class="logo2" id  = "logoImage" src="../chamber/images/logo2.png"
-                alt="Jamaican national bird is use as the Chamber of Commerce logo"></a>
-
+        <a href="../chamber/index.html"><img class="logo2" id="logoImage" src="../chamber/images/logo2.webp"
+                alt="Jamaican national bird is use as the Chamber of Commerce logo" /></a>
 
         <h1>The Chamber of Commerce for Montego Bay, Jamaica</h1>
-
     </header>
     <nav>
         <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
@@ -56,35 +53,53 @@
             <li><a href="./join.html" target="_blank">Join</a></li>
         </ul>
     </nav>
-    <div><button id='dark-mode'>DARK</button></div>
+    <div><button id="dark-mode">DARK</button></div>
 
     <div class="hero-section">
-
         <div class="hero-content">
-            <p>JAMAICA: MONTEGO BAY</p>
+            <!-- <p>JAMAICA: MONTEGO BAY</p> -->
             <!-- Adding link to the button on the onclick event -->
-            <button onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/chamber/join';">Join the
-                Chamber</button>
+            <button onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/chamber/join';">
+                Join the Chamber
+            </button>
         </div>
-        <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
-            alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel.">
+
+        <div class="hero">
+            <picture>
+                <source srcset="/chamber/images/wdd230-image-small-org.webp" media="(max-width:
+          400px)" class="hero_image" />
+
+                <source srcset="/chamber/images/wdd230-image-medium-org.webp" media="(max-width: 960px)"
+                    class="hero_image" />
+                <img src="/chamber/images/wdd230-image-large-org.webp"
+                    alt="A photo showing three Business personnels sitting around a large desk, communicating with a lablop in the foreground"
+                    class="hero_image" />
+            </picture>
+            <h2>JAMAICA: MONTEGO BAY</h2>
+        </div>
+        <!-- <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
+            alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel."> -->
     </div>
 
     <main>
-
         <section class="card card-padding" id="event">
             <h3 class="bold">Event: Montego Bay Music Festival</h3>
-            <hr>
-            <p>Join us for the annual Montego Bay Music Festival, a three-day extravaganza celebrating the rhythm and
-                soul of Jamaica!</p>
-            <p> Vibrant event brings together local and international music artists to showcase a diverse range of
-                musical genres, from reggae and dancehall to jazz and world music.</p>
+            <hr />
+            <p>
+                Join us for the annual Montego Bay Music Festival, a three-day
+                extravaganza celebrating the rhythm and soul of Jamaica!
+            </p>
+            <p>
+                Vibrant event brings together local and international music artists to
+                showcase a diverse range of musical genres, from reggae and dancehall
+                to jazz and world music.
+            </p>
             <p>Date: December 15th - 17th, 2023</p>
             <p>Location: Montego Bay Harmony Beach Park</p>
         </section>
 
         <div class="card">
-            <h3 class=" card box">Weather</h3>
+            <h3 class="card box">Weather</h3>
 
             <div class="card-padding">
                 <p>Partly Cloudy</p>
@@ -93,57 +108,62 @@
             </div>
         </div>
 
-
         <!-- <h3 class="member-title">Member Spotlights</h3> -->
         <section class="card card-padding" id="s1">
             <h3>Montego Bay Culinary Delights</h3>
-            <hr>
-            <p>Meet the culinary genius behind Montego Bay Culinary Delights, Chef Marcus James. With a passion for
-                blending traditional Jamaican flavors with a modern twist, Chef Marcus has taken the Montego Bay dining
-                scene by storm. His restaurant offers a delectable fusion of Caribbean cuisine, showcasing
-                locally-sourced ingredients and innovative recipes. Experience the vibrant tastes of Jamaica at Montego
-                Bay Culinary Delights.</p>
+            <hr />
+            <p>
+                Meet the culinary genius behind Montego Bay Culinary Delights, Chef
+                Marcus James. With a passion for blending traditional Jamaican flavors
+                with a modern twist, Chef Marcus has taken the Montego Bay dining
+                scene by storm. His restaurant offers a delectable fusion of Caribbean
+                cuisine, showcasing locally-sourced ingredients and innovative
+                recipes. Experience the vibrant tastes of Jamaica at Montego Bay
+                Culinary Delights.
+            </p>
         </section>
 
         <section class="card card-padding" id="s2">
             <h3>Tropical Treasures Boutique</h3>
-            <hr>
+            <hr />
             <p>
-                Certainly! Here are three fictional Member Spotlights that you can use as content for the "Member
-                Spotlights" section:
-
-                Member Spotlight: Tropical Treasures Boutique
-                Discover the story behind Tropical Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
-                Lisa Campbell, this charming boutique specializes in handcrafted jewelry and accessories inspired by the
-                beauty of Jamaica's tropical landscapes. Lisa's passion for crafting unique pieces using local materials
-                shines through in every item she creates. Explore the collection and take home a piece of Jamaica's
-                natural beauty with you.</p>
+                Certainly! Here are three fictional Member Spotlights that you can use
+                as content for the "Member Spotlights" section: Member Spotlight:
+                Tropical Treasures Boutique Discover the story behind Tropical
+                Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
+                Lisa Campbell, this charming boutique specializes in handcrafted
+                jewelry and accessories inspired by the beauty of Jamaica's tropical
+                landscapes. Lisa's passion for crafting unique pieces using local
+                materials shines through in every item she creates. Explore the
+                collection and take home a piece of Jamaica's natural beauty with you.
+            </p>
         </section>
 
         <section class="card card-padding" id="s3">
             <h3>Eco-Adventures Jamaica</h3>
-            <hr>
-            <p>Embark on an eco-adventure with Eco-Adventures Jamaica, founded by environmental enthusiast Sarah
-                Thompson. This eco-tour company is dedicated to promoting sustainable tourism while providing
-                unforgettable experiences. Explore the lush rainforests, pristine beaches, and hidden waterfalls of
-                Jamaica with expert guides who are passionate about preserving the island's natural beauty. Join
-                Eco-Adventures Jamaica for an eco-conscious journey through paradise.</p>
+            <hr />
+            <p>
+                Embark on an eco-adventure with Eco-Adventures Jamaica, founded by
+                environmental enthusiast Sarah Thompson. This eco-tour company is
+                dedicated to promoting sustainable tourism while providing
+                unforgettable experiences. Explore the lush rainforests, pristine
+                beaches, and hidden waterfalls of Jamaica with expert guides who are
+                passionate about preserving the island's natural beauty. Join
+                Eco-Adventures Jamaica for an eco-conscious journey through paradise.
+            </p>
         </section>
-
     </main>
-
 
     <footer>
         <div id="footer-image-container">
-            <a href="../chamber/index.html"><img class="footer-logo" src="./images/logo-footer.png"
-                    alt="footer logo of Jamaica national bird used as the company logo"></a>
+            <a href="../chamber/index.html"><img class="footer-logo" src="./images/logo-footer.webp"
+                    alt="footer logo of Jamaica national bird used as the company logo" /></a>
         </div>
         <section>
             <h4>ADDRESS:</h4>
             <p>Montego Bay Chamber of Commerce</p>
             <p>Suite 4, Unit 19</p>
-            <p>M19 Southern Cross Boulevard
-            </p>
+            <p>M19 Southern Cross Boulevard</p>
             <p>Montego Freeport</p>
             <p>Montego Bay, Jamaica</p>
         </section>
@@ -152,16 +172,18 @@
             <p>info@mobaychamber.org</p>
         </section>
         <section>
-            <h4>PHONE:
-            </h4>
+            <h4>PHONE:</h4>
             <p>1 876-952-6045</p>
         </section>
     </footer>
     <div class="sub-footer-container">
         <div>
-            <h6>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="../index.html">Tyrone
-                    Martin</a>. All Rights Reserved. Location: Rexburg, Idaho Last updated: <span
-                    id="lastUpdated"></span></h6>
+            <h6>
+                &copy; <span id="currentYear"></span>
+                <a id="footer-copy-right-name" href="../index.html">Tyrone Martin</a>.
+                All Rights Reserved. Location: Rexburg, Idaho Last updated:
+                <span id="lastUpdated"></span>
+            </h6>
         </div>
     </div>
     <script src="../script/getdates.js"></script>

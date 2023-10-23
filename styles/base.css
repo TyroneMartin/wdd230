@@ -89,7 +89,7 @@ nav ul {
 }
 
 .active {
-    border-bottom: 3px solid rgba(0, 29, 114, 0.593);
+    border-bottom: 3px solid rgba(0, 29, 114);
     /* background-color: #0056b3; */
     /* text-decoration: underline; */
 }

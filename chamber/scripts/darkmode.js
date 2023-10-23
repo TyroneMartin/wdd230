@@ -28,7 +28,7 @@ darkmode.addEventListener('click', () => {
         });
 
         // Change image source for dark mode
-        logoImage.src = "../chamber/images/logo-header2.png";
+        logoImage.src = "../chamber/images/logo-header2.webp";
     } else {
         // Apply light mode styles
         document.documentElement.style.setProperty('--text-color', 'black');
@@ -52,6 +52,6 @@ darkmode.addEventListener('click', () => {
         });
 
         // Change image source back to the original
-        logoImage.src = "../chamber/images/logo2.png";
+        logoImage.src = "../chamber/images/logo2.webp";
     }
 });

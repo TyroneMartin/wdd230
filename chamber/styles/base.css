@@ -6,6 +6,13 @@
     --hover-color: black;
     --header-background-color: rgba(245, 245, 220); /* Updated to the specified background color */
 }
+/* alt text is too large in view port, should image be broken */
+
+img#logoImage {
+    font-size: 10px;
+}
+
+/* ---------------------------- */
 
 header {
     background-color: var(--header-background-color);
@@ -74,10 +81,13 @@ header {
 
 .hero-content button {
     position: absolute;
-    top: 230px;
+    /* top: 230px; */
+    top: 20px;
     left: 200px;
-    background-color: #eaef94d5;
-    height: 50px;
+    /* background-color: #eaef94d5; */
+    background-color: #5d5e57d5;
+
+    /* height: 50px; */
     font-size: 15px;
 
 
