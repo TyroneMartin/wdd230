@@ -33,7 +33,9 @@
     <link rel="stylesheet" href="../chamber/styles/larger.css">
     <script src="./scripts/hamburgermenu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>   
     <title>The Chamber of Commerce for Montego Bay</title>
+    <!-- This is the link to the assignment instructions used in WDD230--- https://byui-cse.github.io/wdd230-course/ -->
 </head>
 
 <body>
@@ -102,9 +104,14 @@
             <h3 class="card box">Weather</h3>
 
             <div class="card-padding">
-                <p>Partly Cloudy</p>
+                <!-- <p>Partly Cloudy</p>
                 <p>Humidity: 35%</p>
-                <p>Wind Chill: N/A</p>
+                <p>Wind Chill: N/A</p> -->
+                <img id="weathericon" src="../chamber/images/Weather-clear.svg">
+                <h3><span id="temperature">32</span>&deg;F</h3>
+                <h3 id="weatherdesc">Clear</h3>
+                <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
+                <h3>Wind Chill: <span id="windchill">?</span>&deg;F</h3>
             </div>
         </div>
 
