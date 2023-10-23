@@ -1,96 +1,102 @@
 /* Large Views */
 
-@media screen and (min-width:956px) {
+@media screen and (min-width: 956px) {
+  body {
+    max-width: 1100px;
 
-    body {
-        max-width: 1100px;  
-       
-        /* was used to center the elements in the body*/
-        margin: 0 auto;
-    }
+    /* was used to center the elements in the body*/
+    margin: 0 auto;
+  }
 
-    nav  {
-        flex-direction: row;
-        min-height: 90px;
+  nav {
+    flex-direction: row;
+    min-height: 90px;
+  }
 
-    }
+  .mainTitle::after {
+    content: " - Larger View";
+    /* content: '🔸''- Larger View '; */
 
-    
-    .mainTitle::after {
-        content: " - Larger View";
-        /* content: '🔸''- Larger View '; */
+    color: rgba(240, 248, 255, 0.763);
+    /* Pseudo-element added for styling */
+  }
 
-        color: rgba(240, 248, 255, 0.763);
-        /* Pseudo-element added for styling */
-    }
+  /* .mainTitle::before { */
+  /* content: " - Larger View"; */
+  /* content: '🔸'; */
 
-    /* .mainTitle::before { */
-        /* content: " - Larger View"; */
-        /* content: '🔸'; */
+  /* color: rgba(240, 248, 255, 0.763); */
+  /* Pseudo-element added for styling */
+  /* } */
 
-        /* color: rgba(240, 248, 255, 0.763); */
-        /* Pseudo-element added for styling */
-    /* } */
+  .hero h2 {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+    font-size: 2rem;
+  }
 
-    .hero h2{
-        position: absolute;
-        top: 14px;        
-        left: 25px;
-        font-size: 2rem;
-    }
+  .hero {
+    grid-column: 1/4;
+  }
 
-    .hero {
-        grid-column: 1/4;
-  
+  main {
+    grid-template-columns: auto auto auto;
+  }
 
-    }
+  /* This image is no longer being used, but keep code for this grid */
 
-    main {
-        grid-template-columns: auto auto auto;   
-    }
-
-    /* This image is no longer being used, but keep code for this grid */
-    
-       /*.byuiImage {
+  /*.byuiImage {
         grid-column: 1/3;
     }
   */
 
+  .mainTitle {
+    grid-column: 1/4;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 
-    .mainTitle {
-        grid-column: 1/4;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
+  img.templeImage {
+    grid-column: 1/4;
+    /* width: 100%; */
+  }
+  .googlemap {
+    grid-column: 1/4;
+  }
 
-    .templeImage {
-        grid-column: 1/4;
-        background-color: azure;
-    }
-    .googlemap {
-        grid-column: 1/4;
-    }
+  .menu-show,
+  .menu-hide,
+  .menu-show.showing,
+  .menu-hide.showing {
+    display: none;
+  }
 
-    .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
-        display: none;
-    }   
-    
-    #nav-menu{
-        display: flex;
-        margin-top:40px;
-    }
+  #nav-menu {
+    display: flex;
+    margin-top: 40px;
+  }
 
-    ul li  {
-        font-size: 15px;
-      }
+  nav a {
+    cursor: pointer;      /* Show a pointer cursor on hover */
+  }
 
-      header h1 {
-        font-size: 60px
-      }
+  ul li {
+    font-size: 15px;
+  }
 
-      #activities {
-        grid-column: 1/3;
-    } 
+  header h1 {
+    font-size: 60px;
+  }
+
+  #activities {
+    grid-column: 1/3;
+  }
+
+  #nav-menu.showing {
+    flex-direction: column;
+    align-items: center;
+}
 
 }
 
