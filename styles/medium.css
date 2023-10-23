@@ -1,35 +1,68 @@
-/* Medium Views was (min-width: 1757px)  */
-@media  screen and (min-width: 960px)  {
+@media screen and (min-width: 420px) {
+  .mainTitle::after {
+    content: " - Small View";
+    color: rgba(240, 248, 255, 0.763);
+    /* Pseudo-element added for styling */
+  }
 
-    nav {
-        /* grid-row-start: 1;
-        grid-column-start: 2;
-        grid-column-end: 8; */
-        text-align: center;
-        /* Center text horizontally */
-        justify-content: center;
-        /* Center text vertically */
-        align-items: center;
-        display: flex;
-        /* Center text vertically */
-        flex-direction: column;
-        /*layout horizontally  */
-        /* Use flexbox */
-        text-decoration: none;
-        /* Remove underline from links */
-        text-transform: uppercase;
-        font-size: 25px;
-        background-color: black;
-        height: 50px;
-        padding-top: 1%;
-        grid-column-start: 3;
-        grid-column-end: 7;
-        grid-row: 2;
-        padding: 10%;
+  header h1 {
+    font-size: 30px;
+  }
 
-    }
+  .mainTitle {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem;
+  }
+
+  .hero h2 {
+    top: 14px;
+    left: 25px;
+    font-size: 1rem;
+  }
+
+  /* .hero {
+    display: inline;
+  } */
+
+  .card ul {
+    font-size: small;
+    padding: 0px;
+  }
 }
 
 
+@media screen and (min-width: 628px) {
+    .mainTitle::after {
+        content: " - Medium View";
+        color: rgba(240, 248, 255, 0.763);
+        /* Pseudo-element added for styling */
+      }
 
+
+      body {
+        max-width: 955px;  
+
+      }
+
+/* main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+} */
+
+/* .mainTitle {
+    grid-column: 1/6;
+}
+
+.googlemap {
+    grid-column: 1/5;
+    width: 100%;
+    margin: 15px;
+}
+
+#activities {
+    grid-column: 1/4;
+} */
+
+}
 
