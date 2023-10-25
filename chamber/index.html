@@ -86,6 +86,36 @@
     </div>
 
     <main>
+        <div class="card" id="weather-Container">
+            <div class="card box">
+                <img id="weathericon" src="../chamber/images/Weather-clear.svg">
+
+                <div>
+                    <h3><span id="temperature">32</span>&deg;F</h3>
+                    <h3 id="weatherdesc">Clear</h3>
+                </div>
+
+
+            </div>
+
+            <div class="card-padding">
+                <div class="temperatureHolder">
+                    <div>
+                        <h3>Wind Speed: </h3>
+                        <p id="windspeed">10 mph</p>
+                    </div>
+
+                    <div>
+                        <h3>Wind Chill: </h3>
+                        <p id="windchill">&deg;F</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
         <section class="card card-padding" id="event">
             <h3 class="bold">Event: Montego Bay Music Festival</h3>
             <hr>
@@ -102,23 +132,26 @@
             <p>Location: Montego Bay Harmony Beach Park</p>
         </section>
 
-        <div class="card" id = "weather-Container">
-            <h3 class="card box">Weather</h3>
-
-            <div class="card-padding">
-                <!-- <p>Partly Cloudy</p>
-                <p>Humidity: 35%</p>
-                <p>Wind Chill: N/A</p> -->
-                <img id="weathericon" src="../chamber/images/Weather-clear.svg">
-                <h3><span id="temperature">32</span>&deg;F</h3>
-                <h3 id="weatherdesc">Clear</h3>
-                <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
-                <h3>Wind Chill: <span id="windchill">?</span>&deg;F</h3>
-            </div>
-        </div>
+        <section class="card card-padding" id="s1">
+            <h3>Tropical Treasures Boutique</h3>
+            <hr>
+            <p>
+                Discover the story behind Tropical Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
+                Lisa-Ann Campbell, this charming boutique specializes in handcrafted
+                jewelry and accessories inspired by the beauty of Jamaica's tropical
+                landscapes. Lisa's passion for crafting unique pieces using local
+                materials shines through in every item she creates. Explore the
+                collection and take home a piece of Jamaica's natural beauty with you.
+            </p>
+            <picture>
+                <img src="./images/lisa-ann_campbell.webp"
+                    alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries"
+                    loading="lazy" height="300">
+            </picture>
+        </section>
 
         <!-- <h3 class="member-title">Member Spotlights</h3> -->
-        <section class="card card-padding" id="s1">
+        <section class="card card-padding" id="s2">
             <h3>Montego Bay Culinary Delights</h3>
             <hr>
             <p>
@@ -136,23 +169,6 @@
             </picture>
         </section>
 
-        <section class="card card-padding" id="s2">
-            <h3>Tropical Treasures Boutique</h3>
-            <hr>
-            <p>
-                Discover the story behind Tropical Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
-                Lisa-Ann Campbell, this charming boutique specializes in handcrafted
-                jewelry and accessories inspired by the beauty of Jamaica's tropical
-                landscapes. Lisa's passion for crafting unique pieces using local
-                materials shines through in every item she creates. Explore the
-                collection and take home a piece of Jamaica's natural beauty with you.
-            </p>
-            <picture>
-                <img src="./images/lisa-ann_campbell.webp"
-                alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries" loading = "lazy"  height="600">
-            </picture>
-        </section>
-
         <section class="card card-padding" id="s3">
             <h3>Eco-Adventures Jamaica</h3>
             <hr>
@@ -166,8 +182,7 @@
                 Eco-Adventures Jamaica for an eco-conscious journey through paradise.
             </p>
             <picture>
-                <img src="./images/chukka_zip.webp"
-                alt="Chukka Fun Adventures and Zip line">
+                <img src="./images/chukka_zip.webp" alt="Chukka Fun Adventures and Zip line">
             </picture>
         </section>
     </main>
