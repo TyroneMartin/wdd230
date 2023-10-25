@@ -31,9 +31,12 @@
     <link rel="stylesheet" href="../chamber/styles/base.css">
     <link rel="stylesheet" href="../chamber/styles/medium.css">
     <link rel="stylesheet" href="../chamber/styles/larger.css">
+
+    <!--scripts-->
     <script src="./scripts/hamburgermenu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-    <script src="./scripts/windchill.js" defer></script>   
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="../script/getdates.js" defer></script>
     <title>The Chamber of Commerce for Montego Bay</title>
     <!-- This is the link to the assignment instructions used in WDD230--- https://byui-cse.github.io/wdd230-course/ -->
 </head>
@@ -71,8 +74,7 @@
                 <source srcset="./images/wdd230-image-small-org.webp" media="(max-width:
           400px)" class="hero_image">
 
-                <source srcset="./images/wdd230-image-medium-org.webp" media="(max-width: 960px)"
-                    class="hero_image">
+                <source srcset="./images/wdd230-image-medium-org.webp" media="(max-width: 960px)" class="hero_image">
                 <img src="./images/wdd230-image-large-org.webp"
                     alt="A photo showing three Business personnels sitting around a large desk, communicating with a lablop in the foreground"
                     class="hero_image">
@@ -128,6 +130,10 @@
                 recipes. Experience the vibrant tastes of Jamaica at Montego Bay
                 Culinary Delights.
             </p>
+            <picture>
+                <img src="./images/restaurante-restaurant.webp"
+                    alt="Restaurant in Jamaica displaying a culinary genius">
+            </picture>
         </section>
 
         <section class="card card-padding" id="s2">
@@ -141,6 +147,10 @@
                 materials shines through in every item she creates. Explore the
                 collection and take home a piece of Jamaica's natural beauty with you.
             </p>
+            <picture>
+                <img src="./images/lisa-ann_campbell.webp"
+                alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries" loading = "lazy"  height="600">
+            </picture>
         </section>
 
         <section class="card card-padding" id="s3">
@@ -155,6 +165,10 @@
                 passionate about preserving the island's natural beauty. Join
                 Eco-Adventures Jamaica for an eco-conscious journey through paradise.
             </p>
+            <picture>
+                <img src="./images/chukka_zip.webp"
+                alt="Chukka Fun Adventures and Zip line">
+            </picture>
         </section>
     </main>
 
@@ -190,7 +204,6 @@
             </h6>
         </div>
     </div>
-    <script src="../script/getdates.js"></script>
 </body>
 
 </html>
