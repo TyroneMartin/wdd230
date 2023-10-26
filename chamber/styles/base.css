@@ -194,20 +194,20 @@ nav ul:last-child {
 
 .box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 0;
     background-color: #1758466d;
-
-    /* border: #333333 solid 5px; */
+    border: #333333 solid 3px;
     /* border-radius: 2rem; */
-    /* justify-self: center; */
+    justify-self: center;
     /*  use to center item*/
-    padding: 20px;
+    /* padding: 20px; */
 
     margin-bottom: 0px;
-    padding-top: 15px;
+    padding-top: 0px;
     text-align: center;
     align-items: center;
+    border-left: #175846 solid 3px;
 }
 
 /* .bold  {
