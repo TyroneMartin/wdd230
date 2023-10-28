@@ -93,10 +93,22 @@ header {
 
 }
 .callout-time {
-font-size: 40px;
+font-size: 15px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #333333c0;
 }
+
+#homepage-phrase-Container {
+    width: 100%;
+}
+
+#s6 img {
+    width: 100%;
+  }
+
+  #s5 img {
+    width: 100%;
+  }
 
 .hero-section p {
     position: absolute;
@@ -116,7 +128,8 @@ div.card.box h3{
 
 header h1 {
     color: rgb(83, 76, 67);
-    font-size: 25px;
+    font-size: 15px;
+    font-weight: bolder;
     font-family: Garamond, Roboto, Arial, sans-serif;
 }
 
@@ -140,22 +153,23 @@ nav {
 nav ul {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 nav a {
 
     color: white;
     text-decoration: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     /* Show a pointer cursor on hover */
     list-style-type: none;
     /* Remove underline from links */
     min-height: 50px;
-    padding: 20px
+    padding: 20px;
 }
 
 nav a:hover {
-    color: blue;
+    color: rgb(0, 255, 174);
 
 }
 
@@ -334,6 +348,8 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-items: normal;
+
 }
 
 
