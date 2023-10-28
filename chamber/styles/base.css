@@ -44,7 +44,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 40px 5px 0 5px;
+    /* margin: 40px 5px 0 5px; */
 }
 
 
@@ -92,6 +92,11 @@ header {
 
 
 }
+.callout-time {
+font-size: 40px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #333333c0;
+}
 
 .hero-section p {
     position: absolute;
@@ -103,6 +108,11 @@ header {
     z-index: 1;
 
 }
+
+div.card.box h3{
+    font-size: 40px;
+
+  }
 
 header h1 {
     color: rgb(83, 76, 67);
@@ -179,12 +189,13 @@ nav ul:last-child {
 .card {
     background-color: #EBEBEB;
     border: #333333 5px;
-    /* border-radius: 2rem; */
+    border-radius: 2rem;
     /* justify-self: center; */
     /*  use to center item*/
     /* padding: 20px; */
     margin: 0%;
     margin-bottom: 15px;
+    gap: 35px;
 }
 
 /* This is to add padding to specificic elements */
@@ -209,6 +220,57 @@ nav ul:last-child {
     align-items: center;
     border-left: #175846 solid 3px;
 }
+
+.Chef-image {
+    border-radius: 2rem;
+padding-top: 31px;
+
+}
+
+.homepage-h3-headings {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.homepage-card-paragraph {
+    font-size: 20px;
+}
+
+.homepage-card-paragraph::first-letter {
+    font-size: 1.5em; 
+  }
+
+
+div#homepage-phrase-Container  {
+    display: flex;
+  }
+
+#homepage-phrase-Container  {
+    /* background-color: aliceblue; */
+    align-items: center;
+width: 100%;
+}
+
+.cent-paragraph {
+    text-align: center;
+padding: 15px;
+}
+
+.lisa-ann-image {
+    width: 100%;
+    border-radius: 2rem; 
+    /* cursor: pointer; */
+    transition: transform 0.8s, box-shadow 0.9s; 
+}
+
+
+
+  .homepage-phrase-h3{
+    font-size: 60px;
+color: red;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 
 /* .bold  {
 font-weight: bold;

@@ -38,7 +38,7 @@
     <script src="./scripts/windchill.js" defer></script>
     <script src="../script/getdates.js" defer></script>
     <title>The Chamber of Commerce for Montego Bay</title>
-    <!-- This is the link to the assignment instructions used in WDD230--- https://byui-cse.github.io/wdd230-course/ -->
+    <!-- This is the link to the assignment instructions used in WDD230 https://byui-cse.github.io/wdd230-course/ -->
 </head>
 
 <body>
@@ -78,9 +78,8 @@
                 <img src="./images/wdd230-image-large-org.webp"
                     alt="A photo showing three Business personnels sitting around a large desk, communicating with a lablop in the foreground"
                     class="hero_image">
-                <h2>-</h2>
             </picture>
-            <h2>JAMAICA: MONTEGO BAY [Local time will display here]</h2>
+            <h2 class = "callout-time">Montego Bay, Jamaica |  Time: <span id="currentTime"></span></h2>
         </div>
         <!-- <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
             alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel."> -->
@@ -89,7 +88,7 @@
     <main>
         <div class="card" id="weather-Container">
             <div class="card box">
-                <img id="weathericon" src="../chamber/images/Weather-clear.svg">
+                <img id="weathericon" src="../chamber/images/Weather-clear.svg" alt="Weather Icon">
 
                 <div>
                     <h3><span id="temperature">32</span>&deg;F</h3>
@@ -120,7 +119,7 @@
         <section class="card card-padding" id="event">
             <h3 class="bold">Event: Montego Bay Music Festival</h3>
             <hr>
-            <p>
+            <p class = "cent-paragraph">
                 Join us for the annual Montego Bay Music Festival, a three-day
                 extravaganza celebrating the rhythm and soul of Jamaica!
             </p>
@@ -129,14 +128,14 @@
                 showcase a diverse range of musical genres, from reggae and dancehall
                 to jazz and world music.
             </p>
-            <p>Date: December 15th - 17th, <span id="currentYear"></span></p>
+            <p>Date: December 15th - 17th, <span id ="currentYear1"></span></p>
             <p>Location: Montego Bay Harmony Beach Park</p>
         </section>
 
         <section class="card card-padding" id="s1">
-            <h3>Tropical Treasures Boutique</h3>
+            <h3 class="homepage-h3-headings">Tropical Treasures Boutique</h3>
             <hr>
-            <p>
+            <p class="homepage-card-paragraph">
                 Discover the story behind Tropical Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
                 Lisa-Ann Campbell, this charming boutique specializes in handcrafted
                 jewelry and accessories inspired by the beauty of Jamaica's tropical
@@ -144,18 +143,21 @@
                 materials shines through in every item she creates. Explore the
                 collection and take home a piece of Jamaica's natural beauty with you.
             </p>
-            <picture>
-                <img src="./images/lisa-ann_campbell.webp"
-                    alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries"
-                    loading="lazy" height="300">
-            </picture>
+    
         </section>
+    <div >
+        <picture >
+            <img class="lisa-ann-image" src="./images/lisa-ann_campbell.webp"
+                alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries"
+                loading="lazy" width="600">
+        </picture>
+    </div>
 
         <!-- <h3 class="member-title">Member Spotlights</h3> -->
         <section class="card card-padding" id="s2">
-            <h3>Montego Bay Culinary Delights</h3>
+            <h3 class="homepage-h3-headings">Montego Bay Culinary Delights</h3>
             <hr>
-            <p>
+            <p class="homepage-card-paragraph">
                 Meet the culinary genius behind Montego Bay Culinary Delights, Chef
                 Marcus James. With a passion for blending traditional Jamaican flavors
                 with a modern twist, Chef Marcus has taken the Montego Bay dining
@@ -166,14 +168,14 @@
             </p>
             <picture>
                 <img src="./images/restaurante-restaurant.webp"
-                    alt="Restaurant in Jamaica displaying a culinary genius">
+                    alt="Restaurant in Jamaica displaying a culinary genius" loading="lazy" width="600" class="Chef-image">
             </picture>
         </section>
 
         <section class="card card-padding" id="s3">
-            <h3>Eco-Adventures Jamaica</h3>
+            <h3 class="homepage-h3-headings">Eco-Adventures Jamaica</h3>
             <hr>
-            <p>
+            <p class="homepage-card-paragraph cent-paragraph">
                 Embark on an eco-adventure with Eco-Adventures Jamaica, founded by
                 environmental enthusiast Sarah Thompson. This eco-tour company is
                 dedicated to promoting sustainable tourism while providing
@@ -182,25 +184,22 @@
                 passionate about preserving the island's natural beauty. Join
                 Eco-Adventures Jamaica for an eco-conscious journey through paradise.
             </p>
-            <picture>
-                <img src="./images/chukka_zip.webp" alt="Chukka Fun Adventures and Zip line">
-            </picture>
+    
         </section>
-        <div>
-            <p>Live. Work. Do Business</p>
+        <div id="homepage-phrase-Container">
+            <h3 class="homepage-phrase-h3">Live. Work. Do Business</h3>
         </div>
         <div id="s4">
             <picture>
-                <img id="s4" src="./images/Jazz-and-Blues-fest.webp" alt="Jamaica Jazz and Blue Music Festival"
-                    loading="lazy" height="600">
+                <img src="./images/jamaica_map.webp" alt="Jamaica map" loading="lazy"
+                    width="20">
             </picture>
         </div>
 
 
-        <div class="s5">
+        <div id="s5">
             <picture>
-                <img src="./images/jamaica_bamboo_raffing.webp" alt="Jamaica Bamboo Raffing" loading="lazy"
-                    height="200">
+                <img src="./images/jamaica_bamboo_raffing.webp" alt="Jamaica Bamboo Raffing" loading="lazy" width="100">
             </picture>
         </div>
 
@@ -210,7 +209,7 @@
     <footer>
         <div id="footer-image-container">
             <a href="../chamber/index.html"><img class="footer-logo" src="./images/logo-footer.webp"
-                    alt="footer logo of Jamaica national bird used as the company logo" /></a>
+                    alt="footer logo of Jamaica national bird used as the company logo"></a>
         </div>
         <section>
             <h4>ADDRESS:</h4>
