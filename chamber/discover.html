@@ -37,6 +37,7 @@
     <script src="./scripts/darkmode.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
     <script src="../script/getdates.js" defer></script>
+    <script src="../chamber/scripts/discover.js" defer></script>
     <title>Chamber of Commerce and Discover</title>
     <!-- This is the link to the assignment instructions used in WDD230: https://byui-cse.github.io/wdd230-course/ -->
 </head>
@@ -68,43 +69,48 @@
         </div>
     </div> -->
 
-    <div class="discoverMessageContainer">
+    <main class = "discoverMain">
+        <!--Nav Side bar start-->
         <div class="discoverMessageContainer">
-            <p>Welcome! Let us know if you have any questions.</p>
+            <div class="discoverMessageContainer1" id="discover-message">
+                <h3 id="message">.</h3>
+            </div>
+            <section class = "discoverMessageContainer2">
+                <h3>The Voice of Business
+                </h3>
+                <p>We are a membership-based, democratic, non-profit organisation made up of businesses and
+                    professionals.
+                    We’re working to build and promote a healthy economy and improve the quality of life of all
+                    Jamaicans.
+                </p>
+            </section>
+    
+            <section class = "discoverMessageContainer3">
+                <h3>Major Projects
+                </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis quas commodi mollitia
+                    asperiores, temporibus adipisci, consectetur dicta, odit cupiditate at doloribus beatae fuga
+                    accusamus
+                    distinctio ullam illo illum sint!</p>
+            </section>
+    
+            <section class = "discoverMessageContainer4">
+                <h3>Calender</h3>
+                <P>See our upcoming activities</P>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores cupiditate consequatur
+                    tempora molestias repudiandae soluta non, odio dolorum in quo magni itaque eum qui. Provident quis
+                    enim quaerat ducimus!</p>
+            </section>
+
+            <picture>
+                <img src="./images/jamaica_map.webp" alt="Jamaca map" loading="lazy" width="350">
+            </picture>
         </div>
-        <section>
-            <h3>The Voice of Business
-            </h3>
-            <p>We are a membership-based, democratic, non-profit organisation made up of businesses and
-                professionals.
-                We’re working to build and promote a healthy economy and improve the quality of life of all
-                Jamaicans.
-            </p>
-        </section>
 
-        <section>
-            <h3>Major Projects
-            </h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat blanditiis quas commodi mollitia
-                asperiores, temporibus adipisci, consectetur dicta, odit cupiditate at doloribus beatae fuga
-                accusamus
-                distinctio ullam illo illum sint!</p>
-        </section>
-
-        <section>
-            <h3>Calender</h3>
-            <P>See our upcoming activities</P>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam asperiores cupiditate consequatur
-                tempora molestias repudiandae soluta non, odio dolorum in quo magni itaque eum qui. Provident quis
-                enim quaerat ducimus!</p>
-        </section>
-
-    </div>
-
-    <main>
+             <!--Nav Side bar End-->
         <h1>Discover the best attractions in Jamaica</h1>
 
-        <section>
+        <section class = "DiscoverPage-item-1">
             <h2>Dunn’s River Falls, Ocho Rios</h2>
             <picture>
                 <img src="./images/dunns_river_falls.webp" alt="Dunn’s River Falls, Ocho Rios" loading="lazy"
@@ -130,7 +136,7 @@
             </p>
         </section>
 
-        <section>
+        <section class = "DiscoverPage-item-2">
             <h2>White River, Ocho Rios</h2>
             <picture>
                 <img src="./images/white_river-ocho_rios.webp" alt="Dunn’s River Falls, Ocho Rios" loading="lazy"
@@ -154,7 +160,7 @@
 
         </section>
 
-        <section>
+        <section class = "DiscoverPage-item-3">
             <h2>Green Grotto Caves, Discovery Bay</h2>
             <picture>
                 <img src="./images/green_grottocaves.webp" alt="Green Grotto Caves, Discovery Bay
@@ -175,8 +181,8 @@
 
         </section>
 
-        <section>
-            <h2>GDoctor’s Cave Beach, Montego Bay
+        <section class = "DiscoverPage-item-4">
+            <h2>Doctor’s Cave Beach, Montego Bay
             </h2>
             <picture>
                 <img src="./images/doctors-cave-beach.webp" alt="Doctor’s Cave Beach, Montego Bay" loading="lazy"
@@ -209,7 +215,7 @@
 
         </section>
 
-        <section>
+        <section class = "DiscoverPage-item-5">
             <h2>Rose Hall Great House, Montego Bay</h2>
             <picture>
                 <img src="./images/rose-hall-great-house.webp" alt="Rose Hall Great House in Montego Bay
@@ -228,7 +234,7 @@
 
         </section>
 
-        <section>
+        <section class = "DiscoverPage-item-6">
             <h2>Blue Hole, Ocho Rios
             </h2>
             <picture>
@@ -255,9 +261,6 @@
             </p>
 
         </section>
-
-
-
     </main>
 
 

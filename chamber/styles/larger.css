@@ -40,7 +40,6 @@
     font-size: 60px;
   }
 
-
   main {
     grid-template-columns: 400px auto 1fr 1fr;
     gap: 15px;
@@ -117,13 +116,12 @@
     grid-row: 4/5;
   }
 
-
   #homepage-phrase-Container {
     grid-column: 3/4;
     grid-row: 3/4;
   }
 
-  #homepage-phrase-Container  h3 {
+  #homepage-phrase-Container h3 {
     font-size: 60px;
     color: brown;
   }
@@ -162,3 +160,115 @@
     top: 600px;
   }
 }
+
+/*  Discover page Styling */
+/* @media screen and (min-width: 1200px) {
+.discoverMain {
+grid-template-columns: 500px 1fr;
+grid-template-rows: auto;
+}
+
+.discoverMessageContainer {
+  grid-column: 1/2;
+  grid-row: 1/8;
+  background-color: rgba(69, 69, 62, 0.619);
+}
+
+.discoverMessageContainer1 {
+  grid-column: 1/2;
+}
+
+.discoverMessageContainer2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+}
+
+.discoverMessageContainer3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.discoverMessageContainer4 {
+  grid-column: 1/2;
+grid-row: 4/5;
+}
+
+} */
+
+/* Discover page Styling */
+@media screen and (min-width: 1200px) {
+  .discoverMain {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 45px;
+  }
+
+  .discoverMessageContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: rgba(8, 65, 8, 0.482);
+    padding: 20px;
+  }
+
+  .discoverMessageContainer1,
+  .discoverMessageContainer2,
+  .discoverMessageContainer3,
+  .discoverMessageContainer4 {
+    margin-bottom: 20px;
+  }
+
+  /* Additional styling for the sidebar */
+  .discoverMessageContainer {
+    padding: 20px;
+    margin: 20px;
+    color: white; /* Example text color */
+  }
+
+  .DiscoverPage-item-1,
+  .DiscoverPage-item-2,
+  .DiscoverPage-item-3,
+  .DiscoverPage-item-4,
+  .DiscoverPage-item-5,
+  .DiscoverPage-item-6 {
+    grid-column: 2/3;
+  }
+
+  .discoverMessageContainer1 {
+    /* background-color: white; */
+    background-color: rgb(134, 147, 133);
+    /* border: #333333 solid 3px; */
+    padding: 50px;
+/* margin-top: -1%; */
+margin: -5%;
+  }
+
+  .discoverMessageContainer1 p {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-align: center;
+  
+  }
+}
+
+/* Responsive design for smaller screens */
+ @media screen and (max-width: 1200px) {
+  .discoverMain {
+      display: block;
+  }
+
+  .discoverMessageContainer {
+      position: relative;
+      top: initial;
+      grid-column: initial;
+      grid-row: initial;
+      background-color: initial;
+      padding: 10px;
+      margin: 10px;
+      color: initial;
+  }
+} 
