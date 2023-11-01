@@ -372,3 +372,14 @@ footer p {
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Discover page CSS */
+.discoverMainColumn2, h2 {
+    text-align: left;
+}
+
+.discoverMainColumn2 p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
