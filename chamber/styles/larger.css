@@ -161,45 +161,17 @@
     }
   }
   
-  /*  Discover page Styling */
-  /* @media screen and (min-width: 1200px) {
-  .discoverMain {
-  grid-template-columns: 500px 1fr;
-  grid-template-rows: auto;
-  }
-  
-  .discoverMessageContainer {
-    grid-column: 1/2;
-    grid-row: 1/8;
-    background-color: rgba(69, 69, 62, 0.619);
-  }
-  
-  .discoverMessageContainer1 {
-    grid-column: 1/2;
-  }
-  
-  .discoverMessageContainer2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  
-  }
-  
+  /* ------------------------------------------ */
 
-  
-  .discoverMessageContainer4 {
-    grid-column: 1/2;
-  grid-row: 4/5;
-  }
-  
-  } */
-  
+
   /* Discover page Styling */
   @media screen and (min-width: 1200px) {
     .discoverMain {
       display: grid;
-      grid-template-columns: 500px 1fr 250px;
+      grid-template-columns: 800px 1fr 500px;
 grid-template-rows: auto;     
  gap: 45px;
+
     }
   
     .discoverMessageContainer {
@@ -234,6 +206,7 @@ grid-template-rows: auto;
     .DiscoverPage-item-5,
     .DiscoverPage-item-6 {
       grid-column: 2/3;
+      text-align: left;
     }
   
     .discoverMessageContainer1 {
@@ -253,23 +226,12 @@ grid-template-rows: auto;
       text-align: center;
     
     }
-  }
-  
-  /* Responsive design for smaller screens */
-   @media screen and (max-width: 1200px) {
-    .discoverMain {
+
+    img {
+        width: 60%;
+        margin: auto;
         display: block;
     }
+  }
   
-    .discoverMessageContainer {
-        position: relative;
-        top: initial;
-        grid-column: initial;
-        grid-row: initial;
-        background-color: initial;
-        padding: 10px;
-        margin: 10px;
-        color: initial;
-    }
-  } 
-  
+ 
