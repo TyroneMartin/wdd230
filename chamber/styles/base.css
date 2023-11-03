@@ -12,6 +12,10 @@ img#logoImage {
     font-size: 10px;
 }
 
+#s3 img {
+    width: 100%;
+      }
+
 /* ---------------------------- */
 
 header {
