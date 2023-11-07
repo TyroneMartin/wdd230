@@ -442,11 +442,18 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
   }
 
-  
+  .discoverMessageContainer1,
+  .discoverMessageContainer2,
+  .discoverMessageContainer3,
+  .discoverMessageContainer4 {
+    margin-bottom: 20px;
+  }
+
 
   /* hr {
     display: none;
   } */
+
 
     
 
