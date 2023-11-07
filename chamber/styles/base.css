@@ -408,8 +408,11 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    border-bottom: 1px solid black;
-/* padding-bottom: 5px; */
+    background-color: #175846;
+    padding: 50px;
+    margin: 1px;
+
+
   }
 
   
@@ -427,9 +430,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   .discoverMain  h2 {
     font-size: 35px;
     font-weight: bold;
-    color: #175846;
-    border-bottom: 1px solid #175846;
-padding-bottom: 5px;
+
   }
 
   .discoverMain hr {
@@ -437,6 +438,7 @@ padding-bottom: 5px;
     /* border: 0; */
     background-color: #175846;
     height: 5px; /* line the thickness */
+    margin: 1px;
 
   }
 
