@@ -154,10 +154,6 @@
 
   }
 
-  .discoverMain  p {
-    font-size: 25px;
-  }
-
   .discoverMessageContainer {
     position: -webkit-sticky;
     position: sticky;
@@ -179,7 +175,6 @@
   /* Additional styling for the sidebar */
   .discoverMessageContainer {
     padding: 85px;
-    /* margin: 20px; */
     color: black;
   }
   
@@ -191,6 +186,7 @@
   .DiscoverPage-item-6 {
     grid-column: 2/3;
     /* text-align: center; */
+
   }
 
   .discoverMessageContainer1 {
@@ -202,7 +198,7 @@
 
 
   .discoverMainColumn2 img {
-        width: 50%;
+        width: 60%;
         margin: auto;
         display: block;
 
