@@ -148,7 +148,7 @@
   /* Discover page Styling */
   .discoverMain {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 800px 1fr;
     grid-template-rows: auto;
     gap: 45px;
 
@@ -178,11 +178,11 @@
 
   /* Additional styling for the sidebar */
   .discoverMessageContainer {
-    padding: 20px;
-    margin: 20px;
+    padding: 85px;
+    /* margin: 20px; */
     color: black;
   }
-
+  
   .DiscoverPage-item-1,
   .DiscoverPage-item-2,
   .DiscoverPage-item-3,
@@ -190,7 +190,7 @@
   .DiscoverPage-item-5,
   .DiscoverPage-item-6 {
     grid-column: 2/3;
-    text-align: left;
+    /* text-align: center; */
   }
 
   .discoverMessageContainer1 {
@@ -200,18 +200,12 @@
     grid-row: 1/2;
   }
 
-  .discoverMessageContainer1 p {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    /* font-weight: bold; */
-    /* text-align: center; */
-
-  }
 
   .discoverMainColumn2 img {
         width: 50%;
         margin: auto;
         display: block;
+
     } 
 
 }
