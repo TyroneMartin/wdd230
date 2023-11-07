@@ -154,6 +154,10 @@
 
   }
 
+  .discoverMain  p {
+    font-size: 25px;
+  }
+
   .discoverMessageContainer {
     position: -webkit-sticky;
     position: sticky;
@@ -199,8 +203,8 @@
   .discoverMessageContainer1 p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    text-align: center;
+    /* font-weight: bold; */
+    /* text-align: center; */
 
   }
 
