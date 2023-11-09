@@ -148,7 +148,7 @@
   /* Discover page Styling */
   .discoverMain {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 800px 1fr;
     grid-template-rows: auto;
     gap: 45px;
 
@@ -165,20 +165,13 @@
   }
 
 
-  .discoverMessageContainer1,
-  .discoverMessageContainer2,
-  .discoverMessageContainer3,
-  .discoverMessageContainer4 {
-    margin-bottom: 20px;
-  }
 
   /* Additional styling for the sidebar */
   .discoverMessageContainer {
-    padding: 20px;
-    margin: 20px;
+    padding: 85px;
     color: black;
   }
-
+  
   .DiscoverPage-item-1,
   .DiscoverPage-item-2,
   .DiscoverPage-item-3,
@@ -186,7 +179,8 @@
   .DiscoverPage-item-5,
   .DiscoverPage-item-6 {
     grid-column: 2/3;
-    text-align: left;
+    /* text-align: center; */
+
   }
 
   .discoverMessageContainer1 {
@@ -196,18 +190,12 @@
     grid-row: 1/2;
   }
 
-  .discoverMessageContainer1 p {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    text-align: center;
-
-  }
 
   .discoverMainColumn2 img {
-        width: 50%;
+        width: 60%;
         margin: auto;
         display: block;
+
     } 
 
 }
