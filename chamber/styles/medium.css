@@ -38,15 +38,11 @@
     #s6 {
         grid-column: 1/2;
     }
-    
-    discoverMessageContainer4
 
-    .menu-show,
+    discoverMessageContainer4 .menu-show,
     .menu-hide,
     .menu-show.showing,
-    .menu-hide.showing    
-    {
-        
+    .menu-hide.showing {
         display: none;
     }
 
@@ -60,7 +56,7 @@
         padding: 50px;
     }
 
-  footer {
+    footer {
         grid-template-columns: repeat(4, 1fr);
     }
 

@@ -276,7 +276,7 @@ div#homepage-phrase-Container {
 
 .cent-paragraph {
     text-align: center;
-padding: 0px;
+    padding: 0px;
 }
 
 .lisa-ann-image {
@@ -383,9 +383,10 @@ footer p {
 
 /* Discover page CSS */
 
-.discoverMainColumn2, h2 {
+.discoverMainColumn2,
+h2 {
     text-align: left;
-} */
+}
 
 .discoverMainColumn2 p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -394,71 +395,76 @@ footer p {
 
 .cent-paragraph_Discover-page {
     text-align: center;
-padding: 0px;
-font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 35px;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #4e565b;
+    font-weight: bold;
 }
 
 
 
 #message {
-    color: black;
-    text-align: center; 
-     font-weight: bold;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size: 20px;
-  }
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
 
-  .discoverMessageContainer1 h3 {
+.discoverMessageContainer1 h3 {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     background-color: #175846;
-    padding: 50px;
-    margin: 1px;
+    padding: 65px;
+    margin: 0px;
+    color: white;
+}
 
 
-  }
-
-  
-  .discoverMessageContainer1 ul li {
+.discoverMessageContainer1 ul li {
     color: black;
     font-family: 'Times New Roman', serif;
     font-size: 1.5rem;
     gap: 50px;
-  }
+}
 
-  .discoverMain  p {
-    font-size: 25px;
-  }
+.discoverMain p {
+    font-size: 18px;
+}
 
-  .discoverMain  h2 {
-    font-size: 35px;
+.discoverMain h2 {
+    font-size: 15px;
     font-weight: bold;
 
-  }
+}
 
-  .discoverMain hr {
+.discoverMain hr {
     width: 20%;
     /* border: 0; */
     background-color: #175846;
-    height: 5px; /* line the thickness */
+    height: 5px;
+    /* line the thickness */
     margin: 1px;
 
-  }
+}
 
-  .discoverMessageContainer1,
-  .discoverMessageContainer2,
-  .discoverMessageContainer3,
-  .discoverMessageContainer4 {
+.discoverMessageContainer1,
+.discoverMessageContainer2,
+.discoverMessageContainer3,
+.discoverMessageContainer4 {
     margin-bottom: 20px;
+}
+
+.discoverMessageContainer1 {
+    background-color: rgb(141, 175, 138);
+    border: #333333 inset 1px;
+    padding: 35px;
   }
 
-
-  /* hr {
-    display: none;
-  } */
-
-
-    
-
-
+    /* Additional styling for the sidebar */
+    .discoverMessageContainer {
+        color: black;
+      }

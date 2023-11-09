@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="L04: Project Milestone - The Chamber of Commerce for Montego Bay, Jamaica in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <meta name="keywords" content="Jamaica Chamber of Commerce, Montego Bay, Business">
+        content="lesson07: The Chamber of Commerce Discover Page for Montego Bay, Jamaica, in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="keywords" content="Jamaica Chamber of Commerce, Montego Bay, Business Discovern Page">
     <meta name="author" content="Tyrone Martin">
 
     <!--Social Media Meta Tags for Facebook-->
-    <meta property="og:title" content="The Chamber of Commerce for Montego Bay, Jamaica">
+    <meta property="og:title" content="The Chamber of Commerce for Montego Bay, Jamaica Discover Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://tyronemartin.github.io/wdd230/chamber/images/favicon.ico">
-    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/chamber/discover.html">
 
     <!-- Import the CSS Normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -31,56 +31,51 @@
     <link rel="stylesheet" href="../chamber/styles/base.css">
     <link rel="stylesheet" href="../chamber/styles/medium.css">
     <link rel="stylesheet" href="../chamber/styles/larger.css">
-    <title>The Chamber of Commerce for Montego Bay</title>
+
+    <!--scripts-->
+    <script src="./scripts/hamburgermenu.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="../script/getdates.js" defer></script>
+    <script src="../chamber/scripts/discover.js" defer></script>
+    <title>Chamber of Commerce and Discover</title>
+    <!-- This is the link to the assignment instructions used in WDD230: https://byui-cse.github.io/wdd230-course/ -->
 </head>
 
 <body>
     <header>
-        <a href="../chamber/index.html"><img class="logo2" src="../chamber/images/logo2.png"
+        <a href="../chamber/index.html"><img class="logo2" id="logoImage" src="../chamber/images/logo2.webp"
                 alt="Jamaican national bird is use as the Chamber of Commerce logo"></a>
 
-
         <h1>The Chamber of Commerce for Montego Bay, Jamaica</h1>
-
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" target="_blank">Discover</a></li>
+        <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+
+        <ul id="nav-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html" target="_blank">Discover</a></li>
             <li><a href="#" target="_blank">Directory</a></li>
-            <li><a href="#" target="_blank">Join</a></li>
+            <li><a href="./join.html" target="_blank">Join</a></li>
         </ul>
     </nav>
-
-    <section class="hero-section">
-
-        <div class="hero-content">
-            <p>JAMAICA: MONTEGO BAY
-            </p>
-            <button>Join the Chamber</button>
-        </div>
-        <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
-            alt="Hero image of Montego Bay showing the water front of Palladium Hotel.">
-    </section>
+    <div><button id="dark-mode">DARK</button></div>
 
     <main>
 
-        <h3>This page is coming soon</h3>
-
+        Join page 
     </main>
-
 
     <footer>
         <div id="footer-image-container">
-            <a href="../chamber/index.html"><img class="footer-logo" src="./images/logo-footer.png"
-                    alt="footer logo of Jamaica national bird used as the company logo">
+            <a href="../chamber/index.html"><img class="footer-logo" src="./images/logo-footer.webp"
+                    alt="footer logo of Jamaica national bird used as the company logo"></a>
         </div>
         <section>
             <h4>ADDRESS:</h4>
             <p>Montego Bay Chamber of Commerce</p>
             <p>Suite 4, Unit 19</p>
-            <p>M19 Southern Cross Boulevard
-            </p>
+            <p>M19 Southern Cross Boulevard</p>
             <p>Montego Freeport</p>
             <p>Montego Bay, Jamaica</p>
         </section>
@@ -89,19 +84,20 @@
             <p>info@mobaychamber.org</p>
         </section>
         <section>
-            <h4>PHONE:
-            </h4>
+            <h4>PHONE:</h4>
             <p>1 876-952-6045</p>
         </section>
-
-        <div class="sub-footer">
-            <h6>&copy; <span id="currentYear"></span> <a id="footer-copy-right-name" href="../index.html">Tyrone
-                    Martin</a>. All Rights Reserved. </h6>
-            <h6><span>Location: Rexburg, Idaho</span></h6>
-            <h6>Last updated: <span id="lastUpdated"></span></h6>
-        </div>
     </footer>
-    <script src="../script/getdates.js"></script>
+    <div class="sub-footer-container">
+        <div>
+            <h6>
+                &copy; <span id="currentYear"></span>
+                <a id="footer-copy-right-name" href="../index.html">Tyrone Martin</a>.
+                All Rights Reserved. Location: Rexburg, Idaho Last updated:
+                <span id="lastUpdated"></span>
+            </h6>
+        </div>
+    </div>
 </body>
 
 </html>
