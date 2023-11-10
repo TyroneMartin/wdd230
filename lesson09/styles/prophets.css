@@ -1,0 +1,58 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card{
+    border: 1px black solid;
+    text-align: center;
+    background-color: lightblue;
+    margin: 1rem;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: #000000fb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    /* Add underline when hovering */
+}
+
+#footer-copy-right-name {
+    font-variant-caps: all-small-caps;
+    font-size: 22px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    /* Add underline when hovering */
+}
+
+#footer-copy-right-name {
+    font-variant-caps: all-small-caps;
+    font-size: 22px;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}

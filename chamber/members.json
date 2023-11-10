@@ -1,0 +1,12 @@
+/* THIS IS FOR THE DIRECTORY SECTION */
+{
+    "members": [
+        {
+            "name": "Example Name",
+            "address": "123 Main Street, Rexburg, ID 83400",
+            "phone": "852582145555",
+            "websiteURL": "https://www.Rexburg.org",
+            "imageURL": "YOUR IMAGE LOCATION"
+        }
+    ]
+}
