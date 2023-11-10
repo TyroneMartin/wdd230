@@ -1,41 +1,39 @@
 {"moveIns":
-
 [{
-    "name": "Merchants",
-    "moveInDate": "2022/08/01",
-    "familySize": 4,
-    "visited": false,
-    "members": [
-    {
-        "name": "Julie Merchant ",
-        "gender" : "F",
-        "birday": "1980/1/1"
-    },
-    {
-        "name": "Lincoln Merchant",
-        "gender" : "M",
-        "birday": "1981/2/8"
-    }
+    "name":"Merchants",
+    "moveInDate":"2013/09/07",
+    "familySize":4,
+    "visited":false,
+    "members":[
 
+        {
+            "name":"Lincoln Merchant",
+            "gender":"M",
+            "birthdate":"1986/02/08"
+        },
+      {
+        "name":"Julie Merchant",
+        "gender":"F",
+        "birthdate":"1987/10/02"
+    }
     ]
 },
-
-    "name": "Merchants",
-    "moveInDate": "2022/08/01",
-    "familySize": 4,
-    "visited": false,
-    "members": [
-    {
-        "name": "Julie Merchant ",
-        "gender" : "F",
-        "birday": "1980/1/1"
-    },
-    {
-        "name": "Lincoln Merchant",
-        "gender" : "M",
-        "birday": "1981/2/8"
-    }
-
+{
+    "name":"Browns",
+    "moveInDate":"2022/09/01",
+    "familySize":3,
+    "visited":false,
+    "members":[
+        {
+            "name":"Anthony Brown",
+            "gender":"M",
+            "birthdate":"1990/10/05"
+        },
+        {
+            "name":"Rose Brown",
+            "gender":"F",
+            "birthdate":"2000/05/04"
+        }
     ]
-
-]
+}]
+}
