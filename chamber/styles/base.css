@@ -543,9 +543,17 @@ input:invalid {
     text-align: center;
 }
 
-#thankyou-main h2 {
+#thankyou-main h1,
+#thankyou-main p {
     text-align: center;
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin: 1px 0 0 0; 
     padding: 1rem 0;
+}
+
+#thankyou-main h1 {
+    font-weight: bold;
+}
+
+#thankyou-main {
+    display: inherit;
 }
