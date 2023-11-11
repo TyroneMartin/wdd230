@@ -35,7 +35,6 @@ header {
 
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -472,10 +471,17 @@ h2 {
 
 /*** Join page styles ***/
 
-#join-main .join {
+.join {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
+  }
+
+
+/* .join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
 
 .join>div {
     margin: 1rem;

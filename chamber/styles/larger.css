@@ -164,10 +164,6 @@
     padding: 2px;
   }
 
-
-
-
-
   .DiscoverPage-item-1,
   .DiscoverPage-item-2,
   .DiscoverPage-item-3,
@@ -182,7 +178,6 @@
   .discoverMessageContainer1 {
     grid-row: 1/2;
   }
-
 
   .discoverMainColumn2 img {
     width: 60%;
@@ -200,3 +195,4 @@
   }
 
 }
+
