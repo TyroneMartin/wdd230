@@ -2,6 +2,7 @@
 let year = new Date(); 
 let presentYear = year.getFullYear(); 
 document.getElementById("currentYear").textContent = presentYear; 
+document.getElementById("currentYear1").textContent = presentYear; 
 document.getElementById("lastUpdated").textContent = document.lastModified; 
 
 function updateTime() {

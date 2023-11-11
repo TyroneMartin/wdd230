@@ -474,22 +474,20 @@ h2 {
 .join {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  }
+}
 
-
-/* .join {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
-
+main#join-main {
+    display:inherit;
+}
 
 .join>div {
     margin: 1rem;
     padding: 1rem;
     border: 1px black solid;
     border-radius: 5px;
-    width: 90%;
+    width: 95%;
     min-width: 400px;
+    background-color: rgba(245, 245, 220);
 }
 
 label.myinput {
@@ -518,7 +516,7 @@ label.myradio input {
 }
 
 .mysubmit {
-    background-color: #338;
+    background-color: #000;
     color: white;
     margin: 1rem 0 0 0;
     padding: .5rem;
