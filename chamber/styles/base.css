@@ -478,6 +478,8 @@ h2 {
 
 main#join-main {
     display:inherit;
+    max-width: 1200px;
+    /* margin: 0 auto;   */
 }
 
 .join>div {
