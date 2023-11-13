@@ -5,7 +5,7 @@
             "address": "1 Megabyte Drive, 1 Barnett St, Montego Bay, Jamaica",
             "phone": "1 876-953-6737",
             "websiteURL": "https://vista.com/",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/vistaprint.webp",
             "membershipLevel": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "Alice Eldemire Dr, Montego Bay, Jamaica",
             "phone": "852582145555",
             "websiteURL": "https://fontanapharmacy.com/",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/fontana.webp",
             "membershipLevel": "Silver"
         },
         {
@@ -21,7 +21,7 @@
             "address": " C2-16 Fairview Office Park, Alice Eldemire Dr, Montego Bay",
             "phone": "1 876-920-5206",
             "websiteURL": "https://local.fedex.com/en-jm/montego-bay/mbjb",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/fedex.webp",
             "membershipLevel": "Bronze"
         },
         {
@@ -29,7 +29,7 @@
             "address": " Fairview Shopping Center, Montego Bay",
             "phone": "876-929-4622",
             "websiteURL": "https://www.jncb.com/",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/ncb.webp",
             "membershipLevel": "Bronze"
         },
 
@@ -38,7 +38,7 @@
             "address": "Baywest Shopping Centre, Montego Bay",
             "phone": " 876-952-4455-6",
             "websiteURL": "https://www.jpsco.com/",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/jps.webp",
             "membershipLevel": "NP Membership"
         },
         {
@@ -46,7 +46,7 @@
             "address": "W Green Ave, Montego Bay",
             "phone": "876-940-0168",
             "websiteURL": "https://www.my-island-jamaica.com/megamart_montego_bay.html",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/megamart.webp",
             "membershipLevel": "NP Membership"
         },
         {
@@ -54,7 +54,7 @@
             "address": "Lower Bevin Ave, Montego Bay",
             "phone": " 888-225-5692",
             "websiteURL": "https://www.nwcjamaica.com/",
-            "imageURL": "YOUR IMAGE LOCATION",
+            "imageURL": "./images/nwc.webp",
             "membershipLevel": "Bronze"
         }
     ]
