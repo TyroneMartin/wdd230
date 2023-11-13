@@ -590,7 +590,7 @@ input:invalid {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
-    display: inherit;
+    /* display: inherit; */
 }
 
 #directory-Main .grid section {

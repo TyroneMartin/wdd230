@@ -56,6 +56,22 @@
             "websiteURL": "https://www.nwcjamaica.com/",
             "imageURL": "./images/nwc.webp",
             "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Scotiabank",
+            "address": "6-7 Sam Sharpe Square, Market",
+            "phone": "876-952-4440",
+            "websiteURL": "https://jm.scotiabank.com/personal.html",
+            "imageURL": "./images/scotiabank.webp",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "KFC Montego Bay",
+            "address": "Montego Bay, Jamaica",
+            "phone": "+1 876-971-5356",
+            "websiteURL": "https://www.kfcjamaica.com/",
+            "imageURL": "./images/kfc.webp",
+            "membershipLevel": "Silver"
         }
     ]
 }
