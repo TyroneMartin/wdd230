@@ -614,7 +614,7 @@ display: inherit;
 
 .directory-cards .card-button{
     text-decoration: none;
-    color: white;
+    color: black;
     background-color: var(--hover-background-color);
     padding: .5rem;
     border-radius: 5px;
