@@ -557,6 +557,34 @@ input:invalid {
     display: inherit;
 }
 
+#slidervalues {
+    display: flex;
+    width: 30rem;;
+    margin: 0 0 0 8px;
+
+}
+
+#sildervalues option {
+    flex: 1;
+}
+
+#rating {
+    display:block
+    padding: .5rem;
+    font-size: 1.1rem;
+    width: 30rem;;
+} 
+
+/* label {
+    display: block;
+    margin: .5rem 0;
+
+} */
+
+option {
+    flex: 1;
+}
+
 /* Directory page CSS */ 
   .directory-main{
 display: inherit;
