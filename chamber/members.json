@@ -2,10 +2,8 @@
     "members": [
         {
             "name": "VistaPrint Jamaica",
-            "address1": "1 Megabyte Drive",
-            "address2": "Barnett St",
-            "address3": "Montego Bay, Jamaica",
             "phone": "1 876-953-6737",
+            "address": "1 Megabyte Drive, Barnett St, Montego Bay, Jamaica ",
             "websiteURL": "https://vista.com/",
             "imageURL": "./images/vistaprint.webp",
             "membershipLevel": "Gold"
@@ -70,7 +68,7 @@
         {
             "name": "KFC Montego Bay",
             "address": "Montego Bay, Jamaica",
-            "phone": "+1 876-971-5356",
+            "phone": "1 876-971-5356",
             "websiteURL": "https://www.kfcjamaica.com/",
             "imageURL": "./images/kfc.webp",
             "membershipLevel": "Silver"

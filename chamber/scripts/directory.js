@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Simulate a click on the grid button once the page is loaded
+    //Work around to apply css styling as it requres the user to 
+    //activate grid before the styling is applied
+    gridButton.click();
+});
+
+
 const gridButton = document.querySelector("#directory-grid");
 const listButton = document.querySelector("#directory-list");
 const display = document.querySelector("#directory-data");
@@ -5,10 +13,11 @@ const display = document.querySelector("#directory-data");
 gridButton.addEventListener("click", () => {
     display.classList.add("directory-cards");
     display.classList.remove("directory-list");
-    
+
     // #directory-selector button.active css styling for color of taggle
     gridButton.classList.add("active");
     listButton.classList.remove("active");
+
 });
 
 listButton.addEventListener("click", () => {

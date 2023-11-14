@@ -633,6 +633,10 @@ display: inherit;
     display: none;
 }
 
+a.card-button {
+padding: 1.5rem;
+}
+
 .directory-list section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
