@@ -2,7 +2,7 @@
 :root {
     --text-color: black;
     --background-color: #ffffff;
-    --hover-background-color: #bc6c25;
+    --hover-background-color: rgb(102, 167, 102);
     --hover-color: black;
     --header-background-color: rgba(245, 245, 220);
     /* Updated to the specified background color */
@@ -234,7 +234,6 @@ nav ul:last-child {
     justify-self: center;
     /*  use to center item*/
     /* padding: 20px; */
-
     margin-bottom: 0px;
     padding-top: 0px;
     text-align: center;
@@ -559,105 +558,102 @@ input:invalid {
 }
 
 /* Directory page CSS */ 
-
-#directory-Main {
-    margin: 0 auto;
-	padding: 0.5rem;
-	max-width: 700px;
+  .directory-main{
+display: inherit;
+    width: 100%;
 }
 
-#directory-Main .menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bed;
-	text-align: center;
+.directory-main img{
+    width: 100%;
+    
 }
 
-#directory-Main .menu button {
-	padding: 1rem;
-	font-weight: 700;
+#directory-selector{
+    width: 100%;
+    text-align: center;
 }
 
-#directory-Main section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #eee;
+#directory-selector button{
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 5px;
+    background-color: var(--body-bg-color);
+    border: 1px black solid; 
+} 
+
+#directory-selector button.active{
+    background-color: var(--hover-background-color);
 }
 
-#directory-Main .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
-    /* display: inherit; */
+/* Cards view */
+
+.directory-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+
 }
 
-#directory-Main .grid section {
-	text-align: center;
+.directory-cards section{
+    text-align: center;    
+    border: 2px solid grey;    
+    width: 300px;
+    background-color: var(--menu-bg-color);
+    padding: 1rem;
+    margin: .5rem;
 }
 
-#directory-Main .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+.directory-cards section{
+    box-shadow: .5rem .5rem .5rem var(--hover-background-color);
 }
 
-#directory-Main .grid section > * {
-	margin: 0.1rem;
+
+/* .directory-cards .gold-member{
+    box-shadow: .5rem .5rem .5rem gold;
+} */
+
+.directory-cards .card-button{
+    text-decoration: none;
+    color: white;
+    background-color: var(--hover-background-color);
+    padding: .5rem;
+    border-radius: 5px;
+
 }
 
-#directory-Main .grid h3 {
-	font-family: "Caveat", cursive;
+/* List View */
+
+.directory-list{    
+    display: grid;    
+    justify-items: center;   
+    padding: 1rem;    
 }
 
-#directory-Main .list {
-	display: flex;
-	flex-direction: column;
+.directory-list section img{
+    display: none;
 }
 
-#directory-Main .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+.directory-list section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 85%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-#directory-Main .list section > * {
-	margin: 0 1rem;
+.directory-list .card-button{
+    text-decoration: underline;
+    color: black;    
 }
 
-.list section img {
-	display: none; /* smaller viewports only */
+
+.directory-list section:nth-child(odd) {
+    /* background-color: var(--background-color); */
+    background-color: #EBEBEB;
 }
 
-#directory-Main .list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+.directory-list section:nth-child(even) {
+    /* background-color: var(--hover-background-color) */
+    background-color: rgba(68, 95, 68, 0.548)
 }
-
-#directory-Main .list section:nth-child(even) {
-	background-color: #bed;
-}
-
-#directory-Main section h3 {
-	font-size: 1.5rem;
-}
-
-#directory-Main section p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-#directory-Main section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
-#directory-Main img {
-	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
-
 

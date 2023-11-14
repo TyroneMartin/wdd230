@@ -1,15 +1,23 @@
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
-const display = document.querySelector(".cards"); // Update to target the correct element
+const gridButton = document.querySelector("#directory-grid");
+const listButton = document.querySelector("#directory-list");
+const display = document.querySelector("#directory-data");
 
 gridButton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
+    display.classList.add("directory-cards");
+    display.classList.remove("directory-list");
+    
+    // #directory-selector button.active css styling for color of taggle
+    gridButton.classList.add("active");
+    listButton.classList.remove("active");
 });
 
 listButton.addEventListener("click", () => {
-    display.classList.add("list");
-    display.classList.remove("grid");
+    display.classList.add("directory-list");
+    display.classList.remove("directory-cards");
+
+  // #directory-selector button.active css styling for color of taggle
+    listButton.classList.add("active");
+    gridButton.classList.remove("active");
 });
 
 const url = 'https://tyronemartin.github.io/wdd230/chamber/members.json';
@@ -32,12 +40,14 @@ function displayMembers(members) {
         let section = document.createElement("section");
         section.classList.add("card");
         let sectionHTML = `
-            <h3>${member.name}</h3>
-            <p>Address: ${member.address}</p>
-            <p>Phone: ${member.phone}</p>
-            <img src="${member.imageURL}" alt="Picture of ${member.name}">
-            <p>Membership Level: ${member.membershipLevel}</p>
-        `;
+        <img src="${member.imageURL}" alt="Picture of ${member.name}">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <p>Membership Level: ${member.membershipLevel}</p>
+        <a href="${member.websiteURL}" target="_blank" class="card-button">Visit Website</a>
+
+    `;
         section.innerHTML = sectionHTML;
         display.appendChild(section);
     });

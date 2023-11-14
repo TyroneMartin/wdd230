@@ -35,7 +35,7 @@
     <!--scripts-->
     <script src="./scripts/hamburgermenu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-    <script src="./script/getdates.js" defer></script>
+    <!-- <script src="./script/getdates.js" defer></script> -->
     <script src="./scripts/directory.js" defer></script>
 
 
@@ -61,22 +61,17 @@
         </ul>
     </nav>
     <div><button id="dark-mode">DARK</button></div>
-
-    <main id="directory-Main">
-        <h1>Business directory</h1>
-        <div class="menu">
-            <button id="grid">⏹️ Grid</button>
-            <button id="list">📄 List</button>
+    <main class="directory-main">
+        <div id='directory-selector'>
+            <button id="directory-grid" class="active">GRID</button>
+            <button id="directory-list">LIST</button>
         </div>
-        <hr>
-
-        <div class="cards">
-            <!-- The member cards will be displayed here -->
+        <div id='directory-data'>
+            <div class="directory-cards grid"></div>
+            <div class="directory-list list"></div>
         </div>
-
     </main>
-
-
+    
     <footer>
         <div id="footer-image-container">
             <a href="../chamber/index.html"><img class="footer-logo" src="./images/logo-footer.webp"

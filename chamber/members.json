@@ -2,7 +2,9 @@
     "members": [
         {
             "name": "VistaPrint Jamaica",
-            "address": "1 Megabyte Drive, 1 Barnett St, Montego Bay, Jamaica",
+            "address1": "1 Megabyte Drive",
+            "address2": "Barnett St",
+            "address3": "Montego Bay, Jamaica",
             "phone": "1 876-953-6737",
             "websiteURL": "https://vista.com/",
             "imageURL": "./images/vistaprint.webp",
