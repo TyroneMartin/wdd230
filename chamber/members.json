@@ -88,6 +88,15 @@
             "websiteURL": "https://www.hilton.com/en/hotels/mbjrhhf-hilton-rose-hall-resort-and-spa/",
             "imageURL": "./images/hilton.webp",
             "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Hotel Riu",
+            "address": "Mahoe Bay. Rose Hall Ironshore P.O, Montego Bay, Jamaica",
+            "phone": " 876-940-8010",
+            "websiteURL": "https://www.riu.com/en/hotel/jamaica/montego-bay/hotel-riu-montego-bay/",
+            "imageURL": "./images/riu.webp",
+            "membershipLevel": "Gold"
         }
+
     ]
 }
