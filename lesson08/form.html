@@ -18,21 +18,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!--stylesheet/s and Favion image-->
-    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/medium.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="stylesheet" href="../lesson08/styles/form.css">
 
-    <link rel="icon" href="/favicon.ico.png" type="image/png">
+
+    <link rel="icon" href="../favicon.ico.png" type="image/png">
     <title>Tyrone Martin - WDD 230 - Web Frontend Development</title>
 
     <!-- script -->
-    <script src="./script/getdates.js" defer></script>
-    <script src="./script/hamburger-menu.js" defer></script>
-    <script src="./script/site-visit.js" defer></script>
+    <script src="../script/getdates.js" defer></script>
+    <script src="../script/hamburger-menu.js" defer></script>
+    <script src="../script/site-visit.js" defer></script>
+    <script src="../scripts/form.js" defer></script>
+
 
 </head>
 
 <body>
     <header>
-        <img class="portalImage" src="./image/myportfolio_photo.webp" alt="Tyrone Martin portfolio picture">
+        <img class="portalImage" src="../image/myportfolio_photo.webp" alt="Tyrone Martin portfolio picture">
         <h1>Tyrone J. Martin</h1>
         <nav>
             <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
@@ -50,36 +56,28 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <fieldset>
-            <p><span></span></p>
-            <form>
-                <label>Username: <input id="username" name "username" type="text" required></label>,
-                <lable>Password: <input id="password" name="password" type="password" pattern="[\w]{8,}" required>
-                </lable>
-                <lable>Comfirm: <input id="confirm" name="confirm" type="password" required></lable>
-                <lable>E-mail: <input id="email" name="email" pattern="[\w\.]+@byui\.edu$" email" required
-                        title="Please enter a valid email address" placeholder="email"></lable>
-                <lable>Page Rating: <span id="currentrating">1</span><input id="rating" name="rating" type="range" min="1" max="10" step="1"
-                        list="slidervalues"></lable>
-                <datalist id="slidervalues" <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <button>GO AND DO!!</button>
+    <main id="form-main">
+        <form action="./record.html" method="GET">
+            <span id="message"></span>
+            <fieldset>
+                <label>Username:
+                    <input id="username" name="username" type="text" required /></label>
+                <label>Password: <input id="password" name="password" type="password" required></label>
+                <label>Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
+                <label>Email:
+                    <input id="email" name="email" type="email" required pattern="[\w\.]+@byui\.edu$"
+                        title="Please enter a valid email address" placeholder="Eg. john12345@byui.edu" /></label>
+                <label>
+                    Page Rating:
+                    <input id="rating" name="rating" type="range" min="1" max="10" step="1" value="1"
+                        oninput="updateRating(this.value)" />
+                    <span id="currentRating">1</span>
 
-            </form>
-        </fieldset>
+                </label>
 
-
-
-
+                <input class="mysubmit" type="submit" value="Learn More!">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>
