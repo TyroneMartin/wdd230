@@ -2,7 +2,7 @@ const LAT = "43.830043";
 const LON = "-111.8293824";
 const 1daaa26c0e994a2e7ac8523b60a91f1b = "1daaa26c0e994a2e7ac8523b60a91f1b";  // This is a free key, will be made public 
 // Choose either Option 1 or Option 2, not both
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${43.830043}&lon=${-111.8293824}&appid=${1daaa26c0e994a2e7ac8523b60a91f1b}&units=imperial`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=43.830043&lon=-111.8293824&appid=1daaa26c0e994a2e7ac8523b60a91f1b&units=imperial`;
 // const apiURL = "../lesson10/scripts/weather.json";
 
 function displayWeather(weatherData) {
