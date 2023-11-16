@@ -7,7 +7,7 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=43.830043&lo
 
 function displayWeather(weatherData) {
   // You can use @2x or @4x to make the icon bigger, or omit it for the standard size
-  const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`
+  const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`
   // const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`
   const desc = weatherData.weather[0].description;
   const windSpeed = weatherData.wind.speed.toFixed(0);
