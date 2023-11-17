@@ -32,19 +32,15 @@ header {
     top: 1rem;
     right: 2rem;
     background-color: var(--background-color);
-
 }
 
 * {
     box-sizing: border-box;
 }
 
-
-
 /* html {
    --- refer to root element/ this was updated to root---
     background-color: #ffffff;
-
 } */
 
 main {
@@ -52,7 +48,6 @@ main {
     grid-template-columns: 1fr;
     /* margin: 40px 5px 0 5px; */
 }
-
 
 header {
     display: flex;
@@ -515,6 +510,16 @@ label.myinput textarea {
     width: 20rem;
     max-width: 20rem;
 }
+
+#password .input{
+    display: block;
+    font-size: 1.2rem;
+    padding: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+}
+
+
 
 label.myradio {
     display: block;

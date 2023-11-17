@@ -37,6 +37,7 @@
     <script src="./scripts/darkmode.js" defer></script>
     <script src="./script/getdates.js" defer></script>
     <script src="./scripts/join.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
 
     <title>Chamber of Commerce and Join</title>
     <!-- This is the link to the assignment instructions used in WDD230: https://byui-cse.github.io/wdd230-course/ -->
@@ -69,8 +70,12 @@
                     <label class="myinput">Last Name*<input type="text" name="lname" required></label>
                     <label class="myinput">Title or Position<input type="text" name="title"
                             pattern="[A-Za-z\s\-]{7,}"></label>
+                                  <label class="myinput">Title or Position<input type="text" name="title"
+                            pattern="[A-Za-z\s\-]{7,}"></label>
                     <label class="myinput">Email*<input type="email" name="email" required
-                            placeholder="example@mymail.com"></label>
+                            placeholder="Eg. john12345@byui.edu" pattern="[\w\.]+@byui\.edu$"></label>
+                <label  class="myinput">Password: <input id="password" name="password" type="password" required></label>
+                            <label  class="myinput">Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
                     <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
                     <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
                     <h3>Membership Level</h3>
@@ -83,22 +88,23 @@
                     <label><input id="timestamp" type="hidden" name="timestamp" value=""></label>
                     <h3>Site Rating</h3>
 
-                    <label class="ratingInput">Page Rating: <span id="currentrating">1</span><input id="rating" name="rating"
-                                    type="range" min="1" max="10" step="1" list="slidervalues"></label>
-                    <datalist id="slidervalues"><option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>  
-                    </datalist>                         
+                    <label class="ratingInput">Page Rating: <span id="currentrating">1</span><input id="rating"
+                            name="rating" type="range" min="1" max="10" step="1" list="slidervalues"></label>
+                    <datalist id="slidervalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
                     <button type="submit" class="mysubmit">Join the Chamber!</button>
 
-                </form>              
+                </form>
             </div>
             <div>
                 <h2>Membership Levels Benefits</h2>
