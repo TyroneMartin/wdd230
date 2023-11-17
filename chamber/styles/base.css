@@ -87,22 +87,33 @@ header {
 
 .hero-content button {
     position: absolute;
-    /* top: 230px; */
-    top: 20px;
+    top: 200px;
     left: 200px;
-    /* background-color: #eaef94d5; */
-    background-color: #5d5e57d5;
-
-    /* height: 50px; */
-    font-size: 15px;
-
-
+    background-color:#17584666;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5%;
 }
 
 .callout-time {
-    font-size: 15px;
+    font-size: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #333333c0;
+    text-align: center;
+}
+
+#weather-desc {
+    font-size: 25px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#weather-temp {
+    font-size: 15px;
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
 }
 
 #homepage-phrase-Container {
@@ -476,7 +487,7 @@ h2 {
 }
 
 main#join-main {
-    display:inherit;
+    display: inherit;
     max-width: 1200px;
     /* margin: 0 auto;   */
 }
@@ -545,7 +556,7 @@ input:invalid {
 #thankyou-main h1,
 #thankyou-main p {
     text-align: center;
-    margin: 1px 0 0 0; 
+    margin: 1px 0 0 0;
     padding: 1rem 0;
 }
 
@@ -559,7 +570,8 @@ input:invalid {
 
 #slidervalues {
     display: flex;
-    width: 30rem;;
+    width: 30rem;
+    ;
     margin: 0 0 0 8px;
 
 }
@@ -569,11 +581,11 @@ option {
 }
 
 #rating {
-    display:block;
+    display: block;
     padding: .5rem;
     font-size: 1.1rem;
     width: 30rem;
-} 
+}
 
 label {
     display: block;
@@ -581,54 +593,74 @@ label {
 
 }
 
-/* Directory page CSS */ 
 
-.directory-main{
-display: inherit;
+#meetgreetContainer {
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(245, 245, 220, 0.455); */
+    display: none;
+}
+
+#meetgreet {
+    margin-left: 100px;
+}
+
+#meetgreetContainer h3 {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+
+}
+
+/* Directory page CSS */
+
+.directory-main {
+    display: inherit;
     width: 100%;
 }
 
-.directory-main img{
+.directory-main img {
     width: 100%;
-    
+
 }
 
-#directory-selector{
+#directory-selector {
     width: 100%;
     text-align: center;
 }
 
-#directory-selector button{
+#directory-selector button {
     padding: 1rem;
     margin: .5rem;
     border-radius: 5px;
     background-color: var(--body-bg-color);
-    border: 1px black solid; 
-} 
+    border: 1px black solid;
+}
 
-#directory-selector button.active{
+#directory-selector button.active {
     background-color: var(--hover-background-color);
 }
 
 /* Cards view */
 
-.directory-cards{
+.directory-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
 
 }
 
-.directory-cards section{
-    text-align: center;    
-    border: 2px solid grey;    
+.directory-cards section {
+    text-align: center;
+    border: 2px solid grey;
     width: 300px;
     background-color: var(--menu-bg-color);
     padding: 1rem;
     margin: .5rem;
 }
 
-.directory-cards section{
+.directory-cards section {
     box-shadow: .5rem .5rem .5rem var(--hover-background-color);
 }
 
@@ -637,7 +669,7 @@ display: inherit;
     box-shadow: .5rem .5rem .5rem gold;
 } */
 
-.directory-cards .card-button{
+.directory-cards .card-button {
     text-decoration: none;
     color: black;
     background-color: var(--hover-background-color);
@@ -648,18 +680,18 @@ display: inherit;
 
 /* List View */
 
-.directory-list{    
-    display: grid;    
-    justify-items: center;   
-    padding: 1rem;    
+.directory-list {
+    display: grid;
+    justify-items: center;
+    padding: 1rem;
 }
 
-.directory-list section img{
+.directory-list section img {
     display: none;
 }
 
 a.card-button {
-padding: 1.5rem;
+    padding: 1.5rem;
 }
 
 .directory-list section {
@@ -670,9 +702,9 @@ padding: 1.5rem;
     padding-right: 1rem;
 }
 
-.directory-list .card-button{
+.directory-list .card-button {
     text-decoration: underline;
-    color: black;    
+    color: black;
 }
 
 
@@ -685,4 +717,3 @@ padding: 1.5rem;
     /* background-color: var(--hover-background-color) */
     background-color: rgba(68, 95, 68, 0.548)
 }
-
