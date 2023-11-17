@@ -71,12 +71,12 @@
                     <label class="myinput">Last Name*<input type="text" name="lname" required></label>
                     <label class="myinput">Title or Position<input type="text" name="title"
                             pattern="[A-Za-z\s\-]{7,}"></label>
+                                  <label class="myinput">Title or Position<input type="text" name="title"
+                            pattern="[A-Za-z\s\-]{7,}"></label>
                     <label class="myinput">Email*<input type="email" name="email" required
                             placeholder="Eg. john12345@byui.edu" pattern="[\w\.]+@byui\.edu$"></label>
-                            <label class="myinput">Password: <input id="password" name="password" type="password" required></label>
-                            <label class="myinput">Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
-                            <span id="password-message" style="color: red;"></span>
-                    <span id="password-message" style="color: red;"></span>
+                <label  class="myinput">Password: <input id="password" name="password" type="password" required></label>
+                            <label  class="myinput">Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
                     <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
                     <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
                     <h3>Membership Level</h3>
@@ -89,7 +89,8 @@
                     <label><input id="timestamp" type="hidden" name="timestamp" value=""></label>
                     <h3>Site Rating</h3>
 
-                    <label class="ratingInput">Page Rating: <span id="currentrating">1</span><input id="rating" name="rating" type="range" min="1" max="10" step="1" list="slidervalues"></label>
+                    <label class="ratingInput">Page Rating: <span id="currentrating">1</span><input id="rating"
+                            name="rating" type="range" min="1" max="10" step="1" list="slidervalues"></label>
                     <datalist id="slidervalues">
                         <option value="1">1</option>
                         <option value="2">2</option>
