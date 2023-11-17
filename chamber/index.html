@@ -37,6 +37,7 @@
     <script src="./scripts/darkmode.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
     <script src="./scripts/date2.js" defer></script>
+    <script src="./script/meet-greet.js" defer></script>
     <title>The Chamber of Commerce for Montego Bay</title>
     <!-- This is the link to the assignment instructions used in WDD230 https://byui-cse.github.io/wdd230-course/ -->
 </head>
@@ -45,9 +46,11 @@
     <header>
         <a href="../chamber/index.html"><img class="logo2" id="logoImage" src="../chamber/images/logo2.webp"
                 alt="Jamaican national bird is use as the Chamber of Commerce logo"></a>
-
         <h1>The Chamber of Commerce for Montego Bay, Jamaica</h1>
     </header>
+    <div id="meetgreetContainer">
+       <h3>Join us for a meet and greet Wednesday night at 7:00 P.M. <span id="meetgreet">❌</span></h3> 
+    </div>
     <nav>
         <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
 
@@ -79,7 +82,7 @@
                     alt="A photo showing three Business personnels sitting around a large desk, communicating with a lablop in the foreground"
                     class="hero_image">
             </picture>
-            <h2 class = "callout-time">Montego Bay, Jamaica |  Time: <span id="currentTime"></span></h2>
+            <h2 class="callout-time">Montego Bay, Jamaica | Time: <span id="currentTime"></span></h2>
         </div>
         <!-- <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
             alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel."> -->
@@ -117,7 +120,7 @@
         <section class="card card-padding" id="event">
             <h3 class="bold">Event: Montego Bay Music Festival</h3>
             <hr>
-            <p class = "cent-paragraph">
+            <p class="cent-paragraph">
                 Join us for the annual Montego Bay Music Festival, a three-day
                 extravaganza celebrating the rhythm and soul of Jamaica!
             </p>
@@ -126,7 +129,7 @@
                 showcase a diverse range of musical genres, from reggae and dancehall
                 to jazz and world music.
             </p>
-            <p>Date: December 15th - 17th, <span id ="currentYear1"></span></p>
+            <p>Date: December 15th - 17th, <span id="currentYear1"></span></p>
             <p>Location: Montego Bay Harmony Beach Park</p>
         </section>
 
@@ -141,16 +144,16 @@
                 materials shines through in every item she creates. Explore the
                 collection and take home a piece of Jamaica's natural beauty with you.
             </p>
-    
+
         </section>
-    <div id = "lisa-ann-image-Container">
-         <!-- This is S2 -->
-        <picture >
-            <img class="lisa-ann-image" src="./images/lisa-ann_campbell.webp"
-                alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries"
-                loading="lazy" width="600">
-        </picture>
-    </div>
+        <div id="lisa-ann-image-Container">
+            <!-- This is S2 -->
+            <picture>
+                <img class="lisa-ann-image" src="./images/lisa-ann_campbell.webp"
+                    alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries"
+                    loading="lazy" width="600">
+            </picture>
+        </div>
 
         <!-- <h3 class="member-title">Member Spotlights</h3> -->
         <section class="card card-padding" id="s3">
@@ -166,8 +169,8 @@
                 Culinary Delights.
             </p>
             <picture>
-                <img src="./images/restaurante-restaurant.webp"
-                    alt="Restaurant in Jamaica displaying a culinary genius" loading="lazy" width="600" class="Chef-image">
+                <img src="./images/restaurante-restaurant.webp" alt="Restaurant in Jamaica displaying a culinary genius"
+                    loading="lazy" width="600" class="Chef-image">
             </picture>
         </section>
 
@@ -183,15 +186,14 @@
                 passionate about preserving the island's natural beauty. Join
                 Eco-Adventures Jamaica for an eco-conscious journey through paradise.
             </p>
-    
+
         </section>
         <div id="homepage-phrase-Container">
             <h3 class="homepage-phrase-h3">Live. Work. Do Business</h3>
         </div>
         <div id="s5">
             <picture>
-                <img src="./images/jamaica_map.webp" alt="Jamaica map" loading="lazy"
-                    width="20">
+                <img src="./images/jamaica_map.webp" alt="Jamaica map" loading="lazy" width="20">
             </picture>
         </div>
 
