@@ -1,79 +1,39 @@
-input{
-    display:block;
-    padding: 0.5rem;
-    font-size: 1.1rem;
-    width:30rem;
-}
-label{
-    display :block;
-    margin: 0.5em;
-    text-align: left;
+:root {
+    --input-padding: 0.5rem;
+    --input-font-size: 1.1rem;
+    --input-width: 30rem;
+
+    --label-margin: 0.5em;
+    --label-font-size: 20px;
+    --label-color: white;
+
+    --box-shadow-valid: 3px 3px 3px black;
 }
 
-#slidervalues{
-    display: flex;
-    width:31rem;
-    margin: 0 0 0 8px;
-}
-#slidervalues options{
-    flex:1;
-}
-button{font-size:1.5rem;
-    color: rgb(7, 7, 7);
-    padding: .5rem;
-    margin: 1rem 0;
-}
-input:valid{
-    box-shadow: 3px 3px 3px black;
-}
-input:invalid{
-    box-shadow: 3px 3px 3px rgb(9, 9, 9);
-}
-
-fieldset {
-    background-color: rgba(22, 22, 72, 0.478);
-}
-
-/* .tell-us-about-you {
-    width: auto;
-    height: 200px;
-margin-top: 50px;  
-margin-left: 100px; 
-} */
-
-.mysubmit{
-/* background-color:rgba(0, 128, 0, 0.763)0, 145, 90); */
-width: 20rem;
-}
-#message{
-    margin-top: 25px;
-    background-color: rgba(0, 0, 0, 0.815);
-    color: white;
-    padding: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+input {
     display: block;
+    padding: var(--input-padding);
+    font-size: var(--input-font-size);
+    width: var(--input-width);
 }
 
-#record-main h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 50px;
-}
-
-#form-main label {
-    font-size: 20px; 
-    color: white;
+label {
+    display: block;
+    margin: var(--label-margin);
+    font-size: var(--label-font-size);
+    color: var(--label-color);
 }
 
 textarea {
     display: block;
-    padding: 0.5rem;
-    font-size: 1.1rem;
-    width: 30rem;
-    margin: 0.5em;
+    padding: var(--input-padding);
+    font-size: var(--input-font-size);
+    width: var(--input-width);
+    margin: var(--label-margin);
 }
 
 textarea:valid {
-    box-shadow: 3px 3px 3px black;
+    box-shadow: var(--box-shadow-valid);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -84,23 +44,18 @@ textarea:valid {
 }
 
 form {
-    text-align: left; /* Reset the text alignment for form content */
-    max-width: 600px; /* Set a maximum width for the form */
+    text-align: left;
+    max-width: 600px;
     width: 100%;
-    padding: 20px; /* Add padding to the form */
+    padding: 20px;
 }
 
-/* Add a media query for smaller screens */
 @media screen and (max-width: 600px) {
     form {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px;
     }
 
     #form-main label {
-        font-size: 20px; 
+        font-size: var(--label-font-size);
     }
 }
-
-
-
-
