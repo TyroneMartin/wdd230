@@ -10,6 +10,19 @@
     --box-shadow-valid: 3px 3px 3px black;
 }
 
+fieldset {
+    background-color: rgba(22, 22, 72, 0.478);
+}
+
+#message{
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+}
+
 input {
     display: block;
     padding: var(--input-padding);
