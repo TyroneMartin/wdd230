@@ -573,6 +573,11 @@ input:invalid {
     display: inherit;
 }
 
+/* main #record-main {
+    text-align: center;
+    text-decoration: none;
+} */
+
 #slidervalues {
     display: flex;
     width: 30rem;

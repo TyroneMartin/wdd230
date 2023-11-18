@@ -19,7 +19,7 @@ label{
     flex:1;
 }
 button{font-size:1.5rem;
-    color: white;
+    color: rgb(7, 7, 7);
     padding: .5rem;
     margin: 1rem 0;
 }
@@ -30,16 +30,27 @@ input:invalid{
     box-shadow: 3px 3px 3px rgb(9, 9, 9);
 }
 
-.mysubmit{
-background-color: white;
-width:20rem;
+fieldset {
+    background-color: rgba(22, 22, 72, 0.478);
+}
 
+/* .tell-us-about-you {
+    width: auto;
+    height: 200px;
+margin-top: 50px;  
+margin-left: 100px; 
+} */
+
+.mysubmit{
+/* background-color:rgba(0, 128, 0, 0.763)0, 145, 90); */
+width: 20rem;
 }
 #message{
     margin-top: 25px;
-    background-color: rgb(76, 76, 138);
-    color: red;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
     padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
     display: block;
 }
 
@@ -47,6 +58,49 @@ width:20rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 50px;
 }
+
+#form-main label {
+    font-size: 20px; 
+    color: white;
+}
+
+textarea {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 30rem;
+    margin: 0.5em;
+}
+
+textarea:valid {
+    box-shadow: 3px 3px 3px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    text-align: left; /* Reset the text alignment for form content */
+    max-width: 600px; /* Set a maximum width for the form */
+    width: 100%;
+    padding: 20px; /* Add padding to the form */
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    #form-main label {
+        font-size: 20px; 
+    }
+}
+
 
 
 
