@@ -5,13 +5,21 @@
     --hover-background-color: rgb(102, 167, 102);
     --hover-color: black;
     --header-background-color: rgba(245, 245, 220);
+    --menu-bg-color: #ffffff; 
+
     /* Updated to the specified background color */
 }
 
-/* alt text is too large in view port, should image be broken */
+
+/* sticky nav bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Set a higher z-index to ensure it appears above other elements */
+  }
 
 img#logoImage {
-    font-size: 10px;
+    height: 150px;
 }
 
 #s3 img {
@@ -79,26 +87,18 @@ header {
     top: 100px;
     left: 200px;
 }
-
-.hero-content button {
-    position: absolute;
-    top: 200px;
-    left: 200px;
-    background-color:#17584666;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 5%;
-}
-
 .callout-time {
     font-size: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #333333c0;
+    color: whitesmoke;
     text-align: center;
+    background-color: #175846;
+margin-top: -1%;
+padding: 15px;
 }
 
 #weather-desc {
-    font-size: 25px;
+    font-size: 2rem;
     color: white;
     text-transform: capitalize;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -202,8 +202,9 @@ p {
     font-family: times New Roman, Arial, sans-serif;
 }
 
-.logo2 {
-    height: 100px;
+.logo2 img{
+    height: 20%;
+    width: auto;
 
 }
 
@@ -234,21 +235,87 @@ nav ul:last-child {
     display: flex;
     justify-content: space-evenly;
     margin-top: 0;
-    background-color: #1758466d;
+    /* background-color: #1758466d; */
+    background-color: #175846c4;
     border: #333333 solid 3px;
     /* border-radius: 2rem; */
     justify-self: center;
     /*  use to center item*/
-    /* padding: 20px; */
+    padding: 5px;
     margin-bottom: 0px;
     padding-top: 0px;
+    /* flex-direction: column; */
     text-align: center;
     align-items: center;
     border-left: #175846 solid 3px;
 }
 
+#weather-temp {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.9rem;
+    color: rgba(245, 245, 245, 0.732);
+    text-transform:unset;
+    text-decoration:wavy;
+}
+
+div.temperatureHolder h1 {
+    width: 100%;
+    font-size: 2rem;
+    color: rgb(139, 81, 81);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+div.temperatureHolder p {
+font-family: 'Times New Roman', Times, serif;
+font-size: 1rem;
+color: #000000;
+}
+
+div.temperatureHolder h2 {
+    text-decoration-line: underline;
+    font-size: 1.2rem;
+
+}
+
+div.temperatureHolder img {
+    height: 5%;
+    width: auto;
+
+}
+
+button.homePage {
+    font-size: 1.5rem;
+    color: rgb(7, 7, 7);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.hero-content button {
+    position: absolute;
+    background-color:#6b968a66;
+    height: 50px;
+    font-size: 20px;
+    /* border-radius: 5%; */
+top: 0;
+    margin: 1rem 0;
+    bottom: 10px;
+    right: 100px; /* Adjust the distance from the right */
+    z-index: 1; /* Set a higher z-index to ensure it appears above other elements */
+}
+
+
+button.homePage:hover {
+    background-color: rgba(0, 128, 0, 0.763);
+}
+
+div.temperatureHolder  {
+    display: flex;
+    justify-content: space-around;
+}
+
 .Chef-image {
-    border-radius: 2rem;
+    border-radius: 3rem;
     padding-top: 31px;
 
 }
@@ -632,7 +699,7 @@ label {
 
 .directory-main img {
     width: 100%;
-
+    height: auto;
 }
 
 #directory-selector {
@@ -646,6 +713,20 @@ label {
     border-radius: 5px;
     background-color: var(--body-bg-color);
     border: 1px black solid;
+}
+
+.directory-cards section h3 {
+    font-weight: bolder;
+    color: #000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.directory-cards section p {
+    font-size: 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+
 }
 
 #directory-selector button.active {
@@ -701,7 +782,8 @@ label {
 }
 
 a.card-button {
-    padding: 1.5rem;
+    padding: 2rem;
+    font-weight: bold;
 }
 
 .directory-list section {

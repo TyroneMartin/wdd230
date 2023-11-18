@@ -29,7 +29,7 @@ listButton.addEventListener("click", () => {
     gridButton.classList.remove("active");
 });
 
-const url = 'https://tyronemartin.github.io/wdd230/chamber/members.json';
+const url = 'https://tyronemartin.github.io/wdd230/chamber/data/members.json';
 
 async function getMemberData() {
     const response = await fetch(url);
