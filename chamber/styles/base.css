@@ -10,14 +10,6 @@
     /* Updated to the specified background color */
 }
 
-
-/* sticky nav bar */
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100; /* Set a higher z-index to ensure it appears above other elements */
-  }
-
 img#logoImage {
     height: 150px;
 }
@@ -25,6 +17,13 @@ img#logoImage {
 #s3 img {
     width: 100%;
 }
+
+/* sticky nav bar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Set a higher z-index to ensure it appears above other elements */
+  }
 
 /* ---------------------------- */
 
@@ -357,6 +356,12 @@ div#homepage-phrase-Container {
     transition: transform 0.8s, box-shadow 0.9s;
 }
 
+.Jazz-Image { 
+    width: 100%;
+    border-radius: 5rem;
+    /* cursor: pointer; */
+    transition: transform 0.8s, box-shadow 0.9s; 
+}
 
 
 .homepage-phrase-h3 {

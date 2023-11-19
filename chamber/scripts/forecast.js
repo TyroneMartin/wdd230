@@ -1,54 +1,47 @@
-const LAT = 43.887093;
-const LON = -111.6682194;
-const APIKEY = "1daaa26c0e994a2e7ac8523b60a91f1b";
-const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
+document.addEventListener("DOMContentLoaded", function () {
+    const ONE_DAY = 24 * 60 * 60 * 1000;
 
-const ONE_DAY = 24 * 60 * 60 * 1000
-
-function showForecast(forecasts){
-    // Get dates for next three days
-    console.log(forecasts);
-    let dates = []
-    let mydate = new Date();
-    for (let i=0; i < 3; i++){
-        mydate = new Date(mydate.getTime() + ONE_DAY)
-        nextdate = mydate.toISOString().slice(0, 10)
-        dates.push(nextdate)
+    async function fetchForecast() {
+        const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=18.471119&lon=-77.987184&appid=1daaa26c0e994a2e7ac8523b60a91f1b&units=imperial`;
+        try {
+            const response = await fetch(weatherURL);
+            if (response.ok) {
+                const data = await response.json();
+                showForecast(data.list);
+            } else {
+                throw Error(await response.text());
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
-    console.log(dates)
-    // Find the object with the highest temperature for each day
-    highTemps = dates.map((date) => forecasts
-        .filter(x => x.dt_txt.startsWith(date))
-        .reduce((prev, next) => prev.main.temp > next.main.temp ? prev : next)
-    )    
-    // Find the object with the lowest temperature for each day
-    lowTemps = dates.map((date) => forecasts
-        .filter(x => x.dt_txt.startsWith(date))
-        .reduce((prev, next) => prev.main.temp < next.main.temp ? prev : next)        
-    )    
-    console.log(highTemps)
-    console.log(lowTemps)
-    // Add the forecast information to the HTML document
-    weatherElt = document.querySelector("body section")
-    for (let i=0; i < 3; i++){
-        let newsection = document.createElement("section");
-        newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`
-        weatherElt.append(newsection)
-    }    
-}
 
-async function fetchForecast() {
-    try {
-      const response = await fetch(weatherURL);
-      if (response.ok) {
-        const data = await response.json();        
-        showForecast(data.list);
-      } else {
-        throw Error(await response.text());
-      }
-    } catch (error) {
-      console.log(error);
+    function showForecast(forecasts) {
+        let dates = [];
+        let mydate = new Date();
+
+        for (let i = 0; i < 3; i++) {
+            mydate = new Date(mydate.getTime() + ONE_DAY);
+            let nextdate = mydate.toISOString().slice(0, 10);
+            dates.push(nextdate);
+        }
+
+        const weatherSection = document.getElementById("weatherSection");
+
+        for (let i = 0; i < 3; i++) {
+            let newSection = document.createElement("section");
+            let iconCode = forecasts[i * 8].weather[0].icon; // Assuming the icon code is the same for all three times in a day
+            let iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+            
+            newSection.innerHTML = `
+                <h2>${dates[i]}</h2>
+                <img src="${iconUrl}" alt="Weather Icon">
+                <p>High: ${forecasts[i * 8].main.temp_max.toFixed(0)}&deg;</p>
+                <p>Low: ${forecasts[i * 8].main.temp_min.toFixed(0)}&deg;</p>
+            `;
+            weatherSection.appendChild(newSection);
+        }
     }
-  }
 
-fetchForecast()
+    fetchForecast();
+});
