@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const darkmodeButton = document.getElementById('dark-mode');
+    const darkmode = document.getElementById('dark-mode');
     const bodyElement = document.body;
     const header = document.querySelector('header');
     const nav = document.querySelector('nav');
@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const box = document.querySelector('.box');
     const logoImage = document.getElementById('logoImage');
     const weatherSection = document.getElementById('weatherSection');
+    const meetgreetContainer = document.getElementById('meetgreetContainer');
 
     // Add a class to the body to identify the current mode
     const darkModeClass = 'dark-mode';
@@ -18,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('mouseover', () => {
             if (bodyElement.classList.contains(darkModeClass)) {
                 // Dark mode hover effect
-                button.style.backgroundColor = 'green'; // Set dark mode hover color
+                button.style.backgroundColor = 'rgb(102, 167, 50)'; // Set dark mode hover color
             } else {
                 // Light mode hover effect
-                button.style.backgroundColor = 'rgb(102, 167, 102)'; // Set light mode hover color
+                button.style.backgroundColor = 'darkgreen'; // Set light mode hover color
             }
         });
 
@@ -31,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    darkmodeButton.addEventListener('click', () => {
-        if (darkmodeButton.textContent === 'DARK') {
+    darkmode.addEventListener('click', () => {
+        if (darkmode.textContent === 'DARK') {
             // Apply dark mode styles
             document.documentElement.style.setProperty('--text-color', 'white');
             document.documentElement.style.setProperty('--background-color', 'black');
@@ -59,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             weatherSection.style.color = 'white'; // Set the text color to white for dark mode
+            meetgreetContainer.style.color = 'white';
+            meetgreetContainer.style.backgroundColor = 'black';
 
             const h2Elements = weatherSection.querySelectorAll('h2');
             h2Elements.forEach(h2 => {
@@ -71,6 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             logoImage.src = "../chamber/images/logo-header2.webp";
+
+            // Apply hover styles for buttons in dark mode
+            buttons.forEach(button => {
+                button.style.backgroundColor = 'rgb(102, 167, 50)'; // Set dark mode hover color
+            });
         } else {
             // Apply light mode styles
             document.documentElement.style.setProperty('--text-color', 'black');
@@ -85,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nav.style.backgroundColor = '#175846';
             box.style.backgroundColor = '#175846c4';
             calloutTime.style.backgroundColor = '#175846';
+            meetgreetContainer.style.color = 'black';
 
             const cards = document.querySelectorAll('.card');
             cards.forEach(card => {
@@ -110,51 +119,21 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             logoImage.src = "../chamber/images/logo2.webp";
+
+            // Apply hover styles for buttons in light mode
+            buttons.forEach(button => {
+                button.style.backgroundColor = 'darkgreen'; // Set light mode hover color
+            });
         }
 
-        // Toggle button text content and set the text color to white for 'LIGHT'
-        darkmodeButton.textContent = darkmodeButton.textContent === 'DARK' ? 'LIGHT' : 'DARK';
-        darkmodeButton.style.color = darkmodeButton.textContent === 'LIGHT' ? 'white' : 'black';
+        // Toggle button text content and set the text color for 'LIGHT'
+        darkmode.textContent = darkmode.textContent === 'DARK' ? 'LIGHT' : 'DARK';
+        darkmode.style.color = darkmode.textContent === 'LIGHT' ? 'white' : 'black';
     });
 
     // Taggle initialization
     const taggleInput = document.getElementById('taggleInput');
     const taggleInstance = new Taggle(taggleInput);
 
-    // Old code
-    const darkmode = document.querySelector('#dark-mode');
-    const bodyelt = document.querySelector('body');
-    const headerOld = document.querySelector('header');
-    const navOld = document.querySelector('nav');
-    const logoImageOld = document.getElementById('logoImage'); // Changed to getElementById
-
-    darkmode.addEventListener('click', () => {
-        if (darkmode.textContent === 'DARK') {
-            // Apply dark mode styles
-            document.documentElement.style.setProperty('--text-color', 'white');
-            document.documentElement.style.setProperty('--background-color', 'black');
-            document.documentElement.style.setProperty('--hover-background-color', '#442211');
-            document.documentElement.style.setProperty('--hover-color', '#dda15e');
-            bodyelt.style.backgroundColor = 'black'; // Set the background color of the body to black
-            bodyelt.classList.add('dark-mode');
-            document.documentElement.style.setProperty('--header-background-color', 'black');
-            headerOld.style.backgroundColor = 'var(--header-background-color)';
-            headerOld.querySelector('h1').style.color = 'white'; // Change the color of the h1 tag to white
-            navOld.style.backgroundColor = '#2c2c2c'; // Set to the specified background color
-            darkmode.textContent = 'LIGHT';
-            darkmode.style.color = 'white'; // Change the text color to white
-
-            // Change the background color of all elements with class 'card' to 'rgb(44, 44, 44)'
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                card.style.backgroundColor = 'rgb(44, 44, 44)';
-                card.style.color = 'white'; // Set the text color to white
-            });
-
-            // Change image source for dark mode
-            logoImageOld.src = "../chamber/images/logo-header2.webp";
-        } else {
-            // Apply light mode styles
-            document.documentElement.style.setProperty('--text-color', 'black');
-            document.documentElement.style.setProperty('--background-color', '#ffffff');
-            document.documentElement.style.setProperty('--hover-background-color', '#bc6c
+    // ... (any other code you may have)
+});

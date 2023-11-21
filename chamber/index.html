@@ -67,15 +67,6 @@
     <div><button type="button" id="dark-mode">DARK</button></div>
 
     <div class="hero-section">
-        <div class="hero-content">
-            <!-- <p>JAMAICA: MONTEGO BAY</p> -->
-            <!-- Adding link to the button on the onclick event -->
-            <button type="button" class="homePage card button"
-            
-            onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/chamber/join';">
-                Join the Chamber
-            </button>
-        </div>
 
         <div class="hero">
             <picture>
@@ -87,14 +78,24 @@
                     alt="A photo showing three Business personnels sitting around a large desk, communicating with a lablop in the foreground"
                     class="hero_image">
             </picture>
-            <h2 class="callout-time">Montego Bay, Jamaica | Time: <span id="currentTime"></span></h2>
-        </div>
+
+            <div class="button-Container">
+                <!-- Adding link to the button on the onclick event -->
+                <button type="button" class="homePage card button"
+                    onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/chamber/join';">
+                    Join the Chamber
+                </button>
+            </div>
+       </div>
+    </div>
+        <h2 class="callout-time">Montego Bay, Jamaica | Time: <span id="currentTime"></span></h2>
+
         <!-- <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
             alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel."> -->
-    </div>
+
 
     <main>
-        <div class="card" id="weather-Container"> 
+        <div class="card" id="weather-Container">
             <div class=" card2 box">
                 <!-- <img id="weathericon" src="../chamber/images/Weather-clear.svg" alt="Weather Icon"> -->
                 <p><img id="weather-icon" src="https://via.placeholder.com/50" alt="weather icon"></p>
@@ -165,13 +166,12 @@
             <!-- This is S2 -->
             <picture>
                 <img class="Jazz-Image" src="images/Jazz-and-Blues-fest.webp"
-                    alt="Jazz and Blues Image showing musical event"
-                    loading="lazy" width="600">
+                    alt="Jazz and Blues Image showing musical event" loading="lazy" width="600">
             </picture>
         </div>
 
         <!-- <h3 class="member-title">Member Spotlights</h3> -->
-        <section class="card-padding card3" id="s3"> 
+        <section class="card-padding card3" id="s3">
             <h3 class="homepage-h3-headings">Montego Bay Culinary Delights</h3>
             <hr>
             <p class="homepage-card-paragraph">
