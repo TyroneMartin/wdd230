@@ -2,7 +2,7 @@
 const year = new Date();
 const presentYear = year.getFullYear();
 document.getElementById("currentYear").textContent = presentYear;
-// document.getElementById("currentYear1").textContent = presentYear;
+document.getElementById("currentYear1").textContent = presentYear;
 document.getElementById("lastUpdated").textContent = document.lastModified;
 
 function updateTime() {
@@ -20,7 +20,7 @@ function updateTime() {
   const formattedTime = `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${amPM}`;
 
   // Update the time in the DOM
-  // document.getElementById("currentTime").textContent = formattedTime;
+  document.getElementById("currentTime").textContent = formattedTime;
 }
 
 // Update time initially
