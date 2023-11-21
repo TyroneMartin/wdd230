@@ -1,5 +1,5 @@
-const LAT = "18.471119";
-const LON = "-77.987184";
+const LAT = "43.830043";
+const LON = "-111.8293824";
 const APIKEY = "1daaa26c0e994a2e7ac8523b60a91f1b";  // This is a free key, will be made public 
 // Choose either Option 1 or Option 2, not both
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
