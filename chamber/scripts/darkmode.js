@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const weatherSection = document.getElementById('weatherSection');
     const meetgreetContainer = document.getElementById('meetgreetContainer');
 
+
     // Add a class to the body to identify the current mode
     const darkModeClass = 'dark-mode';
 
@@ -19,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('mouseover', () => {
             if (bodyElement.classList.contains(darkModeClass)) {
                 // Dark mode hover effect
-                button.style.backgroundColor = 'rgb(102, 167, 50)'; // Set dark mode hover color
+                button.style.backgroundColor = 'green'; // Set dark mode hover color
             } else {
                 // Light mode hover effect
-                button.style.backgroundColor = 'darkgreen'; // Set light mode hover color
+                button.style.backgroundColor = 'rgb(102, 167, 102)'; // Set light mode hover color
             }
         });
 
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             weatherSection.style.color = 'white'; // Set the text color to white for dark mode
             meetgreetContainer.style.color = 'white';
-            meetgreetContainer.style.backgroundColor = 'black';
+            meetgreetContainer.style,backgroundColor= 'black';
 
             const h2Elements = weatherSection.querySelectorAll('h2');
             h2Elements.forEach(h2 => {
@@ -74,11 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             logoImage.src = "../chamber/images/logo-header2.webp";
-
-            // Apply hover styles for buttons in dark mode
-            buttons.forEach(button => {
-                button.style.backgroundColor = 'rgb(102, 167, 50)'; // Set dark mode hover color
-            });
         } else {
             // Apply light mode styles
             document.documentElement.style.setProperty('--text-color', 'black');
@@ -94,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
             box.style.backgroundColor = '#175846c4';
             calloutTime.style.backgroundColor = '#175846';
             meetgreetContainer.style.color = 'black';
-
             const cards = document.querySelectorAll('.card');
             cards.forEach(card => {
                 card.style.backgroundColor = '';
@@ -119,14 +114,9 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             logoImage.src = "../chamber/images/logo2.webp";
-
-            // Apply hover styles for buttons in light mode
-            buttons.forEach(button => {
-                button.style.backgroundColor = 'darkgreen'; // Set light mode hover color
-            });
         }
 
-        // Toggle button text content and set the text color for 'LIGHT'
+        // Toggle button text content and set the text color to white for 'LIGHT'
         darkmode.textContent = darkmode.textContent === 'DARK' ? 'LIGHT' : 'DARK';
         darkmode.style.color = darkmode.textContent === 'LIGHT' ? 'white' : 'black';
     });
