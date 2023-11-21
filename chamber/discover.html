@@ -35,7 +35,6 @@
     <!--scripts-->
     <script src="./scripts/hamburgermenu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-    <script src="./scripts/windchill.js" defer></script>
     <script src="../script/getdates.js" defer></script>
     <script src="../chamber/scripts/discover.js" defer></script>
     <title>Chamber of Commerce and Discover</title>
@@ -46,9 +45,11 @@
     <header>
         <a href="../chamber/index.html"><img class="logo2" id="logoImage" src="../chamber/images/logo2.webp"
                 alt="Jamaican national bird is use as the Chamber of Commerce logo"></a>
-
         <h1>The Chamber of Commerce for Montego Bay, Jamaica</h1>
     </header>
+    <div id="meetgreetContainer">
+        <h3>Join us for a meet and greet Wednesday night at 7:00 P.M. <span id="meetgreet">❌</span></h3>
+    </div>
     <nav>
         <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
 
@@ -59,8 +60,7 @@
             <li><a href="./join.html" target="_blank">Join</a></li>
         </ul>
     </nav>
-    <div><button id="dark-mode">DARK</button></div>
-
+    <div><button type="button" id="dark-mode">DARK</button></div>
     <main class="discoverMain">
         <!--Nav Side bar start-->
         <aside class="sidebar">

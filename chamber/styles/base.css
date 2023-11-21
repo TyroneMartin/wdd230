@@ -2,7 +2,7 @@
 :root {
     --text-color: black;
     --background-color: #ffffff;
-    --hover-background-color: rgb(102, 167, 102);
+    /* --hover-background-color: rgb(77, 112, 77); */
     --hover-color: black;
     --header-background-color: rgba(245, 245, 220);
     --menu-bg-color: #ffffff; 
@@ -25,7 +25,7 @@ nav {
     z-index: 100; /* Set a higher z-index to ensure it appears above other elements */
   }
 
-/* ---------------------------- */
+/* --------------------------- */
 
 header {
     background-color: var(--header-background-color);
@@ -33,7 +33,8 @@ header {
     /* Applying the header color */
 }
 
-/* ---------------------------- */
+/* ------------------------ */
+
 #dark-mode {
     position: absolute;
     top: 1rem;
@@ -92,8 +93,8 @@ header {
     color: whitesmoke;
     text-align: center;
     background-color: #175846;
-margin-top: -1%;
-padding: 15px;
+    margin-top: -1%;
+    padding: 15px;
 }
 
 #weather-desc {
@@ -105,8 +106,8 @@ padding: 15px;
 
 #weather-temp {
     font-size: 15px;
-color: black;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
 }
 
@@ -213,7 +214,7 @@ nav ul:last-child {
 
 }
 
-.card {
+.card, .card2, card3{
     background-color: #EBEBEB;
     border: #333333 5px;
     border-radius: 2rem;
