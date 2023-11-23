@@ -10,6 +10,11 @@
   /* Updated to the specified background color */
 }
 
+button.homePage.card.button {
+bottom: 12px;
+
+}
+
 img#logoImage {
   height: 150px;
 }
