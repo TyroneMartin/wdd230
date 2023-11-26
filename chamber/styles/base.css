@@ -2,12 +2,15 @@
 :root {
   --text-color: black;
   --background-color: #ffffff;
-  /* --hover-background-color: rgb(77, 112, 77); */
+  --hover-background-color: rgb(77, 112, 77);
   --hover-color: black;
   --header-background-color: rgba(245, 245, 220);
   --menu-bg-color: #ffffff;
 
-  /* Updated to the specified background color */
+}
+
+.jamaica_map {
+  width: 100%;
 }
 
 button.homePage.card.button {
@@ -15,13 +18,81 @@ bottom: 12px;
 
 }
 
+
 img#logoImage {
   height: 150px;
 }
 
-#s3 img {
+#Palladium_Hotel-Image img {
   width: 100%;
+} 
+
+#Jazz-and-Blues img {
+  width: 100%;
+  width: auto;
+} 
+
+img.lisa-ann_campbell {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
 }
+
+div#companyInfoContainer h1 {
+  text-align: center;
+  text-decoration: solid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #333;
+  font-weight: 900;
+  margin: 20px 0;
+
+}
+
+#companyInfoContainer {
+  background-color: #175846a3;
+  border-radius: 20px;
+  padding: 20px; 
+  margin-bottom: 15px;
+}
+
+h6 {
+  color: #ffffff;
+}
+
+div#companyInfoContainer h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #010101b5; 
+}
+
+div#companyInfoContainer hr {
+  border: 1px solid #175846; 
+  margin: 0 auto;
+  width: 80%;
+height: 5px;
+background-color: #175846;
+margin-top: -21px;
+}
+
+div#companyInfoContainer p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000; 
+}
+
+div#companyInfoContainer h2,
+div#companyInfoContainer p {
+  margin: 20px; 
+}
+
+.pictureHomePage1,  .pictureHomePage2,  .pictureHomePage3{
+  width: 100%;
+  height: auto;
+
+ 
+}
+
 
 /* sticky nav bar */
 nav {
@@ -56,7 +127,35 @@ header {
     background-color: #ffffff;
 } */
 
-main {
+
+.collage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px;
+  height: auto;
+}
+
+
+
+#Jazz-and-Blues img {
+  width: 100%;
+}
+
+img.pictureHomePage2 {
+  width: 100%;
+}
+
+#weather-Container {
+  width: 100%;
+}
+
+html {
+display:flex;
+}
+
+.homePage-Main {
   display: grid;
   grid-template-columns: 1fr;
   /* margin: 40px 5px 0 5px; */
@@ -117,13 +216,6 @@ button.homePage.card.button {
   width: 100%;
 }
 
-#s6 img {
-  width: 100%;
-}
-
-#s5 img {
-  width: 100%;
-}
 
 .hero-section p {
   position: absolute;
@@ -160,7 +252,7 @@ nav {
   width: 100%;
   grid-column: 1/3;
   text-transform: uppercase;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 
 nav ul {
@@ -216,11 +308,10 @@ card3 {
   border: #333333 5px;
   border-radius: 2rem;
   /* justify-self: center; */
-  /*  use to center item*/
   /* padding: 20px; */
   margin: 0%;
   margin-bottom: 15px;
-  gap: 35px;
+  /* gap: 35px; */
 }
 
 /* This is to add padding to specificic elements */
@@ -288,7 +379,7 @@ button.homePage {
 
 .button-Container button {
   position: absolute;
-  background-color: #6b968a66;
+  background-color: #6b968af1;
   height: 50px;
   font-size: 20px;
   /* border-radius: 5%; */
@@ -298,6 +389,14 @@ button.homePage {
   bottom: 70px;
   right: 10px; /* Adjust the distance from the right */
   z-index: 1; /* Set a higher z-index to ensure it appears above other elements */
+}
+
+#homepage-phrase-Container {
+  width: 100%;
+}
+
+button#dark-mode:hover {
+  background-color: rgba(0, 128, 0, 0.201);
 }
 
 button.homePage:hover {
@@ -359,8 +458,18 @@ div#homepage-phrase-Container {
 
 .homepage-phrase-h3 {
   font-size: 60px;
-  color: red;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  border-bottom: solid #175846 ;
+  border-top: solid #175846;
+  color: brown;
+  width: 100%;
+  padding: 35px;
+
+}
+
+div#weatherSection {
+  padding: 20px
 }
 
 /* .bold  {
@@ -387,7 +496,7 @@ footer a {
 
 #footer-copy-right-name {
   /* font-variant-caps: all-small-caps; */
-  font-size: 15px;
+  /* font-size: 15px; */
   text-decoration: none;
   color: white;
   font-family: "Times New Roman", Times, serif;
@@ -425,8 +534,15 @@ footer p {
   align-items: normal;
 }
 
-.footer-logo {
+img.footer-logo {
   height: 150px;
+  width: auto;
+  /* padding: 50px; */
+}
+
+img#logoImage.logo2 {
+  height: 100px;
+  width: auto;
   /* padding: 50px; */
 }
 
@@ -541,6 +657,10 @@ main#join-main {
   /* margin: 0 auto;   */
 }
 
+/* #companyInfoContainer{
+  background: var(--text-color);
+} */
+
 .join > div {
   margin: 1rem;
   padding: 1rem;
@@ -625,26 +745,22 @@ input:invalid {
   display: inherit;
 }
 
-/* main #record-main {
-    text-align: center;
-    text-decoration: none;
-} */
-
 #slidervalues {
   display: flex;
   width: 30rem;
   margin: 0 0 0 8px;
 }
 
-option {
-  flex: 1;
-}
 
 #rating {
   display: block;
   padding: 0.5rem;
   font-size: 1.1rem;
   width: 30rem;
+}
+
+option {
+  flex: 1;
 }
 
 label {

@@ -35,11 +35,12 @@
     <!--scripts-->
     <script src="../scripts/hamburger-menu.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-    <!-- <script src="../scripts/windchill.js" defer></script> No longer using this script -->
+    <!-- <script src="../scripts/windchill.js" defer></script>  -->
     <script src="./scripts/dates.js" defer></script>
     <script src="./scripts/meet-greet.js" defer></script>
     <script src="./scripts/weather.js" defer></script>
     <script src="./scripts/forecast.js" defer></script>
+    <script src="./scripts/companyInfo.js" defer></script>
 
     <title>The Chamber of Commerce for Montego Bay</title>
     <!-- This is the link to the assignment instructions used in WDD230 https://byui-cse.github.io/wdd230-course/ -->
@@ -59,9 +60,9 @@
 
         <ul id="nav-menu">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./discover.html" >Discover</a></li>
-            <li><a href="./directory.html" >Directory</a></li>
-            <li><a href="./join.html" >Join</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
         </ul>
     </nav>
     <div><button type="button" id="dark-mode">DARK</button></div>
@@ -86,45 +87,40 @@
                     Join the Chamber
                 </button>
             </div>
-       </div>
+        </div>
     </div>
-        <h2 class="callout-time">Montego Bay, Jamaica | Time: <span id="currentTime"></span></h2>
+    <h2 class="callout-time">Montego Bay, Jamaica | Time: <span id="currentTime"></span></h2>
 
-        <!-- <img class="hero_image" src="../chamber/images/hero_image_of_montego-bay.jpg"
-            alt="Hero image of Montego Bay showing the waterfront of Palladium Hotel."> -->
-
-
-    <main>
+    <main class="homePage-Main">
         <div class="card" id="weather-Container">
             <div class=" card2 box">
-                <!-- <img id="weathericon" src="../chamber/images/Weather-clear.svg" alt="Weather Icon"> -->
                 <p><img id="weather-icon" src="https://via.placeholder.com/50" alt="weather icon"></p>
                 <div>
-                    <!-- <h3><span id="temperature">32</span>&deg;F</h3>
-                    <h3 id="weatherdesc">Clear</h3> -->
-                    <!-- <p><img id="weather-icon" src="https://via.placeholder.com/50" alt="weather icon"></p> -->
                     <p id="weather-desc"></p>
                     <p id="weather-temp"></p>
+
                 </div>
             </div>
             <div class="card-padding">
                 <div class="temperatureHolder">
-                    <!-- <div> 
-                         <h3>Wind Speed: </h3> 
-                         <p id="weather-temp"></p> 
-                         <p id="windspeed">10 mph</p> 
-                    </div>
-
-                     <div>
-                        <h3>Wind Chill: </h3>
-                        <p id="windchill">&deg;F</p>
-                    </div>  -->
                     <div id="weatherSection">
                         <h1>Forecast</h1>
                     </div>
                 </div>
-
             </div>
+        </div>
+
+        <!-- Member Spotlights -->
+        <div id="companyInfoContainer" class="card">
+            <h1>Member Spotlights</h1>
+            <hr />
+            <div id="companyInfo"></div>
+
+            <picture>
+                <img src="./images/lisa-ann_campbell.webp" alt="Photo of Lisa-ann Campbell" loading="lazy" width="100"
+                    class="lisa-ann_campbell">
+            </picture>
+
         </div>
 
         <section class="card card-padding" id="event">
@@ -143,83 +139,35 @@
             <p>Location: Montego Bay Harmony Beach Park</p>
         </section>
 
-        <section class="card card-padding" id="s1">
-            <h3 class="homepage-h3-headings">Tropical Treasures Boutique</h3>
-            <hr>
-            <p class="homepage-card-paragraph">
-                Discover the story behind Tropical Treasures Boutique, a locally-owned gem in Montego Bay. Founded by
-                Lisa-Ann Campbell, this charming boutique specializes in handcrafted
-                jewelry and accessories inspired by the beauty of Jamaica's tropical
-                landscapes. Lisa's passion for crafting unique pieces using local
-                materials shines through in every item she creates. Explore the
-                collection and take home a piece of Jamaica's natural beauty with you.
-            </p>
-
-            <picture>
-                <img class="lisa-ann-image" src="./images/lisa-ann_campbell.webp"
-                    alt="Photo of Lisa-Ann Campbell dressed in yellow headband showcasing her well tone skilled and handcrafted jewelries"
-                    loading="lazy" width="600">
-            </picture>
-
-        </section>
-        <div id="Jazz-Image-Container">
-            <!-- This is S2 -->
-            <picture>
-                <img class="Jazz-Image" src="images/Jazz-and-Blues-fest.webp"
-                    alt="Jazz and Blues Image showing musical event" loading="lazy" width="600">
-            </picture>
-        </div>
-
-        <!-- <h3 class="member-title">Member Spotlights</h3> -->
-        <section class="card-padding card3" id="s3">
-            <h3 class="homepage-h3-headings">Montego Bay Culinary Delights</h3>
-            <hr>
-            <p class="homepage-card-paragraph">
-                Meet the culinary genius behind Montego Bay Culinary Delights, Chef
-                Marcus James. With a passion for blending traditional Jamaican flavors
-                with a modern twist, Chef Marcus has taken the Montego Bay dining
-                scene by storm. His restaurant offers a delectable fusion of Caribbean
-                cuisine, showcasing locally-sourced ingredients and innovative
-                recipes. Experience the vibrant tastes of Jamaica at Montego Bay
-                Culinary Delights.
-            </p>
-            <picture>
-                <img src="./images/restaurante-restaurant.webp" alt="Restaurant in Jamaica displaying a culinary genius"
-                    loading="lazy" width="600" class="Chef-image">
-            </picture>
-        </section>
-
-        <section class="card card-padding" id="s4">
-            <h3 class="homepage-h3-headings">Eco-Adventures Jamaica</h3>
-            <hr>
-            <p class="homepage-card-paragraph cent-paragraph">
-                Embark on an eco-adventure with Eco-Adventures Jamaica, founded by
-                environmental enthusiast Sarah Thompson. This eco-tour company is
-                dedicated to promoting sustainable tourism while providing
-                unforgettable experiences. Explore the lush rainforests, pristine
-                beaches, and hidden waterfalls of Jamaica with expert guides who are
-                passionate about preserving the island's natural beauty. Join
-                Eco-Adventures Jamaica for an eco-conscious journey through paradise.
-            </p>
-
-        </section>
         <div id="homepage-phrase-Container">
             <h3 class="homepage-phrase-h3">Live. Work. Do Business</h3>
         </div>
-        <div id="s5">
+
+        <div class="collage">
+            <div id="Jazz-and-Blues">
+                <picture>
+                    <img src="./images/Jazz-and-Blues-fest.webp" alt="Image showing Jazz-and-Blues festival"
+                        loading="lazy" width="100" class="pictureHomePage1">
+                </picture>
+            </div>
+            <div id="Palladium_Hotel-Image">
+                <picture>
+                    <img src="./images/montego-bay_medium-image.webp" alt="Palladium hotel in Montego Bay Jamaica"
+                        loading="lazy" width="100" class="pictureHomePage2">
+                </picture>
+            </div>
+            <div id="Jazz-and-Blues">
+                <picture>
+                    <img src="./images/Jazz-and-Blues-fest.webp" alt="Image showing Jazz-and-Blues festival"
+                        loading="lazy" width="100" class="pictureHomePage1">
+                </picture>
+            </div>
+        </div>
+        <div class="jamaica_mapContainer">
             <picture>
-                <img src="./images/jamaica_map.webp" alt="Jamaica map" loading="lazy" width="20">
+                <img src="./images/jamaica_map.webp" alt="jamaica_map" loading="lazy" width="100" class="jamaica_map">
             </picture>
         </div>
-
-
-        <div id="s6">
-            <picture>
-                <img src="./images/jamaica_bamboo_raffing.webp" alt="Jamaica Bamboo Raffing" loading="lazy" width="100">
-            </picture>
-        </div>
-
-
     </main>
 
     <footer>
@@ -255,5 +203,3 @@
         </div>
     </div>
 </body>
-
-</html>

@@ -8,31 +8,44 @@ document.addEventListener("DOMContentLoaded", function () {
   const logoImage = document.getElementById("logoImage");
   const weatherSection = document.getElementById("weatherSection");
   const meetgreetContainer = document.getElementById("meetgreetContainer");
+  const companyInfoContainer = document.getElementById("companyInfoContainer");
+  const homepagePhraseContainer = document.getElementById("homepage-phrase-Container");
 
   // Add a class to the body to identify the current mode
   const darkModeClass = "dark-mode";
 
-  // Add hover effect for buttons
-  /* const buttons = document.querySelectorAll('.button'); 
+  // Function to set colors for h1, h2, and p tags inside companyInfoContainer
+  function setCompanyInfoColors(textColor, bgColor) {
+    const companyInfoH1 = companyInfoContainer.querySelector("h1");
+    const companyInfoH2 = companyInfoContainer.querySelector("h2");
+    const companyInfoP = companyInfoContainer.querySelectorAll("p");
 
-buttons.forEach(button => {
-        button.addEventListener('mouseover', () => {
-            if (bodyElement.classList.contains(darkModeClass)) {   
-                // Dark mode hover effect
-                button.style.backgroundColor = 'green'; // Set dark mode hover color
-            } else {
-                // Light mode hover effect
-                button.style.backgroundColor = 'rgb(102, 167, 102)'; // Set light mode hover color
-            }
-        });
+    companyInfoH1.style.color = textColor;
+    companyInfoH2.style.color = textColor;
 
-        button.addEventListener('mouseout', () => {
-            // Reset the background color on mouseout
-            button.style.backgroundColor = '';
-        });
-    }); 
+    companyInfoP.forEach((p) => {
+      p.style.color = textColor;
+    });
 
-    */
+    companyInfoContainer.style.backgroundColor = bgColor;
+  }
+
+  // Function to set colors for h1, h2, and p tags inside weatherSection
+  function setWeatherSectionColors(textColor) {
+    const weatherH1 = weatherSection.querySelector("h1");
+    const weatherH2 = weatherSection.querySelectorAll("h2");
+    const weatherP = weatherSection.querySelectorAll("p");
+
+    weatherH1.style.color = textColor;
+
+    weatherH2.forEach((h2) => {
+      h2.style.color = textColor;
+    });
+
+    weatherP.forEach((p) => {
+      p.style.color = textColor;
+    });
+  }
 
   darkmode.addEventListener("click", () => {
     if (darkmode.textContent === "DARK") {
@@ -55,6 +68,7 @@ buttons.forEach(button => {
       nav.style.backgroundColor = "#2c2c2c";
       box.style.backgroundColor = "#3b3b3bc4";
       calloutTime.style.backgroundColor = "#2c2c2c";
+      calloutTime.style.color = "white"; // Set the text color to white for dark mode
 
       const cards = document.querySelectorAll(".card");
       cards.forEach((card) => {
@@ -69,17 +83,12 @@ buttons.forEach(button => {
 
       weatherSection.style.color = "white"; // Set the text color to white for dark mode
       meetgreetContainer.style.color = "white";
-      meetgreetContainer.style, (backgroundColor = "black");
+      meetgreetContainer.style.backgroundColor = "black";
 
-      const h2Elements = weatherSection.querySelectorAll("h2");
-      h2Elements.forEach((h2) => {
-        h2.style.color = "white";
-      });
+      setCompanyInfoColors("white", "black");
+      setWeatherSectionColors("white");
 
-      const pElements = weatherSection.querySelectorAll("p");
-      pElements.forEach((p) => {
-        p.style.color = "white";
-      });
+      homepagePhraseContainer.querySelector(".homepage-phrase-h3").style.color = "#db3737"; // Change text color for dark mode
 
       logoImage.src = "../chamber/images/logo-header2.webp";
     } else {
@@ -105,7 +114,8 @@ buttons.forEach(button => {
       nav.style.backgroundColor = "#175846";
       box.style.backgroundColor = "#175846c4";
       calloutTime.style.backgroundColor = "#175846";
-      meetgreetContainer.style.color = "black";
+      calloutTime.style.color = "white"; // Set the text color to white for light mode
+
       const cards = document.querySelectorAll(".card");
       cards.forEach((card) => {
         card.style.backgroundColor = "";
@@ -117,28 +127,19 @@ buttons.forEach(button => {
         card3.style.color = "black";
       });
 
-      weatherSection.style.color = "#4e565b"; // Set the text color to #4e565b for light mode
+      weatherSection.style.color = "black"; // Set the text color to black for light mode
 
-      const h2ElementsLight = weatherSection.querySelectorAll("h2");
-      h2ElementsLight.forEach((h2) => {
-        h2.style.color = "#4e565b";
-      });
+      setCompanyInfoColors("#000", "");
+      setWeatherSectionColors("black");
 
-      const pElementsLight = weatherSection.querySelectorAll("p");
-      pElementsLight.forEach((p) => {
-        p.style.color = "#000000";
-      });
+      homepagePhraseContainer.querySelector(".homepage-phrase-h3").style.color = "brown"; // Change text color for light mode
 
       logoImage.src = "../chamber/images/logo2.webp";
     }
 
-    // Toggle button text content and set the text color to white for 'LIGHT'
+    // Toggle button text content and set the text color for 'LIGHT'
     darkmode.textContent = darkmode.textContent === "DARK" ? "LIGHT" : "DARK";
-    darkmode.style.color = darkmode.textContent === "LIGHT" ? "white" : "black";
+    darkmode.style.color =
+      darkmode.textContent === "LIGHT" ? "white" : "black";
   });
-
-  // Taggle initialization
-//   const taggleInput = document.getElementById("taggleInput");
-//   const taggleInstance = new Taggle(taggleInput);
-
 });

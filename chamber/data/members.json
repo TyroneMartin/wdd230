@@ -1,6 +1,34 @@
 {
     "members": [
         {
+            "name": "Tropicana Jewelers",
+            "phone": "1 876-953-2242",
+            "address": "Montego Bay, Jamaica ",
+            "websiteURL": "https://tropicanajewelers.com/",
+            "imageURL": "./images/tropicanajewelers.webp",
+            "membershipLevel": "Silver",
+            "description": "Discover an exquisite selection of timepieces at Tropicana's, featuring renowned brands like Patek Philippe, Baume & Mercier, David Yurman, Chopard, Chanel, Time Force, and Alpina. Don't overlook the opportunity to explore premium designer jewelry brands, including David Yurman, Bulgari, Chopard, Gregg Ruth, Marco Bicego, Leo Pizzo, DiModolo, and Antonini Milano."
+
+        },
+        {
+            "name": "Chukka Adventures",
+            "phone": "1 876-619-1441",
+            "address": "Unit #2, Freeport Shopping Centre, Montego Bay, Jamaica",
+            "websiteURL": "https://chukka.com/",
+            "imageURL": "./images/chukka.webp",
+            "membershipLevel": "Gold",
+            "description": "Embark on an eco-adventure with Chukka-Adventures Jamaica, founded by environmental enthusiast Sarah Thompson. This eco-tour company is dedicated to promoting sustainable tourism while providing unforgettable experiences. Explore the lush rainforests, pristine beaches, and hidden waterfalls of Jamaica with expert guides who are passionate about preserving the island's natural beauty. Join Eco-Adventures Jamaica for an eco-conscious journey through paradise."
+        },
+        {
+            "name": "Hotel Riu",
+            "address": "Mahoe Bay. Rose Hall Ironshore P.O, Montego Bay, Jamaica",
+            "phone": " 876-940-8010",
+            "websiteURL": "https://www.riu.com/en/hotel/jamaica/montego-bay/hotel-riu-montego-bay/",
+            "imageURL": "./images/riu.webp",
+            "membershipLevel": "Gold",
+            "description": "RIU Hotels & Resorts, founded by the Riu family in Mallorca, Spain, has evolved into a premier Spanish hotel chain. Fully owned by the Riu family since May 2021, the chain specializes in holiday hotels, offering comprehensive all-inclusive services. With a global presence, RIU Plaza, introduced in 2010, caters to both business travelers and tourists in major cities."
+        },
+        {
             "name": "VistaPrint Jamaica",
             "phone": "1 876-953-6737",
             "address": "1 Megabyte Drive, Barnett St, Montego Bay, Jamaica ",
@@ -8,6 +36,8 @@
             "imageURL": "./images/vistaprint.webp",
             "membershipLevel": "Gold"
         },
+
+
         {
             "name": "Fontana Pharmacy",
             "address": "Alice Eldemire Dr, Montego Bay, Jamaica",
@@ -88,14 +118,6 @@
             "websiteURL": "https://www.hilton.com/en/hotels/mbjrhhf-hilton-rose-hall-resort-and-spa/",
             "imageURL": "./images/hilton.webp",
             "membershipLevel": "Bronze"
-        },
-        {
-            "name": "Hotel Riu",
-            "address": "Mahoe Bay. Rose Hall Ironshore P.O, Montego Bay, Jamaica",
-            "phone": " 876-940-8010",
-            "websiteURL": "https://www.riu.com/en/hotel/jamaica/montego-bay/hotel-riu-montego-bay/",
-            "imageURL": "./images/riu.webp",
-            "membershipLevel": "Gold"
         }
 
     ]
