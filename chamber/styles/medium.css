@@ -33,7 +33,7 @@
         height: 100px;
       }
 
-    discoverMessageContainer4 .menu-show,
+    .menu-show,
     .menu-hide,
     .menu-show.showing,
     .menu-hide.showing {
@@ -53,4 +53,13 @@
     footer {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .discoverMain {
+        display: grid;
+        grid-template-columns: 400px auto;
+        grid-template-rows: auto;
+        gap: 45px;
+    
+      }
+
 }

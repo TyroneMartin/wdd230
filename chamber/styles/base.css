@@ -151,9 +151,9 @@ img.pictureHomePage2 {
   width: 100%;
 }
 
-html {
+/* html {
 display:flex;
-}
+} */
 
 .homePage-Main {
   display: grid;
@@ -566,7 +566,7 @@ img#logoImage.logo2 {
 
 .sidebar {
   width: 400px;
-  background-color: #f4f4f4;
+  background-color: #f4f4f428;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -617,16 +617,16 @@ h2 {
 .discoverMessageContainer1 ul li {
   color: black;
   font-family: "Times New Roman", serif;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   gap: 50px;
 }
 
 .discoverMain p {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .discoverMain h2 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -656,6 +656,29 @@ h2 {
 .discoverMessageContainer {
   color: black;
 }
+
+
+  /* Dark mode styles */
+  .dark-mode .discoverMessageContainer1 h3,
+  .dark-mode .discoverMessageContainer2 h3,
+  .dark-mode .discoverMessageContainer3 h3 {
+      background-color: rgba(44, 44, 44);
+  }
+
+  .dark-mode .discoverMessageContainer3 ul li {
+      color: white;
+  }
+
+  /* Light mode styles */
+  .light-mode .discoverMessageContainer1 h3,
+  .light-mode .discoverMessageContainer2 h3,
+  .light-mode .discoverMessageContainer3 h3 {
+      background-color: /* revert to the original color in light mode */;
+  }
+
+  .light-mode .discoverMessageContainer3 ul li {
+      color: /* revert to the original color in light mode */;
+  }
 
 /*** Join page styles ***/
 
@@ -797,7 +820,7 @@ label {
 /* Directory page CSS */
 
 .directory-main {
-  display: inherit;
+  /* display: inherit; */
   width: 100%;
 }
 

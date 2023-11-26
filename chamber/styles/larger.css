@@ -118,6 +118,11 @@ div#homepage-phrase-Container {
     font-size: 40px;
   }
 
+  .directory-main {
+    display: inherit; 
+    width: 100%;
+  }
+
   nav ul {
     flex-direction: row;
     /* word-spacing: 15px; Adjust the value as needed to control the spacing */
