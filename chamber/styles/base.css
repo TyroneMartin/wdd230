@@ -911,7 +911,7 @@ label {
 .directory-list section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* width: 85%; */
+  width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -939,19 +939,11 @@ div#directory-data {
   width: 100%;
 }
 
-.dark-mode .directory-main {
-  background-color: black;
-  color: white;
-}
-
-.dark-mode #directory-selector button.active {
-  background-color: #442211;
-  color: white;
-}
-
+/* Dark Mode Styles for Directory Page */
+.dark-mode #directory-selector button.active,
 .dark-mode #directory-selector button {
-  background-color: transparent;
-  color: white;
+  background-color: darkgray;
+  color: #000;
 }
 
 .dark-mode .directory-cards.grid,
@@ -964,4 +956,18 @@ div#directory-data {
 .dark-mode .directory-list.list .list-item {
   background-color: rgba(44, 44, 44, 0.95);
   color: white;
+}
+
+.dark-mode .directory-cards section h3,
+.dark-mode .directory-cards section p {
+  color: white; /* Adjust text color as needed for sufficient contrast */
+}
+
+.dark-mode #directory-list {
+  color: white;
+}
+
+.dark-mode a.card-button {
+  background-color: darkgray;
+  color: #000;
 }

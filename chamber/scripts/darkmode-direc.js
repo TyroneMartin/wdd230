@@ -49,49 +49,44 @@ document.addEventListener("DOMContentLoaded", function () {
                 container.style.background = "rgb(44, 44, 44, 0.95)";
             });
         } else {
-            // Apply light mode styles
-            document.documentElement.style.setProperty("--text-color", "black");
-            document.documentElement.style.setProperty("--background-color", "#ffffff");
-            document.documentElement.style.setProperty("--hover-background-color", "#bc6c25");
-            document.documentElement.style.setProperty("--hover-color", "black");
+            // Restore default light mode styles
+            document.documentElement.style.removeProperty("--text-color");
+            document.documentElement.style.removeProperty("--background-color");
+            document.documentElement.style.removeProperty("--hover-background-color");
+            document.documentElement.style.removeProperty("--hover-color");
             bodyElement.style.backgroundColor = "";
             bodyElement.classList.remove(darkModeClass);
-            document.documentElement.style.setProperty("--header-background-color", "rgba(245, 245, 220)");
-            header.style.backgroundColor = "var(--header-background-color)";
-            header.querySelector("h1").style.color = "black";
+            document.documentElement.style.removeProperty("--header-background-color");
+            header.style.backgroundColor = "";
+            header.querySelector("h1").style.color = "";
             discoverPageItem.forEach(item => {
                 item.querySelector("h2").style.color = "";
             });
-            nav.style.backgroundColor = "#175846";
+            nav.style.backgroundColor = "";
 
             const cards = document.querySelectorAll(".card");
             cards.forEach((card) => {
                 card.style.backgroundColor = "";
-                card.style.color = "black";
+                card.style.color = "";
             });
 
             const card3s = document.querySelectorAll(".card3");
             card3s.forEach((card3) => {
-                card3.style.color = "black";
+                card3.style.color = "";
             });
 
             logoImage.src = "../chamber/images/logo2.webp";
 
-            mainSection.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach((heading) => {
-                heading.style.color = "";
-            });
-
             document.querySelectorAll("p").forEach((paragraph) => {
                 paragraph.style.color = "";
             });
-
-            document.querySelector("#message").style.background = "";
 
             document.querySelectorAll(".discoverMessageContainer1, .discoverMessageContainer2, .discoverMessageContainer3").forEach((container) => {
                 container.style.background = "";
             });
         }
 
+        // Toggle button text content and set the text color for 'LIGHT'
         darkmode.textContent = darkmode.textContent === "DARK" ? "LIGHT" : "DARK";
         darkmode.style.color = darkmode.textContent === "LIGHT" ? "white" : "black";
     });
