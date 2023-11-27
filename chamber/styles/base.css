@@ -817,6 +817,34 @@ label {
   text-align: center;
 }
 
+/* Add these styles to your existing CSS file */
+
+.dark-mode #join-main {
+  background-color: rgb(44, 44, 44);
+  color: black;
+}
+
+.dark-mode #join-main form {
+  color: black;
+}
+
+.dark-mode .join h2, .dark-mode .join h3 {
+  color: black;
+}
+
+.dark-mode .join ul {
+  color: black;
+}
+
+.dark-mode .join form label.myinput {
+  color: black;
+}
+
+.dark-mode .join form button.mysubmit {
+  background-color: darkgray;
+  color: #000;
+}
+
 /* Directory page CSS */
 
 .directory-main {
