@@ -888,9 +888,11 @@ label {
 .directory-cards .card-button {
   text-decoration: none;
   color: black;
-  background-color: var(--hover-background-color);
+  /* background-color: var(--hover-background-color); */
   padding: 0.5rem;
   border-radius: 5px;
+  font-weight: bold;
+  background-color: rgb(174 236 174);
 }
 
 /* List View */
@@ -905,15 +907,11 @@ label {
   display: none;
 }
 
-a.card-button {
-  padding: 2rem;
-  font-weight: bold;
-}
 
 .directory-list section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: 85%;
+  /* width: 85%; */
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -931,4 +929,39 @@ a.card-button {
 .directory-list section:nth-child(even) {
   /* background-color: var(--hover-background-color) */
   background-color: rgba(68, 95, 68, 0.548);
+}
+
+button#directory-list {
+  color: #000;
+}
+
+div#directory-data {
+  width: 100%;
+}
+
+.dark-mode .directory-main {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode #directory-selector button.active {
+  background-color: #442211;
+  color: white;
+}
+
+.dark-mode #directory-selector button {
+  background-color: transparent;
+  color: white;
+}
+
+.dark-mode .directory-cards.grid,
+.dark-mode .directory-list.list {
+  background-color: rgb(44, 44, 44);
+  border: 1px solid white;
+}
+
+.dark-mode .directory-cards.grid .card,
+.dark-mode .directory-list.list .list-item {
+  background-color: rgba(44, 44, 44, 0.95);
+  color: white;
 }
