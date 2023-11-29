@@ -57,9 +57,9 @@
 
         <ul id="nav-menu" id="navigation-menu">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./discover.html" >Discover</a></li>
-            <li><a href="./directory.html" >Directory</a></li>
-            <li><a href="./join.html" >Join</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
         </ul>
     </nav>
     <div><button id="dark-mode">DARK</button></div>
@@ -69,16 +69,24 @@
             <div>
                 <!-- <span id="message"></span> -->
                 <form method="GET" action="./thankyou.html">
-                    <label class="myinput">First Name*<input type="text" name="fname" required placeholder="Please enter your first name" autocomplete="given-name"></label>
-                    <label class="myinput">Last Name*<input type="text" name="lname" required placeholder="Please enter your lase name" autocomplete="family-name"></label>
-                    <label class="myinput">Title or Position<input type="text" name="title"
-                            pattern="[A-Za-z\s\-]{7,}" placeholder="Enter your Position" title="Please enter at least 7 characters with only letters, hyphens, and spaces."></label>
+                    <label class="myinput">First Name*<input type="text" name="fname" required
+                            placeholder="Please enter your first name" autocomplete="given-name"></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" required
+                            placeholder="Please enter your lase name" autocomplete="family-name"></label>
+                    <label class="myinput">Title or Position<input type="text" name="title" pattern="[A-Za-z\s\-]{7,}"
+                            placeholder="Enter your Position"
+                            title="Please enter at least 7 characters with only letters, hyphens, and spaces."></label>
                     <label class="myinput">Email*<input type="email" name="email" required
-                            placeholder="Eg. john12345@byui.edu" pattern="[\w\.]+@byui\.edu$" autocomplete="email"></label>
-                <label  class="myinput">Password: <input id="password" name="password" type="password" required autocomplete="new-password"></label>
-                            <label  class="myinput">Confirm Password: <input id="confirm" name="confirm" type="password" required autocomplete="new-password"></label>
-                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required autocomplete="tel"></label>
-                    <label class="myinput">Business Name*<input type="text" name="businessname" required autocomplete="organization"></label>
+                            placeholder="Eg. john12345@byui.edu" pattern="[\w\.]+@byui\.edu$"
+                            autocomplete="email"></label>
+                    <label class="myinput">Password: <input id="password" name="password" type="password" required
+                            autocomplete="new-password"></label>
+                    <label class="myinput">Confirm Password: <input id="confirm" name="confirm" type="password" required
+                            autocomplete="new-password"></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required
+                            autocomplete="tel"></label>
+                    <label class="myinput">Business Name*<input type="text" name="businessname" required
+                            autocomplete="organization"></label>
                     <h3>Membership Level</h3>
                     <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
                     <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
@@ -86,7 +94,9 @@
                     <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
                     <label class="myinput">Business Description<textarea name="description" cols="40"
                             rows="5"></textarea></label>
-                    <label><input id="timestamp" type="hidden" name="timestamp" value=""></label>
+                    <label>
+                        <input id="timestamp" type="hidden" name="timestamp" value="">
+                    </label>
                     <h3>Site Rating</h3>
 
                     <label class="ratingInput">Page Rating: <span id="currentrating">1</span><input id="rating"
