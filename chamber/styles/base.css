@@ -993,8 +993,7 @@ div#directory-data {
   padding: 1rem;
 }
 
-#navigation-menu .active {
-  background-color: #000000; 
-  color: #333; 
-  border-bottom: 2px solid #000; 
+#active {
+  background-color: #5e6160;
+  padding: 1rem;
 }

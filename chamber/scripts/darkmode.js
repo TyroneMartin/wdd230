@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       weatherSection.style.color = "white"; // Set the text color to white for dark mode
       meetgreetContainer.style.color = "white";
-      meetgreetContainer.style.Color = "black";
+      meetgreetContainer.style.backgroundColor = "black";
 
       setCompanyInfoColors("white", "black");
       setWeatherSectionColors("white");
@@ -93,6 +93,10 @@ document.addEventListener("DOMContentLoaded", function () {
       logoImage.src = "../chamber/images/logo-header2.webp";
     } else {
       // Apply light mode styles
+
+      meetgreetContainer.style.color = "black";
+      meetgreetContainer.style.backgroundColor = "white"; // Fixed typo here
+
       document.documentElement.style.setProperty("--text-color", "black");
       document.documentElement.style.setProperty(
         "--background-color",
