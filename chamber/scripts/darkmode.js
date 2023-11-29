@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       weatherSection.style.color = "white"; // Set the text color to white for dark mode
       meetgreetContainer.style.color = "white";
-      meetgreetContainer.style.backgroundColor = "black";
+      meetgreetContainer.style.backgroundColor = "";
 
       setCompanyInfoColors("white", "black");
       setWeatherSectionColors("white");
