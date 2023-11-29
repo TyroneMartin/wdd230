@@ -1,16 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navigation = document.getElementById("navigation-menu");
+    const currentPagePath = window.location.pathname;
+    const navLinks = document.querySelectorAll('#navigation-menu a');
 
-    // Check if navigation is found and it has child elements
-    if (navigation && navigation.children) {
-        const currentPage = window.location.pathname;
-
-        // Loop through each navigation link and check if it matches the current page
-        Array.from(navigation.children).forEach((listItem) => {
-            const link = listItem.querySelector("a");
-            if (link && link.getAttribute("href") === currentPage) {
-                listItem.classList.add("active"); // Add a class to highlight the active tab
-            }
-        });
-    }
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (currentPagePath === linkPath) {
+            link.parentElement.classList.add('active');
+        }
+    });
 });
