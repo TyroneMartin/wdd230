@@ -1,7 +1,7 @@
 /* To change the colors */
 :root {
   --text-color: black;
-  --background-color: #ffffff;
+  /* --background-color: black; */
   --hover-background-color: rgb(77, 112, 77);
   --hover-color: black;
   --header-background-color: rgba(245, 245, 220);
@@ -28,6 +28,11 @@ img#logoImage {
 } 
 
 #Jazz-and-Blues img {
+  width: 100%;
+  width: auto;
+} 
+
+#Jazz-and-Blues2 img {
   width: 100%;
   width: auto;
 } 
@@ -137,11 +142,6 @@ header {
   height: auto;
 }
 
-
-
-#Jazz-and-Blues img {
-  width: 100%;
-}
 
 img.pictureHomePage2 {
   width: 100%;
