@@ -875,6 +875,7 @@ label {
 
 #directory-selector button.active {
   background-color: var(--hover-background-color);
+  color: white;
 }
 
 /* Cards view */
@@ -904,12 +905,12 @@ label {
 
 .directory-cards .card-button {
   text-decoration: none;
-  color: black;
+  color: white;
   /* background-color: var(--hover-background-color); */
   padding: 0.5rem;
   border-radius: 5px;
   font-weight: bold;
-  background-color: rgb(174 236 174);
+  background-color: rgb(26 31 26);
 }
 
 /* List View */
@@ -936,6 +937,7 @@ label {
 .directory-list .card-button {
   text-decoration: underline;
   color: black;
+  padding: 1rem;
 }
 
 .directory-list section:nth-child(odd) {
@@ -985,6 +987,8 @@ div#directory-data {
 }
 
 .dark-mode a.card-button {
-  background-color: darkgray;
-  color: #000;
+  /* background-color: darkgray; */
+  /* color: #000; */
+  color: white;
+  padding: 1rem;
 }
