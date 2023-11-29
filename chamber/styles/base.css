@@ -994,6 +994,6 @@ div#directory-data {
 }
 
 #navigation-menu .active {
-  background-color: #ddd; /* Adjust the background color for the active tab */
+  background-color: #000000; /* Adjust the background color for the active tab */
   color: #333; /* Adjust the text color for the active tab */
 }
