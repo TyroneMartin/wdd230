@@ -669,17 +669,6 @@ h2 {
       color: white;
   }
 
-  /* Light mode styles */
-  .light-mode .discoverMessageContainer1 h3,
-  .light-mode .discoverMessageContainer2 h3,
-  .light-mode .discoverMessageContainer3 h3 {
-      background-color: /* revert to the original color in light mode */;
-  }
-
-  .light-mode .discoverMessageContainer3 ul li {
-      color: /* revert to the original color in light mode */;
-  }
-
 /*** Join page styles ***/
 
 .join {
