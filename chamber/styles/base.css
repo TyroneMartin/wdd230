@@ -132,6 +132,10 @@ header {
     background-color: #ffffff;
 } */
 
+html {
+  width: 100%;
+}
+
 
 .collage {
   width: 100%;
@@ -996,4 +1000,10 @@ div#directory-data {
 #active {
   background-color: #5e6160;
   padding: 1rem;
+}
+
+
+.about-Us-Paragraph  {
+
+  background-color: red;
 }
