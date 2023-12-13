@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bountiful Foods Order Page in WDD 230 - Web Frontend Development">
+    <meta name="author" content="Tyrone Martin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Social Media Meta Tags for Facebook-->
+    <meta property="og:title" content="Bountiful Foods Drinks About Us page- WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" content="https://tyronemartin.github.io/wdd230/final_project/images/favicon.ico">
+
+    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/final_project/about_us.html">
+
+    <!-- Favion image-->
+
+    <link rel="icon" href="./images/favicon.ico" type="image/png">
+
+    <!-- Import the CSS Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--stylesheet/s -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script src="./scripts/drinkCount.js" defer></script>
+
+    <!-- Document Title-->
+    <title>Bountiful Foods Order Page</title>
+
+    <!-- script here-->
+    <!-- <script src="./scripts/getdates.js" defer></script> -->
+    <script src="./scripts/image.js" defer></script>
+    <script src="./hamburgerMenu.js" defer></script>
+    <!-- <script src="./scripts/current-weather.js" defer></script> -->
+    <script src="./scripts/forecast.js" defer></script>
+    <script src="./scripts/fruit-data.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="businessNameHeaderContainer">
+            <h1 class="businessNameHeader">Bountiful Foods Group specializes in organic blends</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-Menu">
+            <button id="menu">≡</button>
+            <ul>
+                <li><a href="./bountiful_foods.html">Home</a></li>
+                <li><a id="active" href="./order.html">Shop</a></li>
+                <li><a href="./about_us.html">About</a></li>
+                <li><a href="https://www.google.com/maps/place/945+Carlsbad+Village+Dr,+Carlsbad,+CA+92008/@33.162119,-117.343888,15z/data=!4m6!3m5!1s0x80dc7219fdc00b2b:0x54d1d560c64c2ad2!8m2!3d33.1621193!4d-117.3438879!16s%2Fg%2F11crvhxqgd?hl=en&gl=US" target=”_blank”>Map</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- <main id = "about-usMain"> -->
+
+    <main id="order-PageMain">
+
+        <div class="home-GridContainer">
+
+
+            <picture>
+                <source srcset="./images/fruits-small.webp" class="hero-Home-Image1" media="(max-width: 600px)">
+                <source srcset="./images/fruits-medium.webp" class="hero-Home-Image2" media="(max-width: 960px)">
+                <img class="hero-Home-Image3" src="./images/fruits-large.webp"
+                    alt="Bountiful Foods hero image showing fruits" loading="lazy">
+            </picture>
+
+
+            <section id="home-Main-Section">
+                <h2>Place Your Order!</h2>
+                <p>Savor the delightful experience of ordering our carefully crafted, fresh offerings. From organic bites to refreshing drinks, your journey to a flavorful meal starts here.</p>                
+                <div class="button-Container">
+                    <!-- Adding link to the button on the onclick event -->
+                    <button type="button" class="homePage-Page-Order-Button"
+                        onclick="window.location.href = 'https://tyronemartin.github.io/wdd230/final_project/order.html';">
+                        Start Your Order Today!
+                    </button>
+                </div>
+
+            </section>
+
+        </div>
+        <main class="order-page-main">
+            <section class="background-div">
+    <!-- Form Start -->
+                <form id="orderForm" action="confirmation.html" method="get">
+                    <!-- First Name -->
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+    
+                    <br>
+    
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <br>
+    
+                    <!-- Phone Number -->
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    
+                    <br><br>
+    
+                    <!-- Select Inputs -->
+                    <label for="selectOption1">Select Fruit for Drink 1:</label>
+                    <select id="selectOption1" name="selectOption1" required>
+                        <option value="" disabled selected>Select</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <label for="selectOption2">Select Fruit for Drink 2:</label>
+                    <select id="selectOption2" name="selectOption2" required>
+                        <option value="" disabled selected>Select</option>
+                    </select>
+                    
+                    <br>
+                    
+                    <label for="selectOption3">Select Fruit for Drink 3:</label>
+                    <select id="selectOption3" name="selectOption3" required>
+                        <option value="" disabled selected>Select</option>
+                    </select>
+                    
+    
+                    <br><br>
+    
+                    <!-- Special Instructions -->
+                    <label for="specialInstructions">Special Instructions:</label>
+                    <textarea id="specialInstructions" name="specialInstructions" rows="4" cols="50"></textarea>
+    
+                    <br><br>
+    
+                    <!-- Payment Information -->
+                    <p>Payment is received when the drink is picked up.</p>
+    
+                    <!-- Submit Button -->
+                    <!-- <input type="submit" value="Order Deliciousness"> -->
+                    <button id="submit-order">Order Deliciousness!</button>
+                </form>
+    
+            </section>
+        </main>
+
+    <footer>
+        <div id="footer-image-container">
+            <a href="../chamber/index.html"><img class="footer-logo" src="./images/footer-logo.webp" loading="lazy"
+                    width="250" alt="Bountiful Foods company logo"></a>
+        </div>
+        <section>
+            <h4>ADDRESS:</h4>
+            <p>Carlsbad, California</p>
+            <p>945 Carlsbad Village Dr.</p>
+            <p>Carlsbad, CA 92008</p>
+
+        </section>
+        <section>
+            <h4>EMAIL:</h4>
+            <p>Bountiful@gmail.com</p>
+        </section>
+        <section>
+            <h4>PHONE:</h4>
+            <p>760-890-05678</p>
+        </section>
+
+        <div class="SoocialMediaCont">
+            <h4 class="socialMedia-Header">Social Media</h4>
+            <div>
+                <a href="https://www.facebook.com/" class="SocialMedia-images m1" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/facebook-icon.webp" alt="Facebook Icon">
+                </a>
+            </div>
+            <div><a href="https://twitter.com/" class="SocialMedia-images m2" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter-icon.webp" alt="Twitter Icon">
+                </a></div>
+            <div> <a href="https://www.instagram.com/" class="SocialMedia-images m3" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/instagram-icon.webp" alt="Instagram Icon">
+                </a></div>
+        </div>
+
+    </footer>
+
+    <div class="attribution-Sub-footer-container">
+        <h6>Attribution</h6>
+        <p>Here are the references used in this site:
+            <a href="https://www.fruityvice.com" target="_blank">www.fruityvice.com</a>,
+            <a href="https://openweathermap.org" target="_blank">openweathermap.org</a>
+            and
+            <a
+                href="https://www.freepik.com/free-photo/medium-shot-smiley-women-with-watermelon_13816253.htm#query=who%20we%20are%20fruit%20drink%20company&position=4&from_view=search&track=ais&uuid=3249787a-bebc-438b-968b-ea8f3032d271">Freepik</a>
+        </p>
+        <hr>
+    </div>
+    <div class="sub-footer-container">
+        <div>
+            <h6>
+                &copy; <span id="currentYear"></span>
+                <a id="footer-copy-right-name" href="../index.html">Tyrone Martin</a>.
+                All Rights Reserved. Location: Rexburg, Idaho Last updated:
+                <span id="lastUpdated"></span>
+            </h6>
+        </div>
+    </div>
+</body>
+
+</html>

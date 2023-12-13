@@ -1,0 +1,147 @@
+:root {
+  --green: #48775d;
+  --yellow: #fedd58;
+  --light-pink: #f8f1eb;
+  --nav-background: #3e363f;
+  --dark-brown: #3e363f;
+  --light-brown: #8d5f4d;
+  --buttons: #f8e1da;
+  --pink: #fe6d73;
+  --orange: #ffcb77;
+  --grey: #aeaead;
+  --black: #000000;
+  --white: white;
+}
+
+@media screen and (min-width: 875px) {
+  .home-GridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    background-color: var(--light-pink);
+    margin-bottom: -50px;
+  }
+
+  .businessNameHeaderContainer {
+    grid-column: 1/8;
+  }
+
+  .Home-section1-Container {
+    flex-direction: row;
+    padding: 45px 0 45px 0;
+  }
+
+  /* forecast   */
+
+  .forecast {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    padding-top: 65px;
+    margin-top: -25px;
+  }
+
+  #videoCard {
+    display: flex;
+  }
+
+  #weather-Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .forecast-container {
+    width: 100%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #videoCard {
+    flex-direction: row;
+  }
+
+  .homePageVideo,
+  .videoCard-image {
+    width: auto; /* Set width to 100% to fill the container */
+    height: 100%; /* Maintain aspect ratio */
+  }
+
+  section.reviewContainer h3 {
+    padding: 90px;
+    font-size: 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .nav-Menu {
+    grid-column: 4/7;
+    grid-row: 3/4;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    right: 200px;
+    z-index: 9000;
+    max-width: 800px;
+  }
+
+  .nav-Menu ul {
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .nav-Menu ul li {
+    display: block;
+    width: 100%;
+    margin-right: 15px;
+    text-align: center;
+  }
+
+  .nav-Menu a:hover,
+  .nav-Menu a:active {
+    color: var(--dark-brown);
+    background-color: var(--buttons);
+    border-radius: 10px;
+  }
+
+  .nav-Menu ul li a {
+    color: var(--black);
+    font-family: var(--text);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  #nav-home-button {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #nav-order-button {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #nav-discover-button {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #nav-about-button {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+

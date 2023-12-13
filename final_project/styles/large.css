@@ -1,0 +1,101 @@
+/* Larger Screen view */
+@media screen and (min-width: 961px) {  
+  body {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+  }
+  .Home-section1-Container {
+    flex-direction: row;
+    padding: 45px 0 45px 0;
+  }
+
+  .nav-Menu {
+    grid-column: 4/7;
+    grid-row: 3/4;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    bottom: 800px;
+    right: 15px;
+    /* left: 100px; */
+    z-index: 9000;
+    max-width: 800px;
+    margin: 0 auto;
+
+  }
+
+  /* forecast   */
+
+  .forecast {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    padding-top: 65px;
+    margin-top: -25px;
+  }
+
+  #videoCard {
+    display: flex;
+  }
+
+
+  .SoocialMediaCont{
+    display: grid;
+      grid-template-rows: 50px;
+      align-items: baseline;
+  }
+
+
+  #weather-Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .forecast-container {
+    width: 100%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #videoCard {
+    flex-direction: row;
+  }
+
+  .homePageVideo,
+  .videoCard-image {
+    width: auto; /* Set width to 100% to fill the container */
+    height: 100%; /* Maintain aspect ratio */
+  }
+
+  section.reviewContainer h3 {
+    padding: 90px;
+    font-size: 2rem;
+  }
+}
+
+/* .nav-Menu ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+} */
+
+
+@media screen and (min-width: 300px) {
+  img.hero-Home-Image3{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 601px) {
+  .home-GridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: center;
+  }
+
+}
