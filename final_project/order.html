@@ -146,8 +146,52 @@
                     <!-- <input type="submit" value="Order Deliciousness"> -->
                     <button id="submit-order">Order Deliciousness!</button>
                 </form>
+
+
+
+                <hr>
+
     
             </section>
+
+            <section class="form-container">
+                <form id="order-drink-form" action="order-confirmation.html" method="get">
+                <h2>Order Your Specialty Drink</h2>
+              
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br><br>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+              
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required><br><br>
+              
+                <label for="fruit1">Fruit 1:</label>
+                <select id="fruit1" name="fruit1" class="selections">
+                    <option value="" disabled selected>Select a fruit</option>
+                </select><br>
+              
+                <label for="fruit2">Fruit 2:</label>
+                <select id="fruit2" name="fruit2" class="selections" >
+                    <option value="" disabled selected>Select a fruit</option><br><br>
+                </select><br>
+              
+                <label for="fruit3">Fruit 3:</label>
+                <select id="fruit3" name="fruit3" class="selections">
+                    <option value="" disabled selected>Select a fruit</option><br><br>
+                </select><br>
+              
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea><br><br>
+              
+                <p>Payment is received when the drink is picked up.</p>
+              
+                <input type="submit" value="Submit Order">
+                </form>
+            
+                <img class="fruit-image" src="./images/Fruit-Smoothie.webp" alt="Fruits">
+                </section>
         </main>
 
     <footer>
