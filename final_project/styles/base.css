@@ -522,3 +522,79 @@ nav.nav-Menu a {
   width: 100%;
   height: auto;
 }
+
+
+    /* order form */
+
+    .form-Image-Container {
+      background-image: url('../images/form-background-image.webp');
+      background-size: cover;
+      background-position: center;
+      margin: 0 auto;
+    }
+
+    .form-Container {
+      right: 0;
+      margin: -1px 50px 0 400px;
+
+      max-width: 300px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.605);
+    }
+
+
+    /* .order-page-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+    } */
+    
+    /* .form-Container {
+      max-width: 600px;
+      padding: 20px;
+      border: 1px solid #ddd; 
+      border-radius: 10px;
+    }
+     */
+    /* .form-Container label {
+      display: block;
+      margin-bottom: 5px;
+    } */
+    
+    .form-Container input,
+    .form-Container select,
+    .form-Container textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    
+    .form-Container textarea {
+      resize: vertical;
+    }
+    
+    .form-Container p {
+      margin-top: 10px;
+      font-style: italic;
+      color: #555;
+    }
+    
+    .submit-order {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    /* Optional: Style for form responsiveness on smaller screens */
+    @media (max-width: 768px) {
+      .form-Container {
+        max-width: 100%;
+      }
+    }
+    

@@ -19,7 +19,7 @@ function updateTime() {
   let formattedTime = `${hours}:${minutes} ${amPM}`;
 
   // Update the time in the DOM
-  document.getElementById("currentTime").textContent = formattedTime;
+  // document.getElementById("currentTime").textContent = formattedTime;
 }
 
 // Update time initially
