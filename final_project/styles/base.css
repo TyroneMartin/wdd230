@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Roboto+Mono:wght@100&family=Sofia&display=swap');
+
 body {
   display: block;
   margin: 0 auto;
@@ -16,6 +18,10 @@ body {
   --grey: #aeaead;
   --black: #000000;
   --white: white;
+  --header-font: 'Sofia', sans-serif;
+  --second-header: 'Bacasime Antique', sans-serif;
+  --font-paragraph: 'Roboto Mono', monospace;
+
 }
 
 @media screen and (max-width: 874px) {
@@ -90,8 +96,19 @@ body {
   /* End of Nav */
 }
 
-#home-Main-Section {
+/* #home-Main-Section {
   color: #8d5f4d;
+} */
+
+#home-Main-Section h2 {
+  font-family: var(--header-font);
+  color: #8d5f4d;
+}
+
+#home-Main-Section p {
+  /* font-family: var(--second-header); */
+  font-weight:400;
+  color: var(--dark-brown);
 }
 
 header {
@@ -278,6 +295,7 @@ section.reviewContainer h3 {
   margin: -10px;
   text-align: center;
   font-size: 1rem;
+  /* font-family: var(--second-header); */
 }
 
 .reviewContainer {
@@ -385,6 +403,8 @@ img.Home-section1-img {
 
 .Home-section1-Container h2 {
   color: #d8ecf5;
+  font-family: var(--second-header);
+
 }
 
 .Home-section1-Container p {
@@ -568,8 +588,15 @@ nav.nav-Menu a {
   padding: 15px;
 }
 
+form#order-drink-form h2 {
+  font-family: var(--second-header);
+}
+
+
+
 .submit-order {
-  background-color: #4caf50;
+  /* background-color: #4caf50; */
+  background-color: #437645;
   color: white;
   padding: 10px;
   border: none;
