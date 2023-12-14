@@ -577,6 +577,9 @@ nav.nav-Menu a {
     
     .form-Container p {
       margin-top: 10px;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: left;
       font-style: italic;
       color: #555;
     }
