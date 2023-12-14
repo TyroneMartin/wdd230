@@ -681,7 +681,8 @@ h2.name-On-order {
   text-align: center;
 }
 
-.follow-us {
+.follow-us h5 {
   font-size: 1rem;
-  color: var(--dark-brown);
+  color: var(--nav-background);
+  font-weight: 600;
 }
