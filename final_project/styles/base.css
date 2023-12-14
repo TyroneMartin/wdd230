@@ -660,6 +660,10 @@ border-top: dotted black 2px;
   padding: 10px 0; 
 }
 
+.order-confirmation-section1 p {
+  text-align: center;
+}
+
 
 
 
