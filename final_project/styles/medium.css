@@ -145,3 +145,13 @@
   }
 }
 
+/* Medium and Large Screens */
+@media (min-width: 768px) {
+  #confirmationPage-Main {
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+
+
+}
+

@@ -597,4 +597,72 @@ nav.nav-Menu a {
         max-width: 100%;
       }
     }
+
+    #confirmationPage-Main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .order-confirmation-section1 {
+      width: 100%;
+      background-color: var(--orange); 
+      padding: 30px 0 45px 0;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+/* Confirmation Page */
+    #confirmationPage-Main {
+      background-color: var(--grey);
+      width: 100%;
+    }
+
+.nutrition-facts-Header {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  background-color: var(--orange);
+  color: #555;
+  border-radius: 15px;
+  width: 90%;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+
+
+.nutrition-facts-Container {
+  background-color: #f9f9f9; 
+  padding: 20px;
+  border: 2px solid #ddd; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+border-top: dotted black 2px;
+}
+
+#confirmationDetailsName {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.nutrition-facts-Container p {
+  margin: 5px 35px 0;
+}
+
+.nutritionSummary {
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  border-top: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd; 
+  padding: 10px 0; 
+}
+
+
+
+
+
+
     

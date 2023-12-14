@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bountiful Foods Confirmation page in WDD 230 - Web Frontend Development">
+    <meta name="author" content="Tyrone Martin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Social Media Meta Tags for Facebook-->
+    <meta property="og:title" content="Bountiful Foods Drinks Confirmation page- WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tyronemartin.github.io/wdd230/final_project/images/favicon.ico">
+    <meta property="og:url" content="https://tyronemartin.github.io/wdd230/final_project/about_us.html">
+
+    <!-- Favion image-->
+
+    <link rel="icon" href="./images/favicon.ico" type="image/png">
+
+    <!-- Import the CSS Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--stylesheet/s -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+    <!-- Document Title-->
+    <title>Bountiful Foods Confirmation Page</title>
+
+    <!-- script here-->
+    <!-- <script src="./scripts/getdates.js" defer></script> -->
+    <script src="./hamburgerMenu.js" defer></script>
+    <script src="./scripts/last-modified.js" defer></script>
+    <script src="./scripts/drinkCount.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="businessNameHeaderContainer">
+            <h1 class="businessNameHeader">Bountiful Foods Group specializes in organic blends</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-Menu">
+            <button id="menu">≡</button>
+            <ul>
+                <li><a href="./bountiful_foods.html">Home</a></li>
+                <li><a href="./order.html">Shop</a></li>
+                <li><a id="active" href="./about_us.html">About</a></li>
+                <li><a href="https://www.google.com/maps/place/945+Carlsbad+Village+Dr,+Carlsbad,+CA+92008/@33.162119,-117.343888,15z/data=!4m6!3m5!1s0x80dc7219fdc00b2b:0x54d1d560c64c2ad2!8m2!3d33.1621193!4d-117.3438879!16s%2Fg%2F11crvhxqgd?hl=en&gl=US"
+                        target=”_blank”>Map</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="home-GridContainer">
+
+
+        <picture>
+            <source srcset="./images/fruits-small.webp" class="hero-Home-Image1" media="(max-width: 600px)">
+            <source srcset="./images/fruits-medium.webp" class="hero-Home-Image2" media="(max-width: 960px)">
+            <img class="hero-Home-Image3" src="./images/fruits-large.webp"
+                alt="Bountiful Foods hero image showing fruits" loading="lazy" width="300">
+        </picture>
+
+
+        <section id="home-Main-Section">
+            <h2 id="confirmationName">>Order Confirmed!</h2>
+            <p>Thank you for choosing our carefully crafted, fresh offerings. Your order is confirmed, and we're excited
+                to prepare a flavorful meal just for you. From organic bites to refreshing drinks, get ready to savor
+                the delightful experience that awaits you.</p>
+
+        </section>
+
+    </div>
+    <main id="confirmationPage-Main">
+        <h3 class="nutrition-facts-Header">Nutrition facts:</h3>
+        <section class="nutrition-facts-Container">
+            <h2 id="confirmationDetailsName">name</h2>
+
+            <p id="confirmationFruits">&nbsp;</p>
+
+            <p id="confirmationEmail">&nbsp;</p>
+
+            <p id="confirmationPhone">&nbsp;</p>
+
+            <p id="confirmationInstructions">&nbsp;</p>
+
+            <h3 class="nutritionSummary">Nutrition Summary</h3>
+            <p id="totalCarbs">&nbsp;</p>
+            <p id="totalProtein">&nbsp;</p>
+            <p id="totalFat">&nbsp;</p>
+            <p id="totalSugar">&nbsp;</p>
+            <p id="totalCalories">&nbsp;</p>
+
+        </section>
+
+        <section class="order-confirmation-section1">
+            <h3>We appreciate your business!</h3>
+            <h4>Drinks Ordered: <span id="total-Drink-Count">0</span></h4>
+            <p>Our team is dedicated to ensuring your satisfaction. As we prepare your order, feel free to explore more
+                of our delicious offerings on our menu. Your support means the world to us, and we look forward to
+                serving you again soon!</p>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div id="footer-image-container">
+            <a href="../chamber/index.html"><img class="footer-logo" src="./images/footer-logo.webp" loading="lazy"
+                    width="600" width="250" alt="Bountiful Foods company logo"></a>
+        </div>
+        <section>
+            <h4>ADDRESS:</h4>
+            <p>Carlsbad, California</p>
+            <p>945 Carlsbad Village Dr.</p>
+            <p>Carlsbad, CA 92008</p>
+
+        </section>
+        <section>
+            <h4>EMAIL:</h4>
+            <p>Bountiful@gmail.com</p>
+        </section>
+        <section>
+            <h4>PHONE:</h4>
+            <p>760-890-05678</p>
+        </section>
+
+        <div class="SoocialMediaCont">
+            <h4 class="socialMedia-Header">Social Media</h4>
+            <div>
+                <a href="https://www.facebook.com/" class="SocialMedia-images m1" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/facebook-icon.webp" alt="Facebook Icon">
+                </a>
+            </div>
+            <div><a href="https://twitter.com/" class="SocialMedia-images m2" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/twitter-icon.webp" alt="Twitter Icon">
+                </a></div>
+            <div> <a href="https://www.instagram.com/" class="SocialMedia-images m3" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/instagram-icon.webp" alt="Instagram Icon">
+                </a></div>
+        </div>
+
+    </footer>
+
+    <div class="attribution-Sub-footer-container">
+        <h6>Attribution</h6>
+        <p>Here are the references used in this site:
+            <a href="https://www.fruityvice.com" target="_blank">www.fruityvice.com</a>,
+            <a href="https://openweathermap.org" target="_blank">openweathermap.org</a>
+            and
+            <a href="https://www.freepik.com/">Freepik</a>
+        </p>
+        <hr>
+    </div>
+    <div class="sub-footer-container">
+        <div>
+            <h6>
+                &copy; <span id="currentYear"></span>
+                <a id="footer-copy-right-name" href="../index.html">Tyrone Martin</a>.
+                All Rights Reserved. Location: Rexburg, Idaho Last updated:
+                <span id="lastUpdated"></span>
+            </h6>
+        </div>
+    </div>
+</body>
+
+</html>

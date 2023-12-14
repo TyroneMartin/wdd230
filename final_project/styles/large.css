@@ -99,3 +99,10 @@
   }
 
 }
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .order-confirmation-section {
+    width: 100%; 
+  }
+}

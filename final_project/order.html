@@ -33,7 +33,6 @@
 
     <!-- script here-->
     <!-- <script src="./scripts/getdates.js" defer></script> -->
-    <script src="./scripts/image.js" defer></script>
     <script src="./hamburgerMenu.js" defer></script>
     <script src="./scripts/last-modified.js" defer></script>
     <script src="./scripts/fruit-data.js" defer></script>
@@ -69,7 +68,7 @@
                 <source srcset="./images/fruits-small.webp" class="hero-Home-Image1" media="(max-width: 600px)">
                 <source srcset="./images/fruits-medium.webp" class="hero-Home-Image2" media="(max-width: 960px)">
                 <img class="hero-Home-Image3" src="./images/fruits-large.webp"
-                    alt="Bountiful Foods hero image showing fruits" loading="lazy">
+                    alt="Bountiful Foods hero image showing fruits" loading="lazy" width="300">
             </picture>
 
 
@@ -80,55 +79,55 @@
             </section>
 
         </div>
+
         <main class="order-page-main">
 
-            <main class="order-page-main">
+            <section class="form-Image-Container">
+                <!-- Form Start -->
+                <form id="order-drink-form" action="order-confirmation.html" method="get" class="form-Container">
+                    <h2>Secure Your Specialized Beverage Today!</h2>
 
-                <section class="form-Image-Container">
-                    <!-- Form Start -->
-                    <form id="order-drink-form" action="order-confirmation.html" method="get" class="form-Container">
-                        <h2>Secure Your Specialized Beverage Today!</h2>
-            
-                        <!-- Name field -->
-                        <label for="first-name">First Name:</label>
-                        <input type="text" id="first-name" name="first-name" required placeholder="Enter first name">
-            
-                        <!-- Email field -->
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter email address">
-            
-                        <!-- Phone field -->
-                        <label for="phone-number">Phone Number:</label>
-                        <input type="tel" id="phone-number" name="phone-number" required placeholder="Enter your phone number">
-            
-                        <!-- Fruit options from API -->
-                        <label for="fruit1">Fruit Blend Option 1:</label>
-                        <select id="fruit1" name="fruit1" class="selections">
-                            <option value="" disabled selected>Select a fruit</option>
-                        </select>
-            
-                        <label for="fruit2">Fruit Blend Option 2:</label>
-                        <select id="fruit2" name="fruit2" class="selections">
-                            <option value="" disabled selected>Select a fruit</option>
-                        </select>
-            
-                        <label for="fruit3">Fruit Blend Option 3:</label>
-                        <select id="fruit3" name="fruit3" class="selections">
-                            <option value="" disabled selected>Select a fruit</option>
-                        </select>
-            
-                        <!-- Special instructions text area -->
-                        <label for="special-instructions">Special Instructions or Allergies:</label>
-                        <textarea id="special-instructions" name="special-instructions"></textarea>
-            
-                        <p>Payment is received when the drink is picked up.</p>
-            
-                        <input type="submit" value="Place Your Order Today" class="submit-order">
-                    </form>
-                    <!-- Form end-->
-                </section>
-            </main>
-            
+                    <!-- Name field -->
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Enter first name">
+
+                    <!-- Email field -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email address">
+
+                    <!-- Phone field -->
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" required
+                        placeholder="Enter your phone number">
+
+                    <!-- Fruit options from API -->
+                    <label for="fruit1">Fruit Blend Option 1:</label>
+                    <select id="fruit1" name="fruit1" class="selections">
+                        <option value="" disabled selected>Select a fruit</option>
+                    </select>
+
+                    <label for="fruit2">Fruit Blend Option 2:</label>
+                    <select id="fruit2" name="fruit2" class="selections">
+                        <option value="" disabled selected>Select a fruit</option>
+                    </select>
+
+                    <label for="fruit3">Fruit Blend Option 3:</label>
+                    <select id="fruit3" name="fruit3" class="selections">
+                        <option value="" disabled selected>Select a fruit</option>
+                    </select>
+
+                    <!-- Special instructions text area -->
+                    <label for="special-instructions">Special Instructions or Allergies:</label>
+                    <textarea id="special-instructions" name="special-instructions"></textarea>
+
+                    <p>Payment is received when the drink is picked up.</p>
+
+                    <input type="submit" value="Place Your Order Today" class="submit-order">
+                </form>
+                <!-- Form end-->
+            </section>
+        </main>
+
         <footer>
             <div id="footer-image-container">
                 <a href="../chamber/index.html"><img class="footer-logo" src="./images/footer-logo.webp" loading="lazy"
@@ -176,8 +175,7 @@
                 <a href="https://www.fruityvice.com" target="_blank">www.fruityvice.com</a>,
                 <a href="https://openweathermap.org" target="_blank">openweathermap.org</a>
                 and
-                <a
-                    href="https://www.freepik.com/">Freepik</a>
+                <a href="https://www.freepik.com/">Freepik</a>
             </p>
             <hr>
         </div>
