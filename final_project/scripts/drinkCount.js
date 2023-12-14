@@ -1,11 +1,12 @@
-// Get the current order count from localStorage or default to 0
-var currentOrderCount = localStorage.getItem('orderCount') || 0;
+document.getElementById('submit').addEventListener('click', function() {
 
-// Update the HTML element with the current order count
-document.getElementById('total-Drink-Count').textContent = currentOrderCount;
+// Get the current order count from localStorage or default to 0
+var currentOrderCount = localStorage.getItem('total-Drink-Count') || 0;
 
 // Increment the order count
 currentOrderCount++;
 
 // Save the updated order count back to localStorage
-localStorage.setItem('orderCount', currentOrderCount);
+localStorage.setItem('total-Drink-Count', currentOrderCount)
+
+});
