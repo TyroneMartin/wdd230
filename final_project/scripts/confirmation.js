@@ -9,9 +9,9 @@ let fruit2 = params.get("fruit2");
 let fruit3 = params.get("fruit3");
 let instructions = params.get("special-instructions");
 
-document.querySelector('#confirmationName').textContent = "Hi" + " " + firstName + " "  + "your order was placed!";
+document.querySelector('.confirmName').textContent = "Hi" + " " + firstName + " "  + "your order was placed!";
 
-document.querySelector('#confirmationFruits').textContent = "Fruits: " + fruit1 + ", " + fruit2 + ", "+ fruit3 + ", ";
+document.querySelector('#confirmationFruits').textContent = "Fruits: " + fruit1 + ", " + fruit2 + ", "+ fruit3;
 
 
 document.querySelector('#confirmationDetailsName').textContent = firstName;
