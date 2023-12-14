@@ -1,7 +1,8 @@
-let url = new URL(window.location);
+// Parse the URL parameters
+const url = new URL(window.location);
 let params  = url.searchParams;
 
-let firstName = params.get("first-Name");
+let firstName = params.get("first-name");
 let email = params.get("email");
 let phoneNumber = params.get("phone-number");
 let fruit1 = params.get("fruit1");
@@ -9,12 +10,10 @@ let fruit2 = params.get("fruit2");
 let fruit3 = params.get("fruit3");
 let instructions = params.get("special-instructions");
 
-document.querySelector('.confirmName').textContent = "Hi" + " " + firstName + " "  + "your order was placed!";
-
+// Update the HTML content
+document.querySelector('.confirmName').textContent = "Hi " + firstName + ", your order was placed!";
 document.querySelector('#confirmationFruits').textContent = "Fruits: " + fruit1 + ", " + fruit2 + ", "+ fruit3;
-
-
-document.querySelector('#confirmationDetailsName').textContent = firstName;
+document.querySelector('.name-On-order').textContent = firstName;
 document.querySelector('#confirmationEmail').textContent = "Email: " + email;
 document.querySelector('#confirmationPhone').textContent = "Phone Number: " + phoneNumber;
 document.querySelector('#confirmationInstructions').textContent = "Instructions: " + instructions;
@@ -79,8 +78,9 @@ function loadFruitData() {
     xhr.open('GET', './data/fruits.json', true);
     xhr.send();
 }
-
 loadFruitData()
+
+
 
 
 

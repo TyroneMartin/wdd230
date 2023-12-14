@@ -664,7 +664,14 @@ border-top: dotted black 2px;
   text-align: center;
 }
 
+h2.name-On-order {
+  text-align: center;
+}
 
+.follow-us {
+ font-size: 1rem;
+ color: var(--dark-brown);
+}
 
 
 
