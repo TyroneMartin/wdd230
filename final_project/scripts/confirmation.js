@@ -1,13 +1,13 @@
 let url = new URL(window.location);
 let params  = url.searchParams;
 
-let firstName = params.get("firstName");
+let firstName = params.get("first-Name");
 let email = params.get("email");
-let phoneNumber = params.get("phoneNumber");
-let fruit1 = params.get("selectOption1");
-let fruit2 = params.get("selectOption2");
-let fruit3 = params.get("selectOption3");
-let instructions = params.get("specialInstructions");
+let phoneNumber = params.get("phone-number");
+let fruit1 = params.get("fruit1");
+let fruit2 = params.get("fruit2");
+let fruit3 = params.get("fruit3");
+let instructions = params.get("special-instructions");
 
 document.querySelector('#confirmationName').textContent = "Hi" + " " + firstName + " "  + "your order was placed!";
 
