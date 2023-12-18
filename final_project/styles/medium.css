@@ -13,7 +13,7 @@
   --white: white;
 }
 
-@media screen and (min-width: 875px) {
+@media only screen and (min-width: 875px) {
   .home-GridContainer {
     grid-template-columns: repeat(2, 1fr);
     display: flex;
@@ -145,13 +145,22 @@
   }
 }
 
-/* Medium and Large Screens */
-@media (min-width: 768px) {
-  #confirmationPage-Main {
-    /* flex-direction: row; */
-    justify-content: space-between;
+
+/* form  */
+
+/* Hide the image for screen size between 500px and 600px */
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .hero-Home-Image3 {
+    display: none;
   }
-
-
 }
 
+@media only screen and (min-width: 800px) {
+  .form-Container {
+    right: 0;
+    margin: -1px 50px 0 400px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.605);
+  }
+}  

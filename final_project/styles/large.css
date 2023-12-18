@@ -83,15 +83,7 @@
 
 } */
 
-
-@media screen and (min-width: 300px) {
-  img.hero-Home-Image3{
-    width: 100%;
-  }
-
-}
-
-@media screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) {
   .home-GridContainer {
     grid-template-columns: repeat(2, 1fr);
     display: flex;
@@ -100,9 +92,3 @@
 
 }
 
-/* Large Screens */
-@media (min-width: 1200px) {
-  .order-confirmation-section {
-    width: 100%; 
-  }
-}

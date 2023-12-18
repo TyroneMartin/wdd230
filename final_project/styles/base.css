@@ -218,17 +218,20 @@ a.SocialMedia-images {
 }
 
 .sub-footer-container {
-  height: 30px;
+  height: 100%;
   width: 100%;
   background-color: black;
   color: white;
   text-align: center;
-  margin-top: -35px;
+  margin-top: -65px;
 }
 
 .sub-footer-container h6 {
-  padding: 8px;
-  font-size: 15px;
+  padding: 25px;
+  font-size: 1rem;
+  font-family: var(--font-paragraph);
+  font-style: italic;
+  color: #ffffff;
 }
 
 a#footer-copy-right-name {
@@ -343,12 +346,12 @@ h1.businessNameHeader {
   font-size: 15px;
 }
 
-.hero-Home-Image1,
+/* .hero-Home-Image1,
 .hero-Home-Image2,
 .hero-Home-Image3 {
   width: auto;
   height: 100%;
-}
+} */
 
 /* .hero-container-home {
     grid-column: 1/2;
@@ -466,52 +469,93 @@ nav.nav-Menu a {
 
 /* About us styling */
 
-/* Styles for smaller screens (up to 600px) */
 .about-UsContainer,
 .about-UsContainer2 {
   text-align: center;
-}
-
-/* Styles for larger screens (above 600px) */
-
-.about-UsContainerParagraph {
   width: 100%;
-  padding-left: 50px; /* Add padding to the right for spacing */
-  /* background-color:#616266; */
+  font-family: var(--second-header);
 }
 
-@media (min-width: 601px) {
-  .about-UsContainer,
-  .about-UsContainer2 {
+/* .about-UsContainer p {
+  width: 100%;
+  height: 125px;
+  text-align: center;
+  margin-top: -1px;
+} */
+
+.about-UsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 125px;
+  width: 100%;
+}
+
+.about-UsContainer p {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--orange);
+  margin-top: -5px;
+
+
+
+}
+
+/* .about-UsContainerParagraph {
+  padding-left: 50px;
+  width: 100%;
+} */
+
+@media only screen and (min-width: 601px) {
+  .about-UsContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
   }
 
-  /* .about-Us-Paragraph{
-    background-color: #3c3c3c7d;
+  .about-UsContainer2 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     width: 100%;
-  } */
+  }
 
-  .about-Us-Paragraph {
-    margin: 80px;
+  }
+
+  .about-Us-Paragraph{
+    background-color: #F1F3F4;
+    width: 100%;
+  }
+
+  img.hero-Home-Image3 {
+    background-color: transparent;
   }
 
   .about-UsContainer2 {
     text-align: left; /* Align text to the left within the container */
-  }
+    background-color: #ACBFC6;
+    font-family: var(--second-header);
+ }
 
+ .about-UsContainer2 picture img {
+  display: block; 
+  /* because same photo name was use due to time restrctions, this is use to overide the settings to have image display always*/
+}
   .about-Us-Paragraph,
   .mapContainer {
-    width: 50%;
+    width: 100%;
+    height: auto;
   }
 
   .about-UsContainerParagraph,
-  .hero-Home-Image3 {
-    width: 50%;
+  .hero-Home-Image1,
+.hero-Home-Image2,
+.hero-Home-Image3{
+    width: 100%;
   }
-}
 
 /* Optional: Adjust as needed for larger screens */
 @media (min-width: 960px) {
@@ -535,14 +579,23 @@ nav.nav-Menu a {
   margin: 0 auto;
 }
 
+@media (min-width: 300px) {
 .form-Container {
   right: 0;
-  margin: -1px 50px 0 400px;
-
+  /* margin: -1px 50px 0 400px; */
   max-width: 300px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.605);
 }
+}
+
+/* Hide the image for screen width less than 300px */
+@media screen and (max-width: 500px) {
+  .hero-Home-Image1, .hero-Home-Image2, .hero-Home-Image3 {
+    display: none;
+  }
+}
+
 
 /* .order-page-main {
       display: flex;
@@ -586,6 +639,7 @@ nav.nav-Menu a {
   background: white;
   border-radius: 10px;
   padding: 15px;
+  font-family: var(--second-header);
 }
 
 form#order-drink-form h2 {
@@ -685,4 +739,8 @@ h2.name-On-order {
   font-size: 1rem;
   color: var(--nav-background);
   font-weight: 600;
+}
+
+.order-confirmation-section {
+  width: 100%; 
 }
