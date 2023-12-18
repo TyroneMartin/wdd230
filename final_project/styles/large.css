@@ -92,3 +92,8 @@
 
 }
 
+.home-GridContainer img {
+display: block;
+
+/* use to overide and add back the images to display src set images "small" */
+}
