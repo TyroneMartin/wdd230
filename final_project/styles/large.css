@@ -92,8 +92,14 @@
 
 }
 
-.home-GridContainer img {
+#homePage-Main .home-GridContainer img {
 display: block;
 
 /* use to overide and add back the images to display src set images "small" */
 }
+
+#about-usMain .home-GridContainer img {
+  display: block;
+height: auto;  
+  /* use to overide and add back the images to display src set images "small" */
+  }
